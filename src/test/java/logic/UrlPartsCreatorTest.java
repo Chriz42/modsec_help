@@ -92,18 +92,6 @@ class UrlPartsCreatorTest {
 						Arrays.asList("eins", "zwei", "drei", "test.php")));
 	}
 
-	/*
-	 * /eins/zwei Param1 /eins param2 /eins/zwei Param3
-	 * "param1=value1&param2=value2", "param1=value1&param2=kekse", "kekse=super",
-	 * "param1=value1&param2=value2", "param1=value1&param2=E68uhj",
-	 * "param1=value1&pm2=E68uhj", "value1&param2=value2"
-	 * 
-	 * "POST /test.php HTTP/1.1", "Post /test.php HTTP/1.1",
-	 * "POST /jkngsdjgs HTTP/1.1", "POST /php HTTP/1.1",
-	 * "POST /jkngsdjgs/php HTTP/1.1"
-	 * 
-	 * 
-	 */
 	@Test
 	void parseRAWData() {
 		UrlPartsCreator creator = new UrlPartsCreator();
