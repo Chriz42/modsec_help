@@ -25,7 +25,10 @@ public class CreateRegexTest {
 	}
 
 	private static Stream<Arguments> getRegex() {
-		return Stream.of(Arguments.of(Arrays.asList("a-z", "A-Z", "0-9"), Set.of("TT", "aa", "55")));
+		return Stream.of(Arguments.of(Arrays.asList("a-z", "A-Z", "0-9"), Set.of("TT", "aa", "55")),
+				Arguments.of(Arrays.asList("a-z", "A-Z"), Set.of("Kekse", "Sollten ", "super", "sein")),
+				Arguments.of(Arrays.asList("0-9"), Set.of("12", "77")),
+				Arguments.of(Arrays.asList("A-Z"), Set.of("TT")), Arguments.of(Arrays.asList(), Set.of()));
 	}
 
 }
