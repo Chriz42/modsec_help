@@ -15,12 +15,16 @@ import model.UrlPart;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		// TODO READ filename from ars
+		// TODO READ filename from args
 		InputStream inputStream = Main.class.getResourceAsStream("modsecurity.log");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 		HashMap<String, Set<String>> dataMap = new FileParser().parse(reader);
 		List<UrlPart> urlList = new UrlPartsCreator().parseRAWData(dataMap);
 		System.out.println("bla");
+
+		// TODO: Find IDs inside the url path
+		// TODO: Set regex for parameter Values (maybe a new model)
+
 	}
 
 }

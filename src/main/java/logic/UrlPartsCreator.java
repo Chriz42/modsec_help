@@ -26,7 +26,6 @@ public class UrlPartsCreator {
 				urlList.get(urlList.indexOf(urlPart)).merge(urlPart);
 			} else {
 				urlList.add(urlPart);
-
 			}
 		}
 		return urlList;
