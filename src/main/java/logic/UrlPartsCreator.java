@@ -62,7 +62,6 @@ public class UrlPartsCreator {
 		}
 	}
 
-	// POST /jkngsdjgs/php HTTP/1.1
 	UrlPart parseUrlandTyp(String urlLine) {
 		String[] parts = urlLine.split(" ");
 		String httpTyp = parts[0].toUpperCase();

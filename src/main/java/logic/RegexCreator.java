@@ -12,28 +12,34 @@ public class RegexCreator {
 
 	public String getRegex(Set<String> values) {
 		String regexString = StringUtils.EMPTY;
-		int min = 0;
-		int max = 0;
 
 		for (String value : values) {
-
 			regexString = checkString(regexString, value);
 		}
 		return regexString;
 	}
 
 	String checkString(String regex, String str) {
-		char ch;
+		String ch;
 		for (int i = 0; i < str.length(); i++) {
-			ch = str.charAt(i);
-			if (Character.isDigit(ch) && !regex.contains(numeric)) {
-				regex = regex.concat(numeric);
-			} else if (Character.isUpperCase(ch) && !regex.contains(upperCase)) {
-				regex = regex.concat(upperCase);
-			} else if (Character.isLowerCase(ch) && !regex.contains(lowerCase)) {
-				regex = regex.concat(lowerCase);
+			ch = Character.toString(str.charAt(i));
+			if (StringUtils.isNumeric(ch)) {
+				if (!regex.contains(numeric)) {
+					regex = regex.concat(numeric);
+				}
+			} else if (StringUtils.isAllUpperCase(ch)) {
+				if (!regex.contains(upperCase)) {
+					regex = regex.concat(upperCase);
+				}
+			} else if (StringUtils.isAllLowerCase(ch)) {
+				if (!regex.contains(lowerCase)) {
+					regex = regex.concat(lowerCase);
+				}
+			} else if (StringUtils.isAsciiPrintable(ch) && !regex.contains(ch)) {
+				regex = regex.concat(ch);
 			}
-			// TODO: add float and special caracters and min max if they are usefull?
+
+			// TODO: add min max if they are usefull?
 		}
 		return regex;
 	}
