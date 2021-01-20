@@ -36,6 +36,8 @@ public class RegexCreator {
 					regex = regex.concat(lowerCase);
 				}
 			} else if (StringUtils.isAsciiPrintable(ch) && !regex.contains(ch)) {
+//				TODO: add escaping for special chars
+//				\ ^ $ . | ? * +  ( ) [ ] { }  -> escape with \
 				regex = regex.concat(ch);
 			}
 

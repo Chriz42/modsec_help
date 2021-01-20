@@ -22,7 +22,6 @@ public class Main {
 		List<UrlPart> urlList = new UrlPartsCreator().parseRAWData(dataMap);
 		System.out.println("bla");
 
-		// TODO: Find IDs inside the url path
 		// TODO: Set regex for parameter Values (maybe a new model)
 
 	}

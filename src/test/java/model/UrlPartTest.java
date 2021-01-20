@@ -3,6 +3,7 @@ package model;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItems;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
 
 import java.util.Map;
 import java.util.Set;
@@ -43,6 +44,71 @@ public class UrlPartTest {
 		assertThat(nextChild.getHttpTyps(), is(Set.of("POST")));
 		Map<String, Set<String>> params = child.getParamMap();
 		assertThat(params, is(IsMapWithSize.aMapWithSize(1)));
+		assertThat(params.get("param1"), hasItems("value1", "value2", "value3"));
+	}
+
+	@Test
+	public void mergeNumericUrlParts() {
+		UrlPart parent = new UrlPart("User", "Post");
+		UrlPart child = new UrlPart("12", "Post");
+		Map<String, Set<String>> paramMap = new HashedMap<>();
+		paramMap.put("param1", Set.of("value1", "value2"));
+		child.addParamMap(paramMap);
+
+		parent.addChild(child);
+
+		UrlPart newParent = new UrlPart("User", "Post");
+		UrlPart newChild = new UrlPart("33", "Post");
+		newParent.addChild(newChild);
+		Map<String, Set<String>> paramMap2 = new HashedMap<>();
+		paramMap2.put("param1", Set.of("value2", "value3"));
+		newChild.addParamMap(paramMap2);
+
+		parent.merge(newParent);
+
+		assertThat(parent.getUrlPartString(), is("User"));
+		assertThat(parent.getHttpTyps(), is(Set.of("POST")));
+		Set<UrlPart> children = parent.getChildren();
+		assertThat(children, is(IsCollectionWithSize.hasSize(1)));
+
+		UrlPart nextChild = children.iterator().next();
+		assertThat(nextChild.getUrlPartString(), is("[0-9]+"));
+		assertThat(nextChild.getHttpTyps(), is(Set.of("POST")));
+		Map<String, Set<String>> params = child.getParamMap();
+		assertThat(params, is(IsMapWithSize.aMapWithSize(1)));
+		assertThat(params.get("param1"), hasItems("value1", "value2", "value3"));
+	}
+
+	@Test
+	public void mergeDifferentHTTPTypsTest() {
+		UrlPart parent = new UrlPart("User", "Post");
+		UrlPart child = new UrlPart("12", "Post");
+		Map<String, Set<String>> paramMap = new HashedMap<>();
+		paramMap.put("param1", Set.of("value1", "value2"));
+		child.addParamMap(paramMap);
+
+		parent.addChild(child);
+
+		UrlPart newParent = new UrlPart("User", "Get");
+		UrlPart newChild = new UrlPart("33", "Get");
+		newParent.addChild(newChild);
+		Map<String, Set<String>> paramMap2 = new HashedMap<>();
+		paramMap2.put("param1", Set.of("value2", "value3"));
+		newChild.addParamMap(paramMap2);
+
+		parent.merge(newParent);
+
+		assertThat(parent.getUrlPartString(), is("User"));
+		assertThat(parent.getHttpTyps(), containsInAnyOrder("POST", "GET"));
+		Set<UrlPart> children = parent.getChildren();
+		assertThat(children, is(IsCollectionWithSize.hasSize(1)));
+
+		UrlPart nextChild = children.iterator().next();
+		assertThat(nextChild.getUrlPartString(), is("[0-9]+"));
+		assertThat(nextChild.getHttpTyps(), containsInAnyOrder("POST", "GET"));
+		Map<String, Set<String>> params = child.getParamMap();
+		assertThat(params, is(IsMapWithSize.aMapWithSize(1)));
+
 		assertThat(params.get("param1"), hasItems("value1", "value2", "value3"));
 	}
 

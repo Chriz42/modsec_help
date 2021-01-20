@@ -6,16 +6,22 @@ import java.util.Set;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.map.HashedMap;
+import org.apache.commons.lang3.StringUtils;
 
 public class UrlPart {
 
-	private String urlPartString;
+	private final String urlPartString;
 	private Map<String, Set<String>> params;
 	private Set<String> httpTyps = new HashSet<String>();
 	private Set<UrlPart> children = new HashSet<UrlPart>();
 
 	public UrlPart(String url, String httpTyp) {
-		this.urlPartString = url;
+		if (StringUtils.isNumeric(url)) {
+//			TODO: Add note after processing, that a number inside an url was noticed and was handelt like an ID with an regex (add config for that)
+			this.urlPartString = "[0-9]+";
+		} else {
+			this.urlPartString = url;
+		}
 		this.httpTyps.add(httpTyp.toUpperCase());
 		this.params = new HashedMap<String, Set<String>>();
 	}
@@ -58,13 +64,13 @@ public class UrlPart {
 		}
 	}
 
-	public void merge(UrlPart urlPart) {
-		if (!equals(urlPart)) {
+	public void merge(UrlPart other) {
+		if (!equals(other)) {
 			return;
 		}
-		httpTyps.addAll(urlPart.getHttpTyps());
-		mergeParamMap(urlPart.getParamMap());
-		mergeChildren(urlPart.getChildren());
+		httpTyps.addAll(other.getHttpTyps());
+		mergeParamMap(other.getParamMap());
+		mergeChildren(other.getChildren());
 
 	}
 
@@ -112,7 +118,7 @@ public class UrlPart {
 		}
 		final UrlPart other = (UrlPart) object;
 
-		if (!this.urlPartString.equals(other.getUrlPartString())) {
+		if (!StringUtils.equals(this.urlPartString, other.getUrlPartString())) {
 			return false;
 		}
 		return true;
