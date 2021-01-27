@@ -1,5 +1,7 @@
 package logic;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
@@ -9,6 +11,9 @@ public class RegexCreator {
 	private final String upperCase = "A-Z";
 	private final String lowerCase = "a-z";
 	private final String numeric = "0-9";
+	private final List<String> toEscapeChars = Arrays.asList("\\", ",", "^", "$", ".", "|", "?", "*", "+", "(", ")",
+			"[", "]", "{", "}");
+	private final String escapeChar = "\\";
 
 	public String getRegex(Set<String> values) {
 		String regexString = StringUtils.EMPTY;
@@ -36,9 +41,11 @@ public class RegexCreator {
 					regex = regex.concat(lowerCase);
 				}
 			} else if (StringUtils.isAsciiPrintable(ch) && !regex.contains(ch)) {
-//				TODO: add escaping for special chars
-//				\ ^ $ . | ? * +  ( ) [ ] { }  -> escape with \
-				regex = regex.concat(ch);
+				String specialCharString = ch;
+				if (toEscapeChars.contains(ch)) {
+					specialCharString = escapeChar.concat(specialCharString);
+				}
+				regex = regex.concat(specialCharString);
 			}
 
 			// TODO: add min max if they are usefull?
