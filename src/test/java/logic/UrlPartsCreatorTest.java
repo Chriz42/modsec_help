@@ -2,6 +2,7 @@ package logic;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItems;
 import static org.hamcrest.Matchers.is;
 
 import java.util.Arrays;
@@ -14,6 +15,8 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.map.HashedMap;
 import org.hamcrest.Matchers;
 import org.hamcrest.collection.IsCollectionWithSize;
+import org.hamcrest.collection.IsMapWithSize;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -24,6 +27,80 @@ import model.UrlPart;
 class UrlPartsCreatorTest {
 
 	// TODO:Sauber formatieren
+
+	// To complicated. add the branch splittling when urlpart is mapped to
+	// locationmatch
+	@Test
+	@Disabled
+	public void streamLineUrlPartsTest() {
+		UrlPart parent = new UrlPart("one", "Post");
+		Map<String, Set<String>> paramMap = new HashedMap<>();
+		paramMap.put("param1", Set.of("value1", "value2"));
+		parent.addParamMap(paramMap);
+		UrlPart child = new UrlPart("two", "Post");
+		parent.addChild(child);
+		UrlPart newChild = new UrlPart("three", "Post");
+		UrlPart newChild1 = new UrlPart("four", "Post");
+		UrlPart newChild2 = new UrlPart("five", "Post");
+		newChild.addChild(newChild1);
+		newChild.addChild(newChild2);
+		parent.addChild(newChild);
+
+		UrlPartsCreator creator = new UrlPartsCreator();
+		List<UrlPart> urlList = creator.removeBranches(parent);
+
+		assertThat(urlList, is(IsCollectionWithSize.hasSize(3)));
+		UrlPart parent1 = urlList.get(0);
+		UrlPart parent2 = urlList.get(1);
+		UrlPart parent3 = urlList.get(2);
+//---------------Parent1----------------------------
+		assertThat(parent1.getUrlPartString(), is("one"));
+		assertThat(parent1.getHttpTyps(), is(Set.of("POST")));
+		Set<UrlPart> children1 = parent1.getChildren();
+		assertThat(children1, is(IsCollectionWithSize.hasSize(1)));
+		Map<String, Set<String>> params1 = parent1.getParamMap();
+		assertThat(params1, is(IsMapWithSize.aMapWithSize(1)));
+		assertThat(params1.get("param1"), hasItems("value1", "value2"));
+
+		UrlPart nextChild1 = children1.iterator().next();
+		assertThat(nextChild1.getUrlPartString(), is("two"));
+		assertThat(nextChild1.getHttpTyps(), is(Set.of("POST")));
+//---------------Parent2----------------------------
+		assertThat(parent2.getUrlPartString(), is("one"));
+		assertThat(parent2.getHttpTyps(), is(Set.of("POST")));
+		Set<UrlPart> children2 = parent2.getChildren();
+		assertThat(children2, is(IsCollectionWithSize.hasSize(1)));
+		Map<String, Set<String>> params2 = parent2.getParamMap();
+		assertThat(params2, is(IsMapWithSize.aMapWithSize(1)));
+		assertThat(params2.get("param1"), hasItems("value1", "value2"));
+
+		UrlPart nextChild2 = children2.iterator().next();
+		assertThat(nextChild2.getUrlPartString(), is("three"));
+		assertThat(nextChild2.getHttpTyps(), is(Set.of("POST")));
+		Set<UrlPart> children22 = nextChild2.getChildren();
+		assertThat(children22, is(IsCollectionWithSize.hasSize(1)));
+		UrlPart nextChild22 = children22.iterator().next();
+		assertThat(nextChild22.getUrlPartString(), is("four"));
+		assertThat(nextChild22.getHttpTyps(), is(Set.of("POST")));
+
+//---------------Parent3----------------------------		
+		assertThat(parent3.getUrlPartString(), is("one"));
+		assertThat(parent3.getHttpTyps(), is(Set.of("POST")));
+		Set<UrlPart> children3 = parent3.getChildren();
+		assertThat(children3, is(IsCollectionWithSize.hasSize(1)));
+		Map<String, Set<String>> params3 = parent3.getParamMap();
+		assertThat(params3, is(IsMapWithSize.aMapWithSize(1)));
+		assertThat(params3.get("param1"), hasItems("value1", "value2"));
+		UrlPart nextChild3 = children3.iterator().next();
+		assertThat(nextChild3.getUrlPartString(), is("three"));
+		assertThat(nextChild3.getHttpTyps(), is(Set.of("POST")));
+		Set<UrlPart> children33 = nextChild3.getChildren();
+		assertThat(children33, is(IsCollectionWithSize.hasSize(1)));
+		UrlPart nextChild33 = children33.iterator().next();
+		assertThat(nextChild33.getUrlPartString(), is("five"));
+		assertThat(nextChild33.getHttpTyps(), is(Set.of("POST")));
+
+	}
 
 	@ParameterizedTest
 	@MethodSource

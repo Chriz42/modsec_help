@@ -1,5 +1,6 @@
 package model;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -8,7 +9,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.map.HashedMap;
 import org.apache.commons.lang3.StringUtils;
 
-public class UrlPart {
+public class UrlPart implements Serializable {
 
 	private final String urlPartString;
 	private Map<String, Set<String>> params;
@@ -122,5 +123,13 @@ public class UrlPart {
 			return false;
 		}
 		return true;
+	}
+
+	public boolean hasChildren() {
+		return this.children.size() > 0;
+	}
+
+	public void removeChildren() {
+		this.children = new HashSet<UrlPart>();
 	}
 }

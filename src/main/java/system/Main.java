@@ -20,6 +20,9 @@ public class Main {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 		HashMap<String, Set<String>> dataMap = new FileParser().parse(reader);
 		List<UrlPart> urlList = new UrlPartsCreator().parseRAWData(dataMap);
+
+//		TODO: Create LocationMatches from UrlPartlists
+
 		System.out.println("bla");
 
 		// TODO: Set regex for parameter Values (maybe a new model)
