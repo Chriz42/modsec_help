@@ -9,14 +9,13 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.apache.commons.lang3.SerializationUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import model.UrlPart;
 
 public class UrlPartsCreator {
 
-//	TODO:add check if the parent hasn't the HTTPmethode of the child -> error
+//	TODO:add check if the parent hasn't the HTTPmethode of the child -> error no wait this a a legit usecase but this 
 //	TODO: Create from the tree urlList a list with only limbs without branches
 	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap) {
 		List<UrlPart> urlList = new ArrayList<>();
@@ -77,33 +76,18 @@ public class UrlPartsCreator {
 			url = url.replaceFirst("/", "");
 		}
 		if (StringUtils.isBlank(url)) {
-			return new UrlPart(url, httpTyp);
+			return new UrlPart("/", httpTyp);
 		}
 		String[] nextUrlPartString = url.split("/", 2);
 		String urlPartString = nextUrlPartString[0];
 		// TODO: check if paths in modsec are case sensitive or not
-		UrlPart part = new UrlPart(urlPartString, httpTyp);
+		UrlPart part = new UrlPart(urlPartString);
 		if (nextUrlPartString.length > 1 && StringUtils.isNotBlank(nextUrlPartString[1])) {
 			part.addChild(createUrlParts(nextUrlPartString[1], httpTyp));
+		} else {
+			part.addHttpTyp(httpTyp);
 		}
 		return part;
 	}
 
-//TODO:	I guess this will be to complicated to bring the deeper layers back- > better to splitt creating locationMAtches -> go throw the children and just copy evertyhing before
-	List<UrlPart> removeBranches(UrlPart parent) {
-		List<UrlPart> urlList = new ArrayList<>();
-		if (parent.hasChildren()) {
-			Set<UrlPart> children = parent.getChildren();
-			parent.removeChildren();
-			for (UrlPart urlPart : children) {
-				UrlPart parent2 = (UrlPart) SerializationUtils.clone(parent);
-				parent2.addChild(urlPart);
-				urlList.add(parent2);
-
-			}
-		} else {
-			urlList.add(parent);
-		}
-		return urlList;
-	}
 }

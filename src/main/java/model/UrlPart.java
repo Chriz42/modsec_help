@@ -1,6 +1,6 @@
 package model;
 
-import java.io.Serializable;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -9,22 +9,29 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.map.HashedMap;
 import org.apache.commons.lang3.StringUtils;
 
-public class UrlPart implements Serializable {
+public class UrlPart {
 
-	private final String urlPartString;
-	private Map<String, Set<String>> params;
+	private String urlPartString;
+	private Map<String, Set<String>> params = new HashMap<String, Set<String>>();
 	private Set<String> httpTyps = new HashSet<String>();
 	private Set<UrlPart> children = new HashSet<UrlPart>();
 
+	public UrlPart(String url) {
+		setUrlPart(url);
+	}
+
 	public UrlPart(String url, String httpTyp) {
+		setUrlPart(url);
+		this.params = new HashedMap<String, Set<String>>();
+		this.httpTyps.add(httpTyp.toUpperCase());
+	}
+
+	private void setUrlPart(String url) {
 		if (StringUtils.isNumeric(url)) {
-//			TODO: Add note after processing, that a number inside an url was noticed and was handelt like an ID with an regex (add config for that)
 			this.urlPartString = "[0-9]+";
 		} else {
 			this.urlPartString = url;
 		}
-		this.httpTyps.add(httpTyp.toUpperCase());
-		this.params = new HashedMap<String, Set<String>>();
 	}
 
 	public void addChild(UrlPart urlPart) {
@@ -53,7 +60,11 @@ public class UrlPart implements Serializable {
 		return params;
 	}
 
-	public void addUrlTyps(Set<String> httpTyps) {
+	public void addHttpTyp(String httpTyp) {
+		this.httpTyps.add(httpTyp.toUpperCase());
+	}
+
+	public void addHttpTyps(Set<String> httpTyps) {
 		httpTyps.addAll(httpTyps);
 	}
 

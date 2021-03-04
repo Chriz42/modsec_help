@@ -9,7 +9,9 @@ import java.util.List;
 import java.util.Set;
 
 import input.FileParser;
+import logic.LocationMatchCreator;
 import logic.UrlPartsCreator;
+import model.LocationMatch;
 import model.UrlPart;
 
 public class Main {
@@ -21,12 +23,10 @@ public class Main {
 		HashMap<String, Set<String>> dataMap = new FileParser().parse(reader);
 		List<UrlPart> urlList = new UrlPartsCreator().parseRAWData(dataMap);
 
-//		TODO: Create LocationMatches from UrlPartlists
-
+		LocationMatchCreator locationMatchCreator = new LocationMatchCreator();
+		Set<LocationMatch> locationMatchList = locationMatchCreator.createListOfLocationMatch(urlList);
 		System.out.println("bla");
-
-		// TODO: Set regex for parameter Values (maybe a new model)
-
+//		TODO: print to file
 	}
 
 }
