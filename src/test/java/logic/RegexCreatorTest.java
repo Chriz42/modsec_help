@@ -32,7 +32,7 @@ public class RegexCreatorTest {
 				Arguments.of(Arrays.asList("0-9"), Set.of("12", "77")),
 				Arguments.of(Arrays.asList("A-Z"), Set.of("TT")), 
 				Arguments.of(Arrays.asList(), Set.of()),
-				Arguments.of(Arrays.asList("0-9", ",", "."), Set.of("55", "44.88", "44,33")), 
+				Arguments.of(Arrays.asList("0-9", "\\,", "\\."), Set.of("55", "44.88", "44,33")), 
 				Arguments.of(Arrays.asList("0-9", "+", "|", ">", "!", "\\"), Set.of("133+5|>34|(!5|\\\\|0+4(|2!|\\\\/|3")),
 				Arguments.of(Arrays.asList("a-z","\""), Set.of("\"test\"")),
 				Arguments.of(Arrays.asList("a-z","\\"), Set.of("\\test\\")),

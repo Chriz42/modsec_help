@@ -13,10 +13,6 @@ public class LocationMatch implements Serializable {
 	private HashMap<String, String> params = new HashMap<>();
 	private Set<String> httpTyps = new HashSet<String>();
 
-	public LocationMatch() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public String getUrlString() {
 		return this.urlString;
 	}

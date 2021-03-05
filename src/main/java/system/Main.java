@@ -1,6 +1,7 @@
 package system;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -10,6 +11,7 @@ import java.util.Set;
 
 import input.FileParser;
 import logic.LocationMatchCreator;
+import logic.Printer;
 import logic.UrlPartsCreator;
 import model.LocationMatch;
 import model.UrlPart;
@@ -25,8 +27,15 @@ public class Main {
 
 		LocationMatchCreator locationMatchCreator = new LocationMatchCreator();
 		Set<LocationMatch> locationMatchList = locationMatchCreator.createListOfLocationMatch(urlList);
-		System.out.println("bla");
-//		TODO: print to file
+
+		Printer printer = new Printer(100000);
+		ByteArrayOutputStream outStream = new ByteArrayOutputStream();
+		for (LocationMatch locationMatch : locationMatchList) {
+			printer.printToStream(locationMatch, outStream);
+		}
+		System.out.println(outStream.toString());
+		// TODO print Config and default deny rule
+		// TODO: print to file
 	}
 
 }
