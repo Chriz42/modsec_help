@@ -28,13 +28,9 @@ But first the basics
 - write propper getting started with modsec learning mode guide
 - add automate testing with request to the ne locationmatches with docker
 - and stuff....
-	
-	
 
+** Configtest **
 
-
-
-** configtest **
 Test the generate locationMatches:
 1. add your loationsmatches to "configtest/modsechelp/modsec_9999.conf" 
 2. "bash run.sh"
