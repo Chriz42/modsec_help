@@ -13,17 +13,18 @@ public class UrlPart {
 
 	private String urlPartString;
 	private Map<String, Set<String>> params = new HashMap<String, Set<String>>();
-	private Set<String> httpTyps = new HashSet<String>();
+	private Set<HTTPType> httpTyps = new HashSet<HTTPType>();
+
 	private Set<UrlPart> children = new HashSet<UrlPart>();
 
 	public UrlPart(String url) {
 		setUrlPart(url);
 	}
 
-	public UrlPart(String url, String httpTyp) {
+	public UrlPart(String url, HTTPType httpTyp) {
 		setUrlPart(url);
 		this.params = new HashedMap<String, Set<String>>();
-		this.httpTyps.add(httpTyp.toUpperCase());
+		this.httpTyps.add(httpTyp);
 	}
 
 	private void setUrlPart(String url) {
@@ -48,7 +49,7 @@ public class UrlPart {
 		return this.urlPartString;
 	}
 
-	public Set<String> getHttpTyps() {
+	public Set<HTTPType> getHttpTyps() {
 		return this.httpTyps;
 	}
 
@@ -60,8 +61,8 @@ public class UrlPart {
 		return params;
 	}
 
-	public void addHttpTyp(String httpTyp) {
-		this.httpTyps.add(httpTyp.toUpperCase());
+	public void addHttpTyp(HTTPType httpTyp) {
+		this.httpTyps.add(httpTyp);
 	}
 
 	public void addHttpTyps(Set<String> httpTyps) {

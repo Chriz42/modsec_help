@@ -12,7 +12,6 @@ import java.util.stream.Stream;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.map.HashedMap;
-import org.apache.commons.lang3.StringUtils;
 import org.hamcrest.Matchers;
 import org.hamcrest.collection.IsCollectionWithSize;
 import org.junit.jupiter.api.Test;
@@ -20,6 +19,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import model.HTTPType;
 import model.UrlPart;
 
 class UrlPartsCreatorTest {
@@ -65,13 +65,13 @@ class UrlPartsCreatorTest {
 
 	@ParameterizedTest
 	@MethodSource
-	void urlAndTypTest(String line, List<String> typs, List<String> urls) {
+	void urlAndTypTest(String line, List<HTTPType> typs, List<String> urls) {
 		UrlPartsCreator creator = new UrlPartsCreator();
 		UrlPart urlPart = creator.parseUrlandTyp(line);
 		assertThat(urlPart.getUrlPartString(), is(equalTo(urls.get(0))));
 
 		// little workaround to use parameterized tests
-		if (StringUtils.isEmpty(typs.get(0))) {
+		if (typs.get(0) == null) {
 			assertThat(urlPart.getHttpTyps(), is(IsCollectionWithSize.hasSize(0)));
 		} else {
 			assertThat(urlPart.getHttpTyps(), Matchers.hasItem(typs.get(0)));
@@ -84,7 +84,7 @@ class UrlPartsCreatorTest {
 				UrlPart child = children.iterator().next();
 				assertThat(child.getUrlPartString(), is(equalTo(urls.get(i))));
 				// little workaround to use parameterized tests
-				if (StringUtils.isEmpty(typs.get(i))) {
+				if (typs.get(i) == null) {
 					assertThat(child.getHttpTyps(), is(IsCollectionWithSize.hasSize(0)));
 				} else {
 					assertThat(child.getHttpTyps(), Matchers.hasItem(typs.get(i)));
@@ -97,12 +97,11 @@ class UrlPartsCreatorTest {
 	}
 
 	private static Stream<Arguments> urlAndTypTest() {
-		return Stream.of(Arguments.of("GET / HTTP/1.1", Arrays.asList("GET"), Arrays.asList("/")),
-				Arguments.of("POST eins/test.php HTTP/1.1", Arrays.asList(StringUtils.EMPTY, "POST"),
+		return Stream.of(Arguments.of("GET / HTTP/1.1", Arrays.asList(HTTPType.GET), Arrays.asList("/")),
+				Arguments.of("POST eins/test.php HTTP/1.1", Arrays.asList(null, HTTPType.POST),
 						Arrays.asList("eins", "test.php")),
-				Arguments.of("POST test.php HTTP/1.1", Arrays.asList("POST"), Arrays.asList("test.php")),
-				Arguments.of("POST /eins/zwei/drei/test.php HTTP/1.1",
-						Arrays.asList(StringUtils.EMPTY, StringUtils.EMPTY, StringUtils.EMPTY, "POST"),
+				Arguments.of("POST test.php HTTP/1.1", Arrays.asList(HTTPType.POST), Arrays.asList("test.php")),
+				Arguments.of("POST /eins/zwei/drei/test.php HTTP/1.1", Arrays.asList(null, null, null, HTTPType.POST),
 						Arrays.asList("eins", "zwei", "drei", "test.php")));
 	}
 
@@ -122,7 +121,7 @@ class UrlPartsCreatorTest {
 				.get();
 
 		assertThat(eins.getUrlPartString(), is("eins"));
-		assertThat(eins.getHttpTyps(), Matchers.hasItem("POST"));
+		assertThat(eins.getHttpTyps(), Matchers.hasItem(HTTPType.POST));
 		Map<String, Set<String>> einsParamMap = eins.getParamMap();
 		assertThat(einsParamMap.get("param1"), is(Set.of("value1")));
 		assertThat(einsParamMap.get("param2"), is(Set.of("value2", "value22")));
@@ -131,7 +130,7 @@ class UrlPartsCreatorTest {
 		UrlPart zwei = eins.getChildren().stream().filter(urlPart -> urlPart.getUrlPartString().equals("zwei"))
 				.findFirst().get();
 		assertThat(zwei.getUrlPartString(), is("zwei"));
-		assertThat(zwei.getHttpTyps(), Matchers.hasItem("POST"));
+		assertThat(zwei.getHttpTyps(), Matchers.hasItem(HTTPType.POST));
 		Map<String, Set<String>> zweiParamMap = zwei.getParamMap();
 		assertThat(zweiParamMap.get("param1"), is(Set.of("value1")));
 		assertThat(zweiParamMap.get("param2"), is(Set.of("value2", "value22")));
@@ -140,7 +139,7 @@ class UrlPartsCreatorTest {
 		UrlPart drei = urlPartsList.stream().filter(urlPart -> urlPart.getUrlPartString().equals("drei")).findFirst()
 				.get();
 		assertThat(drei.getUrlPartString(), is("drei"));
-		assertThat(drei.getHttpTyps(), Matchers.hasItem("GET"));
+		assertThat(drei.getHttpTyps(), Matchers.hasItem(HTTPType.GET));
 		Map<String, Set<String>> dreiParamMap = drei.getParamMap();
 		assertThat(dreiParamMap.get("param3"), is(Set.of("value3")));
 	}

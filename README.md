@@ -20,7 +20,6 @@ But first the basics
 - generate whitelist locationMatches and deny everything else
 - recognize IDs inside urls and add regex for it
 - Whitelist HTTP Types
-	- TODO: add http type enum
 - Whitelist ParamNames
 - simple regex for every param
 
@@ -35,14 +34,12 @@ But first the basics
 
 
 
-#configtest
-simple test if everything went well.
+** configtest **
+Test the generate locationMatches:
+1. add your loationsmatches to "configtest/modsechelp/modsec_9999.conf" 
+2. "bash run.sh"
+3. docker handelsthe rest and start apache with modsec and your rules, syntax errors should be checked on startup
 
-add your loationsmatches to "modsec_9999.conf" 
-
-and run bash run.sh
-
-everything will be copied to docker an started.
-Apache will load the configuration add check it on start up
+to test the matches you should set SecRuleEngine From DetectionOnly to On 
 
 you could use "header_00_config_template.conf" as a template for modsec configuration tp generate your logfiles 

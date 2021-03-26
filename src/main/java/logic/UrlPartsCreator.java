@@ -11,6 +11,7 @@ import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
 
+import model.HTTPType;
 import model.UrlPart;
 
 public class UrlPartsCreator {
@@ -66,12 +67,12 @@ public class UrlPartsCreator {
 
 	UrlPart parseUrlandTyp(String urlLine) {
 		String[] parts = urlLine.split(" ");
-		String httpTyp = parts[0].toUpperCase();
+		HTTPType httpTyp = HTTPType.valueOf(parts[0].toUpperCase());
 
 		return createUrlParts(parts[1], httpTyp);
 	}
 
-	UrlPart createUrlParts(String url, String httpTyp) {
+	UrlPart createUrlParts(String url, HTTPType httpTyp) {
 		if (url.startsWith("/")) {
 			url = url.replaceFirst("/", "");
 		}

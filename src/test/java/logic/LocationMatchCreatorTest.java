@@ -18,6 +18,7 @@ import org.hamcrest.Matchers;
 import org.hamcrest.collection.IsCollectionWithSize;
 import org.junit.jupiter.api.Test;
 
+import model.HTTPType;
 import model.LocationMatch;
 import model.UrlPart;
 
@@ -30,7 +31,7 @@ public class LocationMatchCreatorTest {
 		UrlPart child = new UrlPart("two");
 		UrlPart newChild = new UrlPart("three");
 		UrlPart newChild1 = new UrlPart("four");
-		UrlPart newChild2 = new UrlPart("five", "Post");
+		UrlPart newChild2 = new UrlPart("five", HTTPType.POST);
 		Map<String, Set<String>> paramMap = new HashedMap<>();
 		paramMap.put("param1", Set.of("value1", "value2"));
 		newChild2.addParamMap(paramMap);
@@ -46,7 +47,7 @@ public class LocationMatchCreatorTest {
 
 		assertThat(locationMatch, is(notNullValue()));
 		assertThat(locationMatch.getUrlString(), is("/one/two/three/four/five"));
-		assertThat(locationMatch.getHttpTyps(), Matchers.hasItem("POST"));
+		assertThat(locationMatch.getHttpTyps(), Matchers.hasItem(HTTPType.POST));
 		HashMap<String, String> params = locationMatch.getParams();
 		assertThat(params.size(), is(1));
 		assertTrue(params.get("param1").contains("a-z"));
@@ -57,9 +58,9 @@ public class LocationMatchCreatorTest {
 	public void createLocationMatchesFromUrlPartWithBranchesTest() {
 		UrlPart parent = new UrlPart("one");
 		UrlPart child = new UrlPart("two");
-		UrlPart newChild = new UrlPart("three", "post");
+		UrlPart newChild = new UrlPart("three", HTTPType.POST);
 		UrlPart newChild1 = new UrlPart("four");
-		UrlPart newChild2 = new UrlPart("five", "Post");
+		UrlPart newChild2 = new UrlPart("five", HTTPType.POST);
 		child.addChild(newChild);
 		newChild1.addChild(newChild2);
 
@@ -82,7 +83,7 @@ public class LocationMatchCreatorTest {
 			assertThat(locationMatch, is(notNullValue()));
 
 			assertThat(locationMatch.getUrlString(), is(oneOf("/one/two/three", "/one/four/five")));
-			assertThat(locationMatch.getHttpTyps(), Matchers.hasItem("POST"));
+			assertThat(locationMatch.getHttpTyps(), Matchers.hasItem(HTTPType.POST));
 			HashMap<String, String> params = locationMatch.getParams();
 			assertThat(params.size(), is(1));
 			assertThat(params.get("param1"), allOf(containsString("a-z"), containsString("0-9")));
@@ -92,11 +93,11 @@ public class LocationMatchCreatorTest {
 
 	@Test
 	public void createMultipleLocationMatchesFromSingleBranchTest() {
-		UrlPart parent = new UrlPart("one", "pUT");
+		UrlPart parent = new UrlPart("one", HTTPType.PUT);
 		UrlPart child = new UrlPart("two");
-		UrlPart newChild = new UrlPart("three", "get");
+		UrlPart newChild = new UrlPart("three", HTTPType.GET);
 		UrlPart newChild1 = new UrlPart("four");
-		UrlPart newChild2 = new UrlPart("five", "Post");
+		UrlPart newChild2 = new UrlPart("five", HTTPType.POST);
 		child.addChild(newChild);
 		newChild.addChild(newChild1);
 		newChild1.addChild(newChild2);
@@ -108,7 +109,8 @@ public class LocationMatchCreatorTest {
 		assertThat(matches, is(IsCollectionWithSize.hasSize(3)));
 		for (LocationMatch locationMatch : matches) {
 			assertThat(locationMatch.getUrlString(), is(oneOf("/one", "/one/two/three", "/one/two/three/four/five")));
-			assertThat(locationMatch.getHttpTyps(), is(oneOf(Set.of("POST"), Set.of("GET"), Set.of("PUT"))));
+			assertThat(locationMatch.getHttpTyps(),
+					is(oneOf(Set.of(HTTPType.POST), Set.of(HTTPType.GET), Set.of(HTTPType.PUT))));
 		}
 	}
 
@@ -116,16 +118,17 @@ public class LocationMatchCreatorTest {
 	public void createLocationMatchesFromListTest() {
 		HashSet<UrlPart> parents = new HashSet<>();
 
-		parents.add(new UrlPart("one", "pUT"));
-		parents.add(new UrlPart("two", "post"));
-		parents.add(new UrlPart("three", "get"));
+		parents.add(new UrlPart("one", HTTPType.PUT));
+		parents.add(new UrlPart("two", HTTPType.POST));
+		parents.add(new UrlPart("three", HTTPType.GET));
 
 		LocationMatchCreator creator = new LocationMatchCreator();
 		Set<LocationMatch> matches = creator.createListOfLocationMatch(parents);
 		assertThat(matches, is(IsCollectionWithSize.hasSize(3)));
 		for (LocationMatch locationMatch : matches) {
 			assertThat(locationMatch.getUrlString(), is(oneOf("/one", "/two", "/three")));
-			assertThat(locationMatch.getHttpTyps(), is(oneOf(Set.of("POST"), Set.of("GET"), Set.of("PUT"))));
+			assertThat(locationMatch.getHttpTyps(),
+					is(oneOf(Set.of(HTTPType.POST), Set.of(HTTPType.GET), Set.of(HTTPType.PUT))));
 		}
 	}
 

@@ -17,16 +17,16 @@ public class UrlPartTest {
 
 	@Test
 	public void mergeTest() {
-		UrlPart parent = new UrlPart("eins", "Post");
-		UrlPart child = new UrlPart("zwei", "Post");
+		UrlPart parent = new UrlPart("eins", HTTPType.POST);
+		UrlPart child = new UrlPart("zwei", HTTPType.POST);
 		Map<String, Set<String>> paramMap = new HashedMap<>();
 		paramMap.put("param1", Set.of("value1", "value2"));
 		child.addParamMap(paramMap);
 
 		parent.addChild(child);
 
-		UrlPart newParent = new UrlPart("eins", "Post");
-		UrlPart newChild = new UrlPart("zwei", "Post");
+		UrlPart newParent = new UrlPart("eins", HTTPType.POST);
+		UrlPart newChild = new UrlPart("zwei", HTTPType.POST);
 		newParent.addChild(newChild);
 		Map<String, Set<String>> paramMap2 = new HashedMap<>();
 		paramMap2.put("param1", Set.of("value2", "value3"));
@@ -35,13 +35,13 @@ public class UrlPartTest {
 		parent.merge(newParent);
 
 		assertThat(parent.getUrlPartString(), is("eins"));
-		assertThat(parent.getHttpTyps(), is(Set.of("POST")));
+		assertThat(parent.getHttpTyps(), is(Set.of(HTTPType.POST)));
 		Set<UrlPart> children = parent.getChildren();
 		assertThat(children, is(IsCollectionWithSize.hasSize(1)));
 
 		UrlPart nextChild = children.iterator().next();
 		assertThat(nextChild.getUrlPartString(), is("zwei"));
-		assertThat(nextChild.getHttpTyps(), is(Set.of("POST")));
+		assertThat(nextChild.getHttpTyps(), is(Set.of(HTTPType.POST)));
 		Map<String, Set<String>> params = child.getParamMap();
 		assertThat(params, is(IsMapWithSize.aMapWithSize(1)));
 		assertThat(params.get("param1"), hasItems("value1", "value2", "value3"));
@@ -49,16 +49,16 @@ public class UrlPartTest {
 
 	@Test
 	public void mergeNumericUrlParts() {
-		UrlPart parent = new UrlPart("User", "Post");
-		UrlPart child = new UrlPart("12", "Post");
+		UrlPart parent = new UrlPart("User", HTTPType.POST);
+		UrlPart child = new UrlPart("12", HTTPType.POST);
 		Map<String, Set<String>> paramMap = new HashedMap<>();
 		paramMap.put("param1", Set.of("value1", "value2"));
 		child.addParamMap(paramMap);
 
 		parent.addChild(child);
 
-		UrlPart newParent = new UrlPart("User", "Post");
-		UrlPart newChild = new UrlPart("33", "Post");
+		UrlPart newParent = new UrlPart("User", HTTPType.POST);
+		UrlPart newChild = new UrlPart("33", HTTPType.POST);
 		newParent.addChild(newChild);
 		Map<String, Set<String>> paramMap2 = new HashedMap<>();
 		paramMap2.put("param1", Set.of("value2", "value3"));
@@ -67,13 +67,13 @@ public class UrlPartTest {
 		parent.merge(newParent);
 
 		assertThat(parent.getUrlPartString(), is("User"));
-		assertThat(parent.getHttpTyps(), is(Set.of("POST")));
+		assertThat(parent.getHttpTyps(), is(Set.of(HTTPType.POST)));
 		Set<UrlPart> children = parent.getChildren();
 		assertThat(children, is(IsCollectionWithSize.hasSize(1)));
 
 		UrlPart nextChild = children.iterator().next();
 		assertThat(nextChild.getUrlPartString(), is("[0-9]+"));
-		assertThat(nextChild.getHttpTyps(), is(Set.of("POST")));
+		assertThat(nextChild.getHttpTyps(), is(Set.of(HTTPType.POST)));
 		Map<String, Set<String>> params = child.getParamMap();
 		assertThat(params, is(IsMapWithSize.aMapWithSize(1)));
 		assertThat(params.get("param1"), hasItems("value1", "value2", "value3"));
@@ -81,16 +81,16 @@ public class UrlPartTest {
 
 	@Test
 	public void mergeDifferentHTTPTypsTest() {
-		UrlPart parent = new UrlPart("User", "Post");
-		UrlPart child = new UrlPart("12", "Post");
+		UrlPart parent = new UrlPart("User", HTTPType.POST);
+		UrlPart child = new UrlPart("12", HTTPType.POST);
 		Map<String, Set<String>> paramMap = new HashedMap<>();
 		paramMap.put("param1", Set.of("value1", "value2"));
 		child.addParamMap(paramMap);
 
 		parent.addChild(child);
 
-		UrlPart newParent = new UrlPart("User", "Get");
-		UrlPart newChild = new UrlPart("33", "Get");
+		UrlPart newParent = new UrlPart("User", HTTPType.GET);
+		UrlPart newChild = new UrlPart("33", HTTPType.GET);
 		newParent.addChild(newChild);
 		Map<String, Set<String>> paramMap2 = new HashedMap<>();
 		paramMap2.put("param1", Set.of("value2", "value3"));
@@ -99,13 +99,13 @@ public class UrlPartTest {
 		parent.merge(newParent);
 
 		assertThat(parent.getUrlPartString(), is("User"));
-		assertThat(parent.getHttpTyps(), containsInAnyOrder("POST", "GET"));
+		assertThat(parent.getHttpTyps(), containsInAnyOrder(HTTPType.POST, HTTPType.GET));
 		Set<UrlPart> children = parent.getChildren();
 		assertThat(children, is(IsCollectionWithSize.hasSize(1)));
 
 		UrlPart nextChild = children.iterator().next();
 		assertThat(nextChild.getUrlPartString(), is("[0-9]+"));
-		assertThat(nextChild.getHttpTyps(), containsInAnyOrder("POST", "GET"));
+		assertThat(nextChild.getHttpTyps(), containsInAnyOrder(HTTPType.POST, HTTPType.GET));
 		Map<String, Set<String>> params = child.getParamMap();
 		assertThat(params, is(IsMapWithSize.aMapWithSize(1)));
 
@@ -117,8 +117,8 @@ public class UrlPartTest {
 		Set<String> valueSet = Set.of("value1", "value2");
 		Map<String, Set<String>> paramMap = new HashedMap<>();
 		paramMap.put("Key", valueSet);
-		UrlPart parent = new UrlPart("parent", "POST");
-		UrlPart child = new UrlPart("child", "POST");
+		UrlPart parent = new UrlPart("parent", HTTPType.POST);
+		UrlPart child = new UrlPart("child", HTTPType.POST);
 		parent.addChild(child);
 		parent.addParamMapToLastChild(paramMap);
 		assertThat(child.getParamMap(), is(IsMapWithSize.aMapWithSize(1)));

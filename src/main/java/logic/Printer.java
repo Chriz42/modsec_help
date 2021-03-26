@@ -6,9 +6,11 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 
+import model.HTTPType;
 import model.LocationMatch;
 
 public class Printer {
@@ -68,12 +70,13 @@ public class Printer {
 		printWriter.println(String.format(unexpectedParamNameString, paramNamesString, currentRuleId++));
 	}
 
-	void addHttpMethode(Set<String> httpTypes, PrintWriter printWriter) {
+	void addHttpMethode(Set<HTTPType> set, PrintWriter printWriter) {
 		String httpTypesString = StringUtils.EMPTY;
-		if (httpTypes.size() > 1) {
-			httpTypesString = StringUtils.join(httpTypes, "|");
+		if (set.size() > 1) {
+			Set<String> httpTypeNames = set.stream().map(value -> value.name()).collect(Collectors.toSet());
+			httpTypesString = StringUtils.join(httpTypeNames, "|");
 		} else {
-			httpTypesString = httpTypes.iterator().next();
+			httpTypesString = set.iterator().next().name();
 		}
 		printWriter.println(String.format(requestMethodeString, httpTypesString, currentRuleId++));
 	}

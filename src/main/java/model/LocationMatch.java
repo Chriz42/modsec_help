@@ -11,7 +11,7 @@ public class LocationMatch implements Serializable {
 
 	private String urlString = StringUtils.EMPTY;
 	private HashMap<String, String> params = new HashMap<>();
-	private Set<String> httpTyps = new HashSet<String>();
+	private Set<HTTPType> httpTyps = new HashSet<HTTPType>();
 
 	public String getUrlString() {
 		return this.urlString;
@@ -25,11 +25,11 @@ public class LocationMatch implements Serializable {
 		this.params.put(key, regex);
 	}
 
-	public void addHttpTyps(Set<String> httpTyps) {
-		this.httpTyps = httpTyps;
+	public void addHttpTyps(Set<HTTPType> set) {
+		this.httpTyps = set;
 	}
 
-	public Set<String> getHttpTyps() {
+	public Set<HTTPType> getHttpTyps() {
 		return httpTyps;
 	}
 

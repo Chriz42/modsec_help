@@ -12,6 +12,7 @@ import java.util.Set;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import model.HTTPType;
 import model.LocationMatch;
 
 public class PrinterTest {
@@ -34,7 +35,7 @@ public class PrinterTest {
 		locationMatch.concatUrl("data");
 		locationMatch.addParam("name", "a-zA-Z");
 		locationMatch.addParam("param2", "0-9\\,\\.");
-		locationMatch.addHttpTyps(Set.of("POST", "GET"));
+		locationMatch.addHttpTyps(Set.of(HTTPType.POST, HTTPType.GET));
 
 		printer.printToStream(locationMatch, outStream);
 		String output = outStream.toString();
@@ -42,7 +43,7 @@ public class PrinterTest {
 		String newLine = "\r\n";
 
 		String openString = String.format(printer.locationMatchOpenString + "\r\n", "/user/[0-9]+/data");
-		String httpTypeString = String.format(printer.requestMethodeString + "\r\n", "GET|POST", 0);
+		String httpTypeString = String.format(printer.requestMethodeString + "\r\n", "POST|GET", 0);
 		String namesString = String.format(printer.unexpectedParamNameString + "\r\n", "name|param2", 1);
 		String valuesString = String.format(printer.containsInvalidCharsString + "\r\n", "name", "a-zA-Z", 2)
 				+ String.format(printer.containsInvalidCharsString + "\r\n", "param2", "0-9\\,\\.", 3);
@@ -85,9 +86,9 @@ public class PrinterTest {
 
 	@Test
 	public void addExpectedHtttpTypesTest() {
-		HashSet<String> httpTypes = new HashSet<>();
-		httpTypes.add("POST");
-		httpTypes.add("GET");
+		HashSet<HTTPType> httpTypes = new HashSet<>();
+		httpTypes.add(HTTPType.POST);
+		httpTypes.add(HTTPType.GET);
 
 		PrintWriter printWriter = new PrintWriter(outStream);
 		printer.addHttpMethode(httpTypes, printWriter);
