@@ -20,6 +20,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		// TODO READ filename from args
+		// TODO: Add default waf.conf with logging only mode
 		InputStream inputStream = Main.class.getResourceAsStream("modsecurity.log");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 		HashMap<String, Set<String>> dataMap = new FileParser().parse(reader);
@@ -30,11 +31,12 @@ public class Main {
 
 		Printer printer = new Printer(100000);
 		ByteArrayOutputStream outStream = new ByteArrayOutputStream();
+
 		for (LocationMatch locationMatch : locationMatchList) {
 			printer.printToStream(locationMatch, outStream);
 		}
+		printer.printDefaultMatchToStream(outStream);
 		System.out.println(outStream.toString());
-		// TODO print Config and default deny rule
 		// TODO: print to file
 	}
 

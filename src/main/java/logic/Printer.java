@@ -1,5 +1,6 @@
 package logic;
 
+import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.HashMap;
@@ -18,11 +19,15 @@ public class Printer {
 	// TODO: make startRuleID configureable
 
 	final String locationMatchOpenString = "<LocationMatch \"^%s$\">";
-	final String requestMethodeString = "\tSecRule REQUEST_METHOD !(%s) \"deny,id:%s,'Request method not allowed'\"";
+	final String requestMethodeString = "\tSecRule REQUEST_METHOD !(%s) \"deny,id:%s,msg:'Request method not allowed'\"";
 	final String unexpectedParamNameString = "\tSecRule ARGS_NAMES !^(%s)$ \"deny,id:%s,msg:'The request contained the following unexpected Param: %%{MATCHED_VAR_NAME}'\"";
 	final String containsInvalidCharsString = "\tSecRule ARGS:%s !^[%s]+$ \"deny,id:%s,msg:'The Parameter %%{MATCHED_VAR_NAME} contains invalid characters'\"";
 	final String requestAllowString = "\tSecAction \"allow,id:%s,msg:'Request passed',nolog\"";
 	final String locationMatchCloseString = "</LocationMatch>";
+
+	final String unauthLocationCalledSecActionString = "\tSecAction \"deny,id:%s,msg:'Unauthorized location was called: %%{REQUEST_URI}'\"";
+
+	final String defaultRuleUrlString = "/.*";
 
 	private int currentRuleId;
 
@@ -71,6 +76,16 @@ public class Printer {
 			httpTypesString = httpTypes.iterator().next();
 		}
 		printWriter.println(String.format(requestMethodeString, httpTypesString, currentRuleId++));
+	}
+
+	public void printDefaultMatchToStream(ByteArrayOutputStream outStream) {
+		PrintWriter printWriter = new PrintWriter(outStream);
+		printWriter.println();
+		printWriter.println(String.format(locationMatchOpenString, defaultRuleUrlString));
+		printWriter.println(String.format(unauthLocationCalledSecActionString, currentRuleId++));
+
+		printWriter.println(locationMatchCloseString);
+		printWriter.close();
 	}
 
 }
