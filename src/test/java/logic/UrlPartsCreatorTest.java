@@ -3,6 +3,8 @@ package logic;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,14 +13,17 @@ import java.util.Set;
 import java.util.stream.Stream;
 
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.SetUtils;
 import org.apache.commons.collections4.map.HashedMap;
 import org.hamcrest.Matchers;
 import org.hamcrest.collection.IsCollectionWithSize;
+import org.hamcrest.collection.IsMapWithSize;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import logic.exceptions.UrlPartCreatorException;
 import model.HTTPType;
 import model.UrlPart;
 
@@ -65,7 +70,7 @@ class UrlPartsCreatorTest {
 
 	@ParameterizedTest
 	@MethodSource
-	void urlAndTypTest(String line, List<HTTPType> typs, List<String> urls) {
+	void urlAndTypTest(String line, List<HTTPType> typs, List<String> urls) throws UrlPartCreatorException {
 		UrlPartsCreator creator = new UrlPartsCreator();
 		UrlPart urlPart = creator.parseUrlandTyp(line);
 		assertThat(urlPart.getUrlPartString(), is(equalTo(urls.get(0))));
@@ -106,6 +111,44 @@ class UrlPartsCreatorTest {
 	}
 
 	@Test
+	public void createUrlPartWithQueryString() throws UrlPartCreatorException {
+		UrlPartsCreator creator = new UrlPartsCreator();
+		UrlPart urlPart = creator.parseUrlandTyp("GET test?param1=test1&param2=test2 HTTP/1.1");
+		assertThat(urlPart.getUrlPartString(), is(equalTo("test")));
+
+		assertThat(urlPart.getUrlPartString(), is("test"));
+		assertThat(urlPart.getHttpTyps(), Matchers.hasItem(HTTPType.GET));
+		Map<String, Set<String>> urlPartParamMap = urlPart.getParamMap();
+		assertThat(urlPartParamMap.get("param1"), is(Set.of("test1")));
+		assertThat(urlPartParamMap.get("param2"), is(Set.of("test2")));
+	}
+
+	@Test
+	public void createUrlPartWithEmptyQueryString() throws UrlPartCreatorException {
+		UrlPartsCreator creator = new UrlPartsCreator();
+		UrlPart urlPart = creator.parseUrlandTyp("GET test? HTTP/1.1");
+		assertThat(urlPart.getUrlPartString(), is(equalTo("test")));
+
+		assertThat(urlPart.getUrlPartString(), is("test"));
+		assertThat(urlPart.getHttpTyps(), Matchers.hasItem(HTTPType.GET));
+		Map<String, Set<String>> urlPartParamMap = urlPart.getParamMap();
+		assertThat(urlPartParamMap, is(IsMapWithSize.anEmptyMap()));
+	}
+
+	@Test
+	public void createUrlPartWithQueryStringFromPostErrorHandling() throws UrlPartCreatorException {
+
+		UrlPartCreatorException exception = assertThrows(UrlPartCreatorException.class, () -> {
+			UrlPartsCreator creator = new UrlPartsCreator();
+			creator.parseUrlandTyp("POST test?param1=test1&param2=test2 HTTP/1.1");
+		});
+		String expectedMessage = "There shouldn't be a non GET request with querystring";
+		String actualMessage = exception.getMessage();
+
+		assertTrue(actualMessage.contains(expectedMessage));
+	}
+
+	@Test
 	void parseRAWData() {
 		UrlPartsCreator creator = new UrlPartsCreator();
 		Map<String, Set<String>> parsedLines = new HashedMap<String, Set<String>>();
@@ -114,7 +157,7 @@ class UrlPartsCreatorTest {
 		parsedLines.put("POST /eins/zwei HTTP/1.1",
 				Set.of("param1=value1&param2=value2", "param3=value3&param2=value22"));
 
-		parsedLines.put("GET /drei HTTP/1.1", Set.of("param3=value3"));
+		parsedLines.put("GET /drei?param3=value3 HTTP/1.1", SetUtils.emptySet());
 		List<UrlPart> urlPartsList = creator.parseRAWData(parsedLines);
 
 		UrlPart eins = urlPartsList.stream().filter(urlPart -> urlPart.getUrlPartString().equals("eins")).findFirst()

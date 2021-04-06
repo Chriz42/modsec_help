@@ -11,24 +11,30 @@ import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
 
+import logic.exceptions.UrlPartCreatorException;
 import model.HTTPType;
 import model.UrlPart;
 
 public class UrlPartsCreator {
 
-//	TODO:add check if the parent hasn't the HTTPmethode of the child -> error no wait this a a legit usecase but this 
 //	TODO: Create from the tree urlList a list with only limbs without branches
 	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap) {
 		List<UrlPart> urlList = new ArrayList<>();
 		for (Entry<String, Set<String>> entry : dataMap.entrySet()) {
 
 			Map<String, Set<String>> paramMap = createParameterMap(entry.getValue());
-			UrlPart urlPart = parseUrlandTyp(entry.getKey());
-			urlPart.addParamMapToLastChild(paramMap);
-			if (urlList.contains(urlPart)) {
-				urlList.get(urlList.indexOf(urlPart)).merge(urlPart);
-			} else {
-				urlList.add(urlPart);
+			UrlPart urlPart;
+			try {
+				urlPart = parseUrlandTyp(entry.getKey());
+				urlPart.addParamMapToLastChild(paramMap);
+				if (urlList.contains(urlPart)) {
+					urlList.get(urlList.indexOf(urlPart)).merge(urlPart);
+				} else {
+					urlList.add(urlPart);
+				}
+			} catch (UrlPartCreatorException e) {
+				// TODO: Add logging
+				System.out.println("error occured scip this log entry. Message: " + e.getMessage());
 			}
 		}
 
@@ -49,8 +55,13 @@ public class UrlPartsCreator {
 	}
 
 	Map<String, Set<String>> createParameterMap(HashMap<String, Set<String>> paramMap, String paramString) {
-		Arrays.stream(paramString.split("&")).map(s -> s.split("="))
-				.forEach(pair -> addPairIfNotExist(paramMap, pair[0], pair[1]));
+		Arrays.stream(paramString.split("&")).map(s -> s.split("=")).forEach(pair -> {
+			if (pair.length == 1) {
+				addPairIfNotExist(paramMap, pair[0], StringUtils.EMPTY);
+			} else {
+				addPairIfNotExist(paramMap, pair[0], pair[1]);
+			}
+		});
 		return paramMap;
 
 	}
@@ -65,14 +76,14 @@ public class UrlPartsCreator {
 		}
 	}
 
-	UrlPart parseUrlandTyp(String urlLine) {
+	UrlPart parseUrlandTyp(String urlLine) throws UrlPartCreatorException {
 		String[] parts = urlLine.split(" ");
 		HTTPType httpTyp = HTTPType.valueOf(parts[0].toUpperCase());
 
 		return createUrlParts(parts[1], httpTyp);
 	}
 
-	UrlPart createUrlParts(String url, HTTPType httpTyp) {
+	UrlPart createUrlParts(String url, HTTPType httpTyp) throws UrlPartCreatorException {
 		if (url.startsWith("/")) {
 			url = url.replaceFirst("/", "");
 		}
@@ -82,11 +93,28 @@ public class UrlPartsCreator {
 		String[] nextUrlPartString = url.split("/", 2);
 		String urlPartString = nextUrlPartString[0];
 		// TODO: check if paths in modsec are case sensitive or not
+
+		if (urlPartString.contains("?") && httpTyp.equals(HTTPType.GET)) {
+			return createUrlpartWithQueryString(httpTyp, urlPartString);
+		} else if (urlPartString.contains("?") && !httpTyp.equals(HTTPType.GET)) {
+			throw new UrlPartCreatorException("There shouldn't be a non GET request with querystring");
+		}
 		UrlPart part = new UrlPart(urlPartString);
 		if (nextUrlPartString.length > 1 && StringUtils.isNotBlank(nextUrlPartString[1])) {
 			part.addChild(createUrlParts(nextUrlPartString[1], httpTyp));
 		} else {
 			part.addHttpTyp(httpTyp);
+		}
+		return part;
+	}
+
+	UrlPart createUrlpartWithQueryString(HTTPType httpTyp, String urlPartString) {
+		String[] urlAndQueryString = urlPartString.split("\\?", 2);
+		UrlPart part = new UrlPart(urlAndQueryString[0]);
+		part.addHttpTyp(httpTyp);
+		if (StringUtils.isNotBlank(urlAndQueryString[1])) {
+			Map<String, Set<String>> paramMap = createParameterMap(urlAndQueryString[1]);
+			part.addParamMap(paramMap);
 		}
 		return part;
 	}

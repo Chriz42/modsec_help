@@ -132,7 +132,25 @@ public class PrinterTest {
 		String closeString = printer.locationMatchCloseString + "\r\n";
 		String printedString = newLine + openString + httpTypeString + allowString + closeString;
 		assertThat(output, is(printedString));
+	}
 
+	@Test
+	public void createTextFromDocumentRootLocationMatch() {
+		LocationMatch locationMatch = new LocationMatch();
+		locationMatch.concatUrl("/");
+		locationMatch.addHttpTyps(Set.of(HTTPType.GET));
+
+		printer.printToStream(locationMatch, outStream);
+		String output = outStream.toString();
+
+		String newLine = "\r\n";
+
+		String openString = String.format(printer.locationMatchOpenString + "\r\n", "/");
+		String httpTypeString = String.format(printer.requestMethodeString + "\r\n", "GET", 0);
+		String allowString = String.format(printer.requestAllowString + "\r\n", 1);
+		String closeString = printer.locationMatchCloseString + "\r\n";
+		String printedString = newLine + openString + httpTypeString + allowString + closeString;
+		assertThat(output, is(printedString));
 	}
 
 }

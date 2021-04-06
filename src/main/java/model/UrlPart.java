@@ -71,7 +71,7 @@ public class UrlPart {
 
 	public void addParamMapToLastChild(Map<String, Set<String>> paramMap) {
 		if (CollectionUtils.sizeIsEmpty(children)) {
-			this.params = paramMap;
+			this.params.putAll(paramMap);
 		} else {
 			children.iterator().next().addParamMapToLastChild(paramMap);
 		}

@@ -25,6 +25,7 @@ But first the basics
 
 **Open features**
 - ADD Get support, only tested with post requests...
+- document root page "/" is not correct mapped to locationamtch 
 - ADD modsec 3 support if needed
 - ADD resource wildcards (and as inoption default on)
 - read and print with input output files from cmd

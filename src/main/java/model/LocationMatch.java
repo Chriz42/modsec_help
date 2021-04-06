@@ -18,7 +18,12 @@ public class LocationMatch implements Serializable {
 	}
 
 	public void concatUrl(String urlPartString) {
-		this.urlString = this.urlString + "/" + urlPartString;
+		if (urlPartString.equals("/")) {
+			this.urlString = this.urlString + "/";
+		} else {
+			this.urlString = this.urlString + "/" + urlPartString;
+		}
+
 	}
 
 	public void addParam(String key, String regex) {
