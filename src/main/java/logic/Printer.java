@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import model.HTTPType;
@@ -43,8 +44,10 @@ public class Printer {
 		printWriter.println(String.format(locationMatchOpenString, locationMatch.getUrlString()));
 
 		addHttpMethode(locationMatch.getHttpTyps(), printWriter);
-		addExpectedParamNames(locationMatch.getParams(), printWriter);
-		addExpectedParamValues(locationMatch.getParams(), printWriter);
+		if (MapUtils.isNotEmpty(locationMatch.getParams())) {
+			addExpectedParamNames(locationMatch.getParams(), printWriter);
+			addExpectedParamValues(locationMatch.getParams(), printWriter);
+		}
 		printWriter.println(String.format(requestAllowString, currentRuleId++));
 
 		printWriter.println(locationMatchCloseString);

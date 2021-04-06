@@ -113,4 +113,26 @@ public class PrinterTest {
 		assertThat(output, is(printedString));
 	}
 
+	@Test
+	public void createTextFromLocationMatchWithoutParams() {
+		LocationMatch locationMatch = new LocationMatch();
+		locationMatch.concatUrl("user");
+		locationMatch.concatUrl("[0-9]+");
+		locationMatch.concatUrl("data");
+		locationMatch.addHttpTyps(Set.of(HTTPType.POST, HTTPType.GET));
+
+		printer.printToStream(locationMatch, outStream);
+		String output = outStream.toString();
+
+		String newLine = "\r\n";
+
+		String openString = String.format(printer.locationMatchOpenString + "\r\n", "/user/[0-9]+/data");
+		String httpTypeString = String.format(printer.requestMethodeString + "\r\n", "POST|GET", 0);
+		String allowString = String.format(printer.requestAllowString + "\r\n", 1);
+		String closeString = printer.locationMatchCloseString + "\r\n";
+		String printedString = newLine + openString + httpTypeString + allowString + closeString;
+		assertThat(output, is(printedString));
+
+	}
+
 }

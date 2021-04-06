@@ -24,6 +24,9 @@ But first the basics
 - simple regex for every param
 
 **Open features**
+- ADD Get support, only tested with post requests...
+- ADD modsec 3 support if needed
+- ADD resource wildcards (and as inoption default on)
 - read and print with input output files from cmd
 - write propper getting started with modsec learning mode guide
 - add automate testing with request to the ne locationmatches with docker

@@ -20,7 +20,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		// TODO READ filename from args
-		InputStream inputStream = Main.class.getResourceAsStream("modsecurity.log");
+		InputStream inputStream = Main.class.getResourceAsStream("modsec.log");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 		HashMap<String, Set<String>> dataMap = new FileParser().parse(reader);
 		List<UrlPart> urlList = new UrlPartsCreator().parseRAWData(dataMap);

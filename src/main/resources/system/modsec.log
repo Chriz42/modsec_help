@@ -1,0 +1,2258 @@
+---HzzDQfO2---A--
+[06/Apr/2021:10:39:07 +0000] 161770554750.100929 172.20.0.1 50424 172.20.0.1 9000
+---HzzDQfO2---B--
+GET /sessions/new HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Upgrade-Insecure-Requests: 1
+sec-ch-ua-mobile: ?0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Cache-Control: max-age=0
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Sec-Fetch-User: ?1
+Sec-Fetch-Mode: navigate
+Connection: keep-alive
+Host: localhost:9000
+Sec-Fetch-Dest: document
+Referer: http://localhost:9000/maintenance?return_to=%2Fprojects%3Fsort%3D-analysis_date
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---HzzDQfO2---F--
+HTTP/1.1 502
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:07 GMT
+Content-Length: 560
+Content-Type: text/html
+Connection: keep-alive
+
+---HzzDQfO2---H--
+
+---HzzDQfO2---I--
+
+---HzzDQfO2---Z--
+
+---pdM4zLXb---A--
+[06/Apr/2021:10:39:07 +0000] 161770554710.471627 172.20.0.1 50424 172.20.0.1 9000
+---pdM4zLXb---B--
+GET /favicon.ico HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Cache-Control: no-cache
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Pragma: no-cache
+Referer: http://localhost:9000/sessions/new
+Sec-Fetch-Mode: no-cors
+Connection: keep-alive
+Host: localhost:9000
+Sec-Fetch-Dest: image
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---pdM4zLXb---F--
+HTTP/1.1 502
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:07 GMT
+Content-Length: 560
+Content-Type: text/html
+Connection: keep-alive
+
+---pdM4zLXb---H--
+
+---pdM4zLXb---I--
+
+---pdM4zLXb---Z--
+
+---vc3Kl9MO---A--
+[06/Apr/2021:10:39:40 +0000] 161770558041.894213 172.20.0.1 50424 172.20.0.1 9000
+---vc3Kl9MO---B--
+GET /sessions/new HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Upgrade-Insecure-Requests: 1
+sec-ch-ua-mobile: ?0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Cache-Control: max-age=0
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Sec-Fetch-User: ?1
+Sec-Fetch-Mode: navigate
+Connection: keep-alive
+Host: localhost:9000
+Sec-Fetch-Dest: document
+Referer: http://localhost:9000/maintenance?return_to=%2Fprojects%3Fsort%3D-analysis_date
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---vc3Kl9MO---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:41 GMT
+Content-Type: text/html;charset=utf-8
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+vary: accept-encoding
+Content-Encoding: gzip
+
+---vc3Kl9MO---H--
+
+---vc3Kl9MO---I--
+
+---vc3Kl9MO---Z--
+
+---FVA1i3ix---A--
+[06/Apr/2021:10:39:41 +0000] 161770558188.728760 172.20.0.1 50554 172.20.0.1 9000
+---FVA1i3ix---B--
+GET /favicon.ico HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Cache-Control: no-cache
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Pragma: no-cache
+Referer: http://localhost:9000/sessions/new
+Sec-Fetch-Mode: no-cors
+Connection: keep-alive
+Host: localhost:9000
+Sec-Fetch-Dest: image
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---FVA1i3ix---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+ETag: W/"5430-1614590442000"
+X-Content-Type-Options: nosniff
+Content-Type: image/x-icon
+Content-Length: 5430
+Date: Tue, 06 Apr 2021 10:39:41 GMT
+Server: nginx/1.15.12
+
+---FVA1i3ix---H--
+
+---FVA1i3ix---I--
+
+---FVA1i3ix---Z--
+
+---1f9PKXS9---A--
+[06/Apr/2021:10:39:41 +0000] 161770558158.567934 172.20.0.1 50424 172.20.0.1 9000
+---1f9PKXS9---B--
+GET /api/navigation/global HTTP/1.1
+Referer: http://localhost:9000/sessions/new
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---1f9PKXS9---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:41 GMT
+Content-Length: 491
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---1f9PKXS9---H--
+
+---1f9PKXS9---I--
+
+---1f9PKXS9---Z--
+
+---9mD85jh0---A--
+[06/Apr/2021:10:39:41 +0000] 161770558142.523002 172.20.0.1 50426 172.20.0.1 9000
+---9mD85jh0---B--
+GET /api/l10n/index?locale=de-DE HTTP/1.1
+Referer: http://localhost:9000/sessions/new
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---9mD85jh0---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:41 GMT
+Server: nginx/1.15.12
+
+---9mD85jh0---H--
+
+---9mD85jh0---I--
+
+---9mD85jh0---Z--
+
+---JiJ4rdS5---A--
+[06/Apr/2021:10:39:41 +0000] 161770558175.183209 172.20.0.1 50426 172.20.0.1 9000
+---JiJ4rdS5---B--
+GET /api/users/identity_providers HTTP/1.1
+Referer: http://localhost:9000/sessions/new
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---JiJ4rdS5---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:41 GMT
+Content-Length: 24
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---JiJ4rdS5---H--
+
+---JiJ4rdS5---I--
+
+---JiJ4rdS5---Z--
+
+---8b4pcmmb---A--
+[06/Apr/2021:10:39:51 +0000] 161770559116.019051 172.20.0.1 50426 172.20.0.1 9000
+---8b4pcmmb---B--
+POST /api/authentication/login HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Origin: http://localhost:9000
+sec-ch-ua-mobile: ?0
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Content-Length: 26
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Host: localhost:9000
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/sessions/new
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---8b4pcmmb---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:52 GMT
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Set-Cookie: XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; Max-Age=259200; Expires=Fri, 09-Apr-2021 10:39:52 GMT; Path=/
+Set-Cookie: JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0; Max-Age=259200; Expires=Fri, 09-Apr-2021 10:39:52 GMT; Path=/; HttpOnly
+
+---8b4pcmmb---H--
+
+---8b4pcmmb---I--
+
+---8b4pcmmb---Z--
+
+---Rv1kRRrY---A--
+[06/Apr/2021:10:39:52 +0000] 161770559274.393815 172.20.0.1 50426 172.20.0.1 9000
+---Rv1kRRrY---B--
+GET / HTTP/1.1
+Sec-Fetch-User: ?1
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Upgrade-Insecure-Requests: 1
+sec-ch-ua-mobile: ?0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Mode: navigate
+Connection: keep-alive
+Host: localhost:9000
+Sec-Fetch-Dest: document
+Referer: http://localhost:9000/sessions/new
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---Rv1kRRrY---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:52 GMT
+Content-Type: text/html;charset=utf-8
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+vary: accept-encoding
+Content-Encoding: gzip
+
+---Rv1kRRrY---H--
+
+---Rv1kRRrY---I--
+
+---Rv1kRRrY---Z--
+
+---D5eJmLH5---A--
+[06/Apr/2021:10:39:52 +0000] 161770559241.172510 172.20.0.1 50426 172.20.0.1 9000
+---D5eJmLH5---B--
+GET /api/l10n/index?locale=de-DE HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---D5eJmLH5---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:52 GMT
+Server: nginx/1.15.12
+
+---D5eJmLH5---H--
+
+---D5eJmLH5---I--
+
+---D5eJmLH5---Z--
+
+---2Y7rBauK---A--
+[06/Apr/2021:10:39:52 +0000] 161770559246.978771 172.20.0.1 50424 172.20.0.1 9000
+---2Y7rBauK---B--
+GET /api/users/current HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---2Y7rBauK---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:52 GMT
+Content-Length: 354
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---2Y7rBauK---H--
+
+---2Y7rBauK---I--
+
+---2Y7rBauK---Z--
+
+---9z9ljtNB---A--
+[06/Apr/2021:10:39:52 +0000] 161770559213.831811 172.20.0.1 50554 172.20.0.1 9000
+---9z9ljtNB---B--
+GET /api/navigation/global HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---9z9ljtNB---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:53 GMT
+Content-Length: 490
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---9z9ljtNB---H--
+
+---9z9ljtNB---I--
+
+---9z9ljtNB---Z--
+
+---nOvEpmm0---A--
+[06/Apr/2021:10:39:53 +0000] 161770559356.904947 172.20.0.1 50554 172.20.0.1 9000
+---nOvEpmm0---B--
+GET /api/languages/list HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---nOvEpmm0---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:53 GMT
+Content-Length: 479
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---nOvEpmm0---H--
+
+---nOvEpmm0---I--
+
+---nOvEpmm0---Z--
+
+---pQHZjZej---A--
+[06/Apr/2021:10:39:53 +0000] 161770559330.903499 172.20.0.1 50424 172.20.0.1 9000
+---pQHZjZej---B--
+GET /js/353.m.18056128.chunk.js HTTP/1.1
+Referer: http://localhost:9000/projects
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---pQHZjZej---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"4437-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:53 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---pQHZjZej---H--
+
+---pQHZjZej---I--
+
+---pQHZjZej---Z--
+
+---7mbHKTZT---A--
+[06/Apr/2021:10:39:53 +0000] 161770559331.966605 172.20.0.1 50426 172.20.0.1 9000
+---7mbHKTZT---B--
+GET /api/components/search_projects?filter=isFavorite&ps=1 HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/projects
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---7mbHKTZT---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:53 GMT
+Content-Length: 96
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---7mbHKTZT---H--
+
+---7mbHKTZT---I--
+
+---7mbHKTZT---Z--
+
+---SgCCZZLM---A--
+[06/Apr/2021:10:39:53 +0000] 16177055935.493526 172.20.0.1 50426 172.20.0.1 9000
+---SgCCZZLM---B--
+GET /api/components/search_projects?ps=50&facets=reliability_rating%2Csecurity_rating%2Csqale_rating%2Ccoverage%2Cduplicated_lines_density%2Cncloc%2Calert_status%2Clanguages%2Ctags&f=analysisDate%2CleakPeriodDate HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/projects
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---SgCCZZLM---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:53 GMT
+Server: nginx/1.15.12
+
+---SgCCZZLM---H--
+
+---SgCCZZLM---I--
+
+---SgCCZZLM---Z--
+
+---vEYiyKjo---A--
+[06/Apr/2021:10:39:56 +0000] 161770559647.711075 172.20.0.1 50426 172.20.0.1 9000
+---vEYiyKjo---B--
+GET /api/components/search_projects?ps=50&facets=reliability_rating%2Csecurity_rating%2Csqale_rating%2Ccoverage%2Cduplicated_lines_density%2Cncloc%2Calert_status%2Clanguages%2Ctags&f=analysisDate%2CleakPeriodDate HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/projects
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---vEYiyKjo---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:56 GMT
+Server: nginx/1.15.12
+
+---vEYiyKjo---H--
+
+---vEYiyKjo---I--
+
+---vEYiyKjo---Z--
+
+---i0LQZ09f---A--
+[06/Apr/2021:10:39:56 +0000] 161770559679.501820 172.20.0.1 50424 172.20.0.1 9000
+---i0LQZ09f---B--
+GET /api/components/search_projects?filter=isFavorite&ps=1 HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/projects
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---i0LQZ09f---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:56 GMT
+Content-Length: 96
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---i0LQZ09f---H--
+
+---i0LQZ09f---I--
+
+---i0LQZ09f---Z--
+
+---kiw2CVTc---A--
+[06/Apr/2021:10:39:57 +0000] 161770559761.748228 172.20.0.1 50554 172.20.0.1 9000
+---kiw2CVTc---B--
+GET /js/2.m.24d42570.chunk.js HTTP/1.1
+Referer: http://localhost:9000/issues?resolved=false
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---kiw2CVTc---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"20640-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:57 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---kiw2CVTc---H--
+
+---kiw2CVTc---I--
+
+---kiw2CVTc---Z--
+
+---BfmiD538---A--
+[06/Apr/2021:10:39:57 +0000] 161770559756.611860 172.20.0.1 50426 172.20.0.1 9000
+---BfmiD538---B--
+GET /js/1.m.d1c59759.chunk.js HTTP/1.1
+Referer: http://localhost:9000/issues?resolved=false
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---BfmiD538---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"19597-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:57 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---BfmiD538---H--
+
+---BfmiD538---I--
+
+---BfmiD538---Z--
+
+---JbrIua4c---A--
+[06/Apr/2021:10:39:56 +0000] 161770559673.778905 172.20.0.1 50424 172.20.0.1 9000
+---JbrIua4c---B--
+GET /api/components/search_projects?ps=50&facets=reliability_rating%2Csecurity_rating%2Csqale_rating%2Ccoverage%2Cduplicated_lines_density%2Cncloc%2Calert_status%2Clanguages%2Ctags&f=analysisDate%2CleakPeriodDate HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/projects
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---JbrIua4c---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:57 GMT
+Server: nginx/1.15.12
+
+---JbrIua4c---H--
+
+---JbrIua4c---I--
+
+---JbrIua4c---Z--
+
+---aP08N8l5---A--
+[06/Apr/2021:10:39:57 +0000] 161770559745.228781 172.20.0.1 50612 172.20.0.1 9000
+---aP08N8l5---B--
+GET /js/279.m.b4b61c05.chunk.js HTTP/1.1
+Referer: http://localhost:9000/issues?resolved=false
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---aP08N8l5---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"199043-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:57 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---aP08N8l5---H--
+
+---aP08N8l5---I--
+
+---aP08N8l5---Z--
+
+---of708abJ---A--
+[06/Apr/2021:10:39:57 +0000] 161770559712.820745 172.20.0.1 50424 172.20.0.1 9000
+---of708abJ---B--
+GET /js/8.m.be3cd67d.chunk.js HTTP/1.1
+Referer: http://localhost:9000/coding_rules
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---of708abJ---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"19996-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:57 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---of708abJ---H--
+
+---of708abJ---I--
+
+---of708abJ---Z--
+
+---ELzRR2Xk---A--
+[06/Apr/2021:10:39:57 +0000] 161770559727.288631 172.20.0.1 50426 172.20.0.1 9000
+---ELzRR2Xk---B--
+GET /js/282.m.9bab0f0b.chunk.js HTTP/1.1
+Referer: http://localhost:9000/coding_rules
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---ELzRR2Xk---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"137994-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:57 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---ELzRR2Xk---H--
+
+---ELzRR2Xk---I--
+
+---ELzRR2Xk---Z--
+
+---eO0Ww48V---A--
+[06/Apr/2021:10:39:57 +0000] 161770559794.585319 172.20.0.1 50612 172.20.0.1 9000
+---eO0Ww48V---B--
+GET /js/11.m.da9195e4.chunk.js HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Purpose: prefetch
+sec-ch-ua-mobile: ?0
+Accept: application/signed-exchange;v=b3;q=0.9,*/*;q=0.8
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/coding_rules
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---eO0Ww48V---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"31451-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:57 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---eO0Ww48V---H--
+
+---eO0Ww48V---I--
+
+---eO0Ww48V---Z--
+
+---S7bpFMv3---A--
+[06/Apr/2021:10:39:57 +0000] 161770559755.419110 172.20.0.1 50554 172.20.0.1 9000
+---S7bpFMv3---B--
+GET /js/287.m.d50a4251.chunk.js HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Purpose: prefetch
+sec-ch-ua-mobile: ?0
+Accept: application/signed-exchange;v=b3;q=0.9,*/*;q=0.8
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/coding_rules
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---S7bpFMv3---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"88203-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:57 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---S7bpFMv3---H--
+
+---S7bpFMv3---I--
+
+---S7bpFMv3---Z--
+
+---1029bbQp---A--
+[06/Apr/2021:10:39:58 +0000] 161770559826.330213 172.20.0.1 50426 172.20.0.1 9000
+---1029bbQp---B--
+GET /api/rules/app? HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/coding_rules
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---1029bbQp---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:58 GMT
+Server: nginx/1.15.12
+
+---1029bbQp---H--
+
+---1029bbQp---I--
+
+---1029bbQp---Z--
+
+---wNENQl62---A--
+[06/Apr/2021:10:39:58 +0000] 161770559831.220592 172.20.0.1 50626 172.20.0.1 9000
+---wNENQl62---B--
+GET /js/372.m.625bcc62.chunk.js HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Purpose: prefetch
+sec-ch-ua-mobile: ?0
+Accept: application/signed-exchange;v=b3;q=0.9,*/*;q=0.8
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/coding_rules
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---wNENQl62---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"12682-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:58 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---wNENQl62---H--
+
+---wNENQl62---I--
+
+---wNENQl62---Z--
+
+---86Y29eXb---A--
+[06/Apr/2021:10:39:58 +0000] 161770559892.887298 172.20.0.1 50426 172.20.0.1 9000
+---86Y29eXb---B--
+GET /js/331.m.c3acfe77.chunk.js HTTP/1.1
+Referer: http://localhost:9000/profiles
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---86Y29eXb---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"8371-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:58 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---86Y29eXb---H--
+
+---86Y29eXb---I--
+
+---86Y29eXb---Z--
+
+---l6OySJ0R---A--
+[06/Apr/2021:10:39:58 +0000] 161770559894.888749 172.20.0.1 50426 172.20.0.1 9000
+---l6OySJ0R---B--
+GET /api/qualityprofiles/exporters HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/profiles
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---l6OySJ0R---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:58 GMT
+Content-Length: 411
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---l6OySJ0R---H--
+
+---l6OySJ0R---I--
+
+---l6OySJ0R---Z--
+
+---I0YtbwgX---A--
+[06/Apr/2021:10:39:58 +0000] 161770559816.298680 172.20.0.1 50426 172.20.0.1 9000
+---I0YtbwgX---B--
+GET /js/284.m.a761cc97.chunk.js HTTP/1.1
+Referer: http://localhost:9000/quality_gates
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---I0YtbwgX---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"65391-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---I0YtbwgX---H--
+
+---I0YtbwgX---I--
+
+---I0YtbwgX---Z--
+
+---Istidxil---A--
+[06/Apr/2021:10:39:59 +0000] 161770559917.753827 172.20.0.1 50426 172.20.0.1 9000
+---Istidxil---B--
+GET /api/qualitygates/list? HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/quality_gates
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---Istidxil---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Content-Length: 244
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---Istidxil---H--
+
+---Istidxil---I--
+
+---Istidxil---Z--
+
+---3GoAsJjc---A--
+[06/Apr/2021:10:39:58 +0000] 161770559853.579638 172.20.0.1 50424 172.20.0.1 9000
+---3GoAsJjc---B--
+GET /api/qualityprofiles/search? HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/coding_rules
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---3GoAsJjc---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Server: nginx/1.15.12
+
+---3GoAsJjc---H--
+
+---3GoAsJjc---I--
+
+---3GoAsJjc---Z--
+
+---Q8YqPYGh---A--
+[06/Apr/2021:10:39:59 +0000] 16177055997.685066 172.20.0.1 50426 172.20.0.1 9000
+---Q8YqPYGh---B--
+GET /api/metrics/search?ps=500 HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/quality_gates/show/1
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---Q8YqPYGh---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Server: nginx/1.15.12
+
+---Q8YqPYGh---H--
+
+---Q8YqPYGh---I--
+
+---Q8YqPYGh---Z--
+
+---YmY9hCfz---A--
+[06/Apr/2021:10:39:59 +0000] 161770559913.327450 172.20.0.1 50424 172.20.0.1 9000
+---YmY9hCfz---B--
+GET /api/qualityprofiles/search? HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/profiles
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---YmY9hCfz---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Server: nginx/1.15.12
+
+---YmY9hCfz---H--
+
+---YmY9hCfz---I--
+
+---YmY9hCfz---Z--
+
+---4WhiTNRU---A--
+[06/Apr/2021:10:39:59 +0000] 161770559997.858058 172.20.0.1 50626 172.20.0.1 9000
+---4WhiTNRU---B--
+GET /api/qualitygates/show?id=1 HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/quality_gates/show/1
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---4WhiTNRU---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Content-Length: 508
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---4WhiTNRU---H--
+
+---4WhiTNRU---I--
+
+---4WhiTNRU---Z--
+
+---bFfTXO3x---A--
+[06/Apr/2021:10:39:59 +0000] 161770559910.288062 172.20.0.1 50426 172.20.0.1 9000
+---bFfTXO3x---B--
+GET /js/300.m.eb03ade4.chunk.js HTTP/1.1
+Referer: http://localhost:9000/admin/settings
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---bFfTXO3x---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"18761-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---bFfTXO3x---H--
+
+---bFfTXO3x---I--
+
+---bFfTXO3x---Z--
+
+---UcluAzZh---A--
+[06/Apr/2021:10:39:59 +0000] 161770559920.795595 172.20.0.1 50426 172.20.0.1 9000
+---UcluAzZh---B--
+GET /api/navigation/settings HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/admin/settings
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---UcluAzZh---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Content-Length: 41
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---UcluAzZh---H--
+
+---UcluAzZh---I--
+
+---UcluAzZh---Z--
+
+---m8oTKTSP---A--
+[06/Apr/2021:10:39:59 +0000] 161770559991.151569 172.20.0.1 50426 172.20.0.1 9000
+---m8oTKTSP---B--
+GET /js/302.m.f1d6d220.chunk.js HTTP/1.1
+Referer: http://localhost:9000/admin/settings
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---m8oTKTSP---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"39216-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---m8oTKTSP---H--
+
+---m8oTKTSP---I--
+
+---m8oTKTSP---Z--
+
+---z75SSWx3---A--
+[06/Apr/2021:10:39:59 +0000] 161770559966.147629 172.20.0.1 50424 172.20.0.1 9000
+---z75SSWx3---B--
+GET /api/system/status HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/admin/settings
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---z75SSWx3---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Content-Length: 76
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---z75SSWx3---H--
+
+---z75SSWx3---I--
+
+---z75SSWx3---Z--
+
+---maUHwYCP---A--
+[06/Apr/2021:10:39:59 +0000] 161770559943.398214 172.20.0.1 50426 172.20.0.1 9000
+---maUHwYCP---B--
+GET /api/settings/list_definitions? HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/admin/settings
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---maUHwYCP---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:39:59 GMT
+Server: nginx/1.15.12
+
+---maUHwYCP---H--
+
+---maUHwYCP---I--
+
+---maUHwYCP---Z--
+
+---8xJGxqxh---A--
+[06/Apr/2021:10:39:59 +0000] 161770559973.680431 172.20.0.1 50426 172.20.0.1 9000
+---8xJGxqxh---B--
+GET /api/settings/values?keys=sonar.dbcleaner.hoursBeforeKeepingOnlyOneSnapshotByDay%2Csonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByWeek%2Csonar.dbcleaner.weeksBeforeKeepingOnlyOneSnapshotByMonth%2Csonar.dbcleaner.weeksBeforeKeepingOnlyAnalysesWithVersion%2Csonar.dbcleaner.weeksBeforeDeletingAllSnapshots%2Csonar.dbcleaner.daysBeforeDeletingClosedIssues%2Csonar.lf.aboutText%2Csonar.builtInQualityProfiles.disableNotificationOnUpdate%2Csonar.cpd.cross_project%2Csonar.issues.defaultAssigneeLogin%2Cemail.prefix%2Csonar.lf.enableGravatar%2Cemail.from%2Cemail.fromName%2Csonar.lf.gravatarServerUrl%2Csonar.lf.logoUrl%2Csonar.leak.period%2Cemail.smtp_secure_connection.secured%2Csonar.core.serverBaseURL%2Cemail.smtp_host.secured%2Cemail.smtp_password.secured%2Cemail.smtp_port.secured%2Cemail.smtp_username.secured%2Csonar.lf.logoWidthPx HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/admin/settings
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---8xJGxqxh---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:40:00 GMT
+Server: nginx/1.15.12
+
+---8xJGxqxh---H--
+
+---8xJGxqxh---I--
+
+---8xJGxqxh---Z--
+
+---ymAHDaeD---A--
+[06/Apr/2021:10:39:59 +0000] 161770559967.322281 172.20.0.1 50554 172.20.0.1 9000
+---ymAHDaeD---B--
+GET /api/rules/search?f=isTemplate%2Cname%2Clang%2ClangName%2Cseverity%2Cstatus%2CsysTags%2Ctags%2CtemplateKey&facets=languages%2Ctypes&ps=100&s=name HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/quality_gates/show/1
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---ymAHDaeD---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:40:00 GMT
+Server: nginx/1.15.12
+
+---ymAHDaeD---H--
+
+---ymAHDaeD---I--
+
+---ymAHDaeD---Z--
+
+---fjd7FY8z---A--
+[06/Apr/2021:10:40:01 +0000] 161770560114.696918 172.20.0.1 50554 172.20.0.1 9000
+---fjd7FY8z---B--
+GET /api/settings/values?keys=sonar.vbnet.roslyn.ignoreIssues%2Csonar.cs.roslyn.ignoreIssues%2Csonar.vbnet.roslyn.bugCategories%2Csonar.cs.roslyn.bugCategories%2Csonar.cs.roslyn.vulnerabilityCategories%2Csonar.vbnet.roslyn.vulnerabilityCategories%2Csonar.cs.roslyn.codeSmellCategories%2Csonar.vbnet.roslyn.codeSmellCategories%2Csonar.androidLint.reportPaths%2Csonar.python.bandit.reportPaths%2Csonar.java.checkstyle.reportPaths%2Csonar.kotlin.detekt.reportPaths%2Csonar.eslint.reportPaths%2Csonar.java.pmd.reportPaths%2Csonar.ruby.rubocop.reportPaths%2Csonar.scala.scalastyle.reportPaths%2Csonar.scala.scapegoat.reportPaths%2Csonar.java.spotbugs.reportPaths%2Csonar.typescript.tslint.reportPaths HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/admin/settings?category=external+analyzers
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---fjd7FY8z---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:01 GMT
+Content-Length: 161
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---fjd7FY8z---H--
+
+---fjd7FY8z---I--
+
+---fjd7FY8z---Z--
+
+---6cG38SSG---A--
+[06/Apr/2021:10:39:59 +0000] 161770559983.128884 172.20.0.1 50626 172.20.0.1 9000
+---6cG38SSG---B--
+GET /api/plugins/pending HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/admin/settings
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---6cG38SSG---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:02 GMT
+Content-Length: 45
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---6cG38SSG---H--
+
+---6cG38SSG---I--
+
+---6cG38SSG---Z--
+
+---OjXJXS0W---A--
+[06/Apr/2021:10:40:03 +0000] 161770560331.732012 172.20.0.1 50626 172.20.0.1 9000
+---OjXJXS0W---B--
+GET /js/4.m.718017c3.chunk.js HTTP/1.1
+Referer: http://localhost:9000/admin/permission_templates
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---OjXJXS0W---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"19032-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:40:03 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---OjXJXS0W---H--
+
+---OjXJXS0W---I--
+
+---OjXJXS0W---Z--
+
+---C8lQgPbL---A--
+[06/Apr/2021:10:40:03 +0000] 16177056030.632582 172.20.0.1 50554 172.20.0.1 9000
+---C8lQgPbL---B--
+GET /js/18.m.65f0dd95.chunk.js HTTP/1.1
+Referer: http://localhost:9000/admin/permission_templates
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---C8lQgPbL---F--
+HTTP/1.1 200
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"32420-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Date: Tue, 06 Apr 2021 10:40:03 GMT
+Server: nginx/1.15.12
+vary: accept-encoding
+
+---C8lQgPbL---H--
+
+---C8lQgPbL---I--
+
+---C8lQgPbL---Z--
+
+---8CQLlYLr---A--
+[06/Apr/2021:10:40:03 +0000] 16177056034.676221 172.20.0.1 50554 172.20.0.1 9000
+---8CQLlYLr---B--
+GET /api/permissions/search_templates HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Referer: http://localhost:9000/admin/permission_templates
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---8CQLlYLr---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:40:03 GMT
+Server: nginx/1.15.12
+
+---8CQLlYLr---H--
+
+---8CQLlYLr---I--
+
+---8CQLlYLr---Z--
+
+---AbsH2IVQ---A--
+[06/Apr/2021:10:40:05 +0000] 161770560532.783236 172.20.0.1 50554 172.20.0.1 9000
+---AbsH2IVQ---B--
+GET /js/376.m.546a1f9c.chunk.js HTTP/1.1
+Referer: http://localhost:9000/sessions/logout
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: */*
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---AbsH2IVQ---F--
+HTTP/1.1 200
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=31536000
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+ETag: W/"599-1614590440000"
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+Content-Type: application/javascript
+Content-Length: 599
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Server: nginx/1.15.12
+Accept-Ranges: bytes
+
+---AbsH2IVQ---H--
+
+---AbsH2IVQ---I--
+
+---AbsH2IVQ---Z--
+
+---z0jXTh1f---A--
+[06/Apr/2021:10:40:05 +0000] 16177056056.815523 172.20.0.1 50554 172.20.0.1 9000
+---z0jXTh1f---B--
+POST /api/authentication/logout HTTP/1.1
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+sec-ch-ua-mobile: ?0
+Origin: http://localhost:9000
+X-XSRF-TOKEN: 1j7ibsll7ld4ehrd0j7631cons
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Content-Length: 0
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Host: localhost:9000
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/sessions/logout
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=1j7ibsll7ld4ehrd0j7631cons; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGlteEdWTUJfb3BTOUhBZktQbCIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3NzA1NTkyLCJleHAiOjE2MTc5NjQ3OTIsImxhc3RSZWZyZXNoVGltZSI6MTYxNzcwNTU5MjEyNSwieHNyZlRva2VuIjoiMWo3aWJzbGw3bGQ0ZWhyZDBqNzYzMWNvbnMifQ.sVZSznw7GhdLuHcPcppPaRjqUlgnbjYS4o29Iw4tXS0
+
+---z0jXTh1f---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Set-Cookie: JWT-SESSION=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; HttpOnly
+Set-Cookie: XSRF-TOKEN=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
+
+---z0jXTh1f---H--
+
+---z0jXTh1f---I--
+
+---z0jXTh1f---Z--
+
+---pm5V9eqF---A--
+[06/Apr/2021:10:40:05 +0000] 161770560546.823841 172.20.0.1 50554 172.20.0.1 9000
+---pm5V9eqF---B--
+GET / HTTP/1.1
+Sec-Fetch-User: ?1
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Upgrade-Insecure-Requests: 1
+sec-ch-ua-mobile: ?0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Mode: navigate
+Connection: keep-alive
+Host: localhost:9000
+Sec-Fetch-Dest: document
+Referer: http://localhost:9000/sessions/logout
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---pm5V9eqF---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Content-Type: text/html;charset=utf-8
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+vary: accept-encoding
+Content-Encoding: gzip
+
+---pm5V9eqF---H--
+
+---pm5V9eqF---I--
+
+---pm5V9eqF---Z--
+
+---rGacmvRu---A--
+[06/Apr/2021:10:40:05 +0000] 161770560536.138993 172.20.0.1 50626 172.20.0.1 9000
+---rGacmvRu---B--
+GET /api/users/current HTTP/1.1
+Referer: http://localhost:9000/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---rGacmvRu---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Content-Length: 112
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---rGacmvRu---H--
+
+---rGacmvRu---I--
+
+---rGacmvRu---Z--
+
+---VIBXYhvY---A--
+[06/Apr/2021:10:40:05 +0000] 161770560515.116195 172.20.0.1 50426 172.20.0.1 9000
+---VIBXYhvY---B--
+GET /api/navigation/global HTTP/1.1
+Referer: http://localhost:9000/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---VIBXYhvY---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Content-Length: 491
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---VIBXYhvY---H--
+
+---VIBXYhvY---I--
+
+---VIBXYhvY---Z--
+
+---he38L4o8---A--
+[06/Apr/2021:10:40:05 +0000] 161770560543.281884 172.20.0.1 50554 172.20.0.1 9000
+---he38L4o8---B--
+GET /api/l10n/index?locale=de-DE HTTP/1.1
+Referer: http://localhost:9000/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---he38L4o8---F--
+HTTP/1.1 200
+vary: accept-encoding
+Sonar-Version: 7.9.6.41879
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store, must-revalidate
+X-XSS-Protection: 1; mode=block
+Connection: keep-alive
+Content-Encoding: gzip
+X-Content-Type-Options: nosniff
+Content-Type: application/json
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Server: nginx/1.15.12
+
+---he38L4o8---H--
+
+---he38L4o8---I--
+
+---he38L4o8---Z--
+
+---ordvWRAN---A--
+[06/Apr/2021:10:40:05 +0000] 161770560532.994845 172.20.0.1 50554 172.20.0.1 9000
+---ordvWRAN---B--
+GET /api/languages/list HTTP/1.1
+Referer: http://localhost:9000/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---ordvWRAN---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Content-Length: 479
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---ordvWRAN---H--
+
+---ordvWRAN---I--
+
+---ordvWRAN---Z--
+
+---fkxReML9---A--
+[06/Apr/2021:10:40:05 +0000] 161770560537.101316 172.20.0.1 50626 172.20.0.1 9000
+---fkxReML9---B--
+GET /api/settings/values?keys=sonar.lf.aboutText HTTP/1.1
+Referer: http://localhost:9000/about
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---fkxReML9---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Content-Length: 15
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---fkxReML9---H--
+
+---fkxReML9---I--
+
+---fkxReML9---Z--
+
+---cVgBAZjp---A--
+[06/Apr/2021:10:40:05 +0000] 161770560568.917926 172.20.0.1 50554 172.20.0.1 9000
+---cVgBAZjp---B--
+GET /api/components/search_projects?ps=1 HTTP/1.1
+Referer: http://localhost:9000/about
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---cVgBAZjp---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Content-Length: 96
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---cVgBAZjp---H--
+
+---cVgBAZjp---I--
+
+---cVgBAZjp---Z--
+
+---DmyWokea---A--
+[06/Apr/2021:10:40:05 +0000] 161770560535.542758 172.20.0.1 50426 172.20.0.1 9000
+---DmyWokea---B--
+GET /api/issues/search?resolved=false&facets=types&ps=1&additionalFields=_all HTTP/1.1
+Referer: http://localhost:9000/about
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+sec-ch-ua-mobile: ?0
+Accept: application/json
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Connection: keep-alive
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Host: localhost:9000
+Accept-Encoding: gzip, deflate, br
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+
+---DmyWokea---F--
+HTTP/1.1 200
+Server: nginx/1.15.12
+Date: Tue, 06 Apr 2021 10:40:05 GMT
+Content-Length: 799
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Sonar-Version: 7.9.6.41879
+
+---DmyWokea---H--
+
+---DmyWokea---I--
+
+---DmyWokea---Z--
+
