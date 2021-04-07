@@ -148,6 +148,51 @@ class UrlPartsCreatorTest {
 		assertTrue(actualMessage.contains(expectedMessage));
 	}
 
+	@ParameterizedTest
+	@MethodSource
+	public void createUrlResourcePlaceholderUrlPart(String line, List<Set<HTTPType>> httpTyps, List<String> urls)
+			throws UrlPartCreatorException {
+		UrlPartsCreator creator = new UrlPartsCreator();
+		UrlPart urlPart = creator.parseUrlandTyp(line);
+		assertThat(urlPart.getHttpTyps(), is(httpTyps.get(0)));
+		assertThat(urlPart.getUrlPartString(), is(urls.get(0)));
+		assertThat(urlPart.getChildren(), is(IsCollectionWithSize.hasSize(1)));
+
+		UrlPart child = urlPart.getChildren().iterator().next();
+
+		assertThat(child.getHttpTyps(), is(httpTyps.get(1)));
+		assertThat(child.getUrlPartString(), is(urls.get(1)));
+
+	}
+
+	private static Stream<Arguments> createUrlResourcePlaceholderUrlPart() {
+		return Stream.of(
+				Arguments.of("GET /js/11.m.da9195e4.chunk.js HTTP/1.1",
+						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("js", "*.js")),
+				Arguments.of("GET /css/11.m.das.chunk.css HTTP/1.1",
+						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("css", "*.css")),
+				Arguments.of("GET /resources/gsdgdsg.jpg HTTP/1.1",
+						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("resources", "*.*")));
+	}
+
+	@ParameterizedTest
+	@MethodSource
+	public void createUrlResourcePlaceholderUrlPartErrors(String line) {
+		UrlPartCreatorException exception = assertThrows(UrlPartCreatorException.class, () -> {
+			UrlPartsCreator creator = new UrlPartsCreator();
+			creator.parseUrlandTyp(line);
+		});
+		String expectedMessage = "There shouldn't be a non GET request on static resources";
+		String actualMessage = exception.getMessage();
+
+		assertTrue(actualMessage.contains(expectedMessage));
+	}
+
+	private static Stream<Arguments> createUrlResourcePlaceholderUrlPartErrors() {
+		return Stream.of(Arguments.of("POST /js/11.m.das.chunk.js HTTP/1.1"),
+				Arguments.of("POST /css/11.m.das.chunk.css HTTP/1.1"), Arguments.of("POST /resources/dasg.png"));
+	}
+
 	@Test
 	void parseRAWData() {
 		UrlPartsCreator creator = new UrlPartsCreator();

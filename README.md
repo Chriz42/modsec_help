@@ -16,6 +16,7 @@ a change was made it creates a PR with the niew rule set.
 But first the basics
 
 **featues**
+- only apche support atm
 - "read" modsec log file
 - generate whitelist locationMatches and deny everything else
 - recognize IDs inside urls and add regex for it
@@ -24,14 +25,24 @@ But first the basics
 - simple regex for every param
 
 **Open features**
-- ADD Get support, only tested with post requests...
-- document root page "/" is not correct mapped to locationamtch 
-- ADD modsec 3 support if needed
-- ADD resource wildcards (and as inoption default on)
+- ADD resource wildcards (and as an option default on)
 - read and print with input output files from cmd
 - write propper getting started with modsec learning mode guide
 - add automate testing with request to the ne locationmatches with docker
-- and stuff....
+- Add nginx support:
+Problem LocationMatch is an apache directive.
+But Modsec can use something like this:
+ 	SecRule REQUEST_FILENAME "^/admin$" "allow,id:111111111,chain"
+            SecRule REQUEST_METHOD (GET) "chain"
+            SecRule ARGS_GET_NAMES ^(firstname|lastname)$ "chain"
+            SecRule ARGS_GET:firstname ^[a-zA-Z]+$ "chain"
+            SecRule ARGS_GET:lastname ^[a-zA-Z]+$
+
+	SecRule Request_URI "^/.*$" "deny,status:403,id:1111111111110"
+
+	REQUEST_FILENAME is the url and all SecRules are chained and allow if everything match the whitelist secrules.
+	SecRule 1111111111110 blocks everything else. 
+	Con: you don't have a message inside the auditlog what went wrong...
 
 ** Configtest **
 

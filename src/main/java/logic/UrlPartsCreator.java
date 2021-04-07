@@ -2,6 +2,7 @@ package logic;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -17,7 +18,17 @@ import model.UrlPart;
 
 public class UrlPartsCreator {
 
-//	TODO: Create from the tree urlList a list with only limbs without branches
+	// TODO: add placeholder for js,css, resources
+	private static final Map<String, String> resourcesMapping;
+	static {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("js", "*.js");
+		map.put("css", "*.css");
+		map.put("resources", "*.*");
+
+		resourcesMapping = Collections.unmodifiableMap(map);
+	}
+
 	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap) {
 		List<UrlPart> urlList = new ArrayList<>();
 		for (Entry<String, Set<String>> entry : dataMap.entrySet()) {
@@ -37,7 +48,6 @@ public class UrlPartsCreator {
 				System.out.println("error occured scip this log entry. Message: " + e.getMessage());
 			}
 		}
-
 		return urlList;
 	}
 
@@ -99,6 +109,16 @@ public class UrlPartsCreator {
 		} else if (urlPartString.contains("?") && !httpTyp.equals(HTTPType.GET)) {
 			throw new UrlPartCreatorException("There shouldn't be a non GET request with querystring");
 		}
+
+		if (resourcesMapping.containsKey(urlPartString) && httpTyp.equals(HTTPType.GET)) {
+			String placeHolderString = resourcesMapping.get(urlPartString);
+			UrlPart part = new UrlPart(urlPartString);
+			part.addChild(createUrlParts(placeHolderString, httpTyp));
+			return part;
+		} else if (resourcesMapping.containsKey(urlPartString) && !httpTyp.equals(HTTPType.GET)) {
+			throw new UrlPartCreatorException("There shouldn't be a non GET request on static resources");
+		}
+
 		UrlPart part = new UrlPart(urlPartString);
 		if (nextUrlPartString.length > 1 && StringUtils.isNotBlank(nextUrlPartString[1])) {
 			part.addChild(createUrlParts(nextUrlPartString[1], httpTyp));
