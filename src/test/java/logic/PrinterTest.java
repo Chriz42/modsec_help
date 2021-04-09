@@ -20,6 +20,7 @@ public class PrinterTest {
 //	TODO: add negativ tests
 	Printer printer;
 	ByteArrayOutputStream outStream;
+	String newLine = System.getProperty("line.separator");
 
 	@BeforeEach
 	public void init() {
@@ -40,15 +41,13 @@ public class PrinterTest {
 		printer.printToStream(locationMatch, outStream);
 		String output = outStream.toString();
 
-		String newLine = "\r\n";
-
-		String openString = String.format(printer.locationMatchOpenString + "\r\n", "/user/[0-9]+/data");
-		String httpTypeString = String.format(printer.requestMethodeString + "\r\n", "POST|GET", 0);
-		String namesString = String.format(printer.unexpectedParamNameString + "\r\n", "name|param2", 1);
-		String valuesString = String.format(printer.containsInvalidCharsString + "\r\n", "name", "[a-zA-Z]+", 2)
-				+ String.format(printer.containsInvalidCharsString + "\r\n", "param2", "[0-9\\,\\.]+", 3);
-		String allowString = String.format(printer.requestAllowString + "\r\n", 4);
-		String closeString = printer.locationMatchCloseString + "\r\n";
+		String openString = String.format(printer.locationMatchOpenString + newLine, "/user/[0-9]+/data");
+		String httpTypeString = String.format(printer.requestMethodeString + newLine, "POST|GET", 0);
+		String namesString = String.format(printer.unexpectedParamNameString + newLine, "name|param2", 1);
+		String valuesString = String.format(printer.containsInvalidCharsString + newLine, "name", "[a-zA-Z]+", 2)
+				+ String.format(printer.containsInvalidCharsString + newLine, "param2", "[0-9\\,\\.]+", 3);
+		String allowString = String.format(printer.requestAllowString + newLine, 4);
+		String closeString = printer.locationMatchCloseString + newLine;
 		String printedString = newLine + openString + httpTypeString + namesString + valuesString + allowString
 				+ closeString;
 		assertThat(output, is(printedString));
@@ -66,9 +65,9 @@ public class PrinterTest {
 		printer.addExpectedParamValues(paramMap, printWriter);
 		printWriter.close();
 		String output = outStream.toString();
-		String printedString = String.format(printer.containsInvalidCharsString + "\r\n", "one", "[21]+", 0)
-				+ String.format(printer.containsInvalidCharsString + "\r\n", "two", "[42]+", 1)
-				+ String.format(printer.containsInvalidCharsString + "\r\n", "three", "", 2);
+		String printedString = String.format(printer.containsInvalidCharsString + newLine, "one", "[21]+", 0)
+				+ String.format(printer.containsInvalidCharsString + newLine, "two", "[42]+", 1)
+				+ String.format(printer.containsInvalidCharsString + newLine, "three", "", 2);
 		assertThat(output, is(printedString));
 
 	}
@@ -83,7 +82,7 @@ public class PrinterTest {
 		printer.addExpectedParamNames(paramMap, printWriter);
 		printWriter.close();
 		String output = outStream.toString();
-		assertThat(output, is(String.format(printer.unexpectedParamNameString + "\r\n", "one|two", 0)));
+		assertThat(output, is(String.format(printer.unexpectedParamNameString + newLine, "one|two", 0)));
 	}
 
 	@Test
@@ -96,7 +95,7 @@ public class PrinterTest {
 		printer.addHttpMethode(httpTypes, printWriter);
 		printWriter.close();
 		String output = outStream.toString();
-		assertThat(output, is(String.format(printer.requestMethodeString + "\r\n", "POST|GET", 0)));
+		assertThat(output, is(String.format(printer.requestMethodeString + newLine, "POST|GET", 0)));
 	}
 
 	@Test
@@ -106,9 +105,8 @@ public class PrinterTest {
 		printWriter.close();
 		String output = outStream.toString();
 
-		String newLine = "\r\n";
-		String openString = String.format(printer.locationMatchOpenString + "\r\n", printer.defaultRuleUrlString);
-		String closeString = printer.locationMatchCloseString + "\r\n";
+		String openString = String.format(printer.locationMatchOpenString + newLine, printer.defaultRuleUrlString);
+		String closeString = printer.locationMatchCloseString + newLine;
 
 		String printedString = newLine + openString + String.format(printer.unauthLocationCalledSecActionString, 0)
 				+ newLine + closeString;
@@ -126,12 +124,10 @@ public class PrinterTest {
 		printer.printToStream(locationMatch, outStream);
 		String output = outStream.toString();
 
-		String newLine = "\r\n";
-
-		String openString = String.format(printer.locationMatchOpenString + "\r\n", "/user/[0-9]+/data");
-		String httpTypeString = String.format(printer.requestMethodeString + "\r\n", "POST|GET", 0);
-		String allowString = String.format(printer.requestAllowString + "\r\n", 1);
-		String closeString = printer.locationMatchCloseString + "\r\n";
+		String openString = String.format(printer.locationMatchOpenString + newLine, "/user/[0-9]+/data");
+		String httpTypeString = String.format(printer.requestMethodeString + newLine, "POST|GET", 0);
+		String allowString = String.format(printer.requestAllowString + newLine, 1);
+		String closeString = printer.locationMatchCloseString + newLine;
 		String printedString = newLine + openString + httpTypeString + allowString + closeString;
 		assertThat(output, is(printedString));
 	}
@@ -145,12 +141,10 @@ public class PrinterTest {
 		printer.printToStream(locationMatch, outStream);
 		String output = outStream.toString();
 
-		String newLine = "\r\n";
-
-		String openString = String.format(printer.locationMatchOpenString + "\r\n", "/");
-		String httpTypeString = String.format(printer.requestMethodeString + "\r\n", "GET", 0);
-		String allowString = String.format(printer.requestAllowString + "\r\n", 1);
-		String closeString = printer.locationMatchCloseString + "\r\n";
+		String openString = String.format(printer.locationMatchOpenString + newLine, "/");
+		String httpTypeString = String.format(printer.requestMethodeString + newLine, "GET", 0);
+		String allowString = String.format(printer.requestAllowString + newLine, 1);
+		String closeString = printer.locationMatchCloseString + newLine;
 		String printedString = newLine + openString + httpTypeString + allowString + closeString;
 		assertThat(output, is(printedString));
 	}
