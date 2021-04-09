@@ -9,8 +9,11 @@ import org.apache.commons.lang3.StringUtils;
 public class RegexCreator {
 
 	private final String upperCase = "A-Z";
+	private final String upperCasePlaceHolder = "upperCase";
 	private final String lowerCase = "a-z";
+	private final String lowerCaseupperCasePlaceHolder = "lowerCase";
 	private final String numeric = "0-9";
+	private final String numericupperCasePlaceHolder = "numeric";
 	private final List<String> toEscapeChars = Arrays.asList("\\", ",", "^", "$", ".", "|", "?", "*", "+", "(", ")",
 			"[", "]", "{", "}");
 	private final String escapeChar = "\\";
@@ -21,6 +24,9 @@ public class RegexCreator {
 		for (String value : values) {
 			regexString = checkString(regexString, value);
 		}
+		regexString = StringUtils.replace(regexString, upperCasePlaceHolder, upperCase);
+		regexString = StringUtils.replace(regexString, lowerCaseupperCasePlaceHolder, lowerCase);
+		regexString = StringUtils.replace(regexString, numericupperCasePlaceHolder, numeric);
 		return regexString;
 	}
 
@@ -29,16 +35,16 @@ public class RegexCreator {
 		for (int i = 0; i < str.length(); i++) {
 			ch = Character.toString(str.charAt(i));
 			if (StringUtils.isNumeric(ch)) {
-				if (!regex.contains(numeric)) {
-					regex = regex.concat(numeric);
+				if (!regex.contains(numericupperCasePlaceHolder)) {
+					regex = regex.concat(numericupperCasePlaceHolder);
 				}
 			} else if (StringUtils.isAllUpperCase(ch)) {
-				if (!regex.contains(upperCase)) {
-					regex = regex.concat(upperCase);
+				if (!regex.contains(upperCasePlaceHolder)) {
+					regex = regex.concat(upperCasePlaceHolder);
 				}
 			} else if (StringUtils.isAllLowerCase(ch)) {
-				if (!regex.contains(lowerCase)) {
-					regex = regex.concat(lowerCase);
+				if (!regex.contains(lowerCaseupperCasePlaceHolder)) {
+					regex = regex.concat(lowerCaseupperCasePlaceHolder);
 				}
 			} else if (StringUtils.isAsciiPrintable(ch) && !regex.contains(ch)) {
 				String specialCharString = ch;
@@ -50,6 +56,7 @@ public class RegexCreator {
 
 			// TODO: add min max if they are usefull?
 		}
+
 		return regex;
 	}
 }

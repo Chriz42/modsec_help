@@ -1,5 +1,8 @@
 package logic;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -19,14 +22,15 @@ import model.UrlPart;
 public class UrlPartsCreator {
 
 	// TODO: add placeholder for js,css, resources
-	private static final Map<String, String> resourcesMapping;
+	private static final List<String> resourcePlaceHolderDirectories;
 	static {
-		Map<String, String> map = new HashMap<String, String>();
-		map.put("js", "*.js");
-		map.put("css", "*.css");
-		map.put("resources", "*.*");
+		List<String> list = new ArrayList<String>();
+		list.add("js");
+		list.add("css");
+		list.add("resources");
+		list.add("images");
 
-		resourcesMapping = Collections.unmodifiableMap(map);
+		resourcePlaceHolderDirectories = Collections.unmodifiableList(list);
 	}
 
 	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap) {
@@ -44,7 +48,6 @@ public class UrlPartsCreator {
 					urlList.add(urlPart);
 				}
 			} catch (UrlPartCreatorException e) {
-				// TODO: Add logging
 				System.out.println("error occured scip this log entry. Message: " + e.getMessage());
 			}
 		}
@@ -110,12 +113,13 @@ public class UrlPartsCreator {
 			throw new UrlPartCreatorException("There shouldn't be a non GET request with querystring");
 		}
 
-		if (resourcesMapping.containsKey(urlPartString) && httpTyp.equals(HTTPType.GET)) {
-			String placeHolderString = resourcesMapping.get(urlPartString);
+		if (resourcePlaceHolderDirectories.contains(urlPartString) && httpTyp.equals(HTTPType.GET)) {
+			String fileName = nextUrlPartString[1];
+			String[] splittedString = fileName.split("\\.");
 			UrlPart part = new UrlPart(urlPartString);
-			part.addChild(createUrlParts(placeHolderString, httpTyp));
+			part.addChild(createUrlParts(".*\\." + splittedString[splittedString.length - 1], httpTyp));
 			return part;
-		} else if (resourcesMapping.containsKey(urlPartString) && !httpTyp.equals(HTTPType.GET)) {
+		} else if (resourcePlaceHolderDirectories.contains(urlPartString) && !httpTyp.equals(HTTPType.GET)) {
 			throw new UrlPartCreatorException("There shouldn't be a non GET request on static resources");
 		}
 
@@ -133,7 +137,15 @@ public class UrlPartsCreator {
 		UrlPart part = new UrlPart(urlAndQueryString[0]);
 		part.addHttpTyp(httpTyp);
 		if (StringUtils.isNotBlank(urlAndQueryString[1])) {
-			Map<String, Set<String>> paramMap = createParameterMap(urlAndQueryString[1]);
+			String urldecodedParams;
+			try {
+				urldecodedParams = URLDecoder.decode(urlAndQueryString[1], StandardCharsets.UTF_8.name());
+			} catch (UnsupportedEncodingException e) {
+				System.out.println("Urldecoding error with string: " + urlAndQueryString[1]
+						+ " and UTF-8 charset. Use raw value for params");
+				urldecodedParams = urlAndQueryString[1];
+			}
+			Map<String, Set<String>> paramMap = createParameterMap(urldecodedParams);
 			part.addParamMap(paramMap);
 		}
 		return part;

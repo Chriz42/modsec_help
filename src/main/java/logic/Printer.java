@@ -24,7 +24,7 @@ public class Printer {
 	final String locationMatchOpenString = "<LocationMatch \"^%s$\">";
 	final String requestMethodeString = "\tSecRule REQUEST_METHOD !(%s) \"deny,id:%s,msg:'Request method not allowed'\"";
 	final String unexpectedParamNameString = "\tSecRule ARGS_NAMES !^(%s)$ \"deny,id:%s,msg:'The request contained the following unexpected Param: %%{MATCHED_VAR_NAME}'\"";
-	final String containsInvalidCharsString = "\tSecRule ARGS:%s !^[%s]+$ \"deny,id:%s,msg:'The Parameter %%{MATCHED_VAR_NAME} contains invalid characters'\"";
+	final String containsInvalidCharsString = "\tSecRule ARGS:%s !^%s$ \"deny,id:%s,msg:'The Parameter %%{MATCHED_VAR_NAME} contains invalid characters'\"";
 	final String requestAllowString = "\tSecAction \"allow,id:%s,msg:'Request passed',nolog\"";
 	final String locationMatchCloseString = "</LocationMatch>";
 
@@ -56,8 +56,12 @@ public class Printer {
 	}
 
 	void addExpectedParamValues(HashMap<String, String> params, PrintWriter printWriter) {
-		for (Map.Entry entry : params.entrySet()) {
-			String line = String.format(containsInvalidCharsString, entry.getKey(), entry.getValue(), currentRuleId++);
+		for (Map.Entry<String, String> entry : params.entrySet()) {
+			String value = entry.getValue();
+			if (StringUtils.isNotEmpty(value)) {
+				value = "[" + value + "]+";
+			}
+			String line = String.format(containsInvalidCharsString, entry.getKey(), value, currentRuleId++);
 			printWriter.println(line);
 		}
 

@@ -27,6 +27,7 @@ But first the basics
 **Open features**
 - ADD resource wildcards (and as an option default on)
 - read and print with input output files from cmd
+- Add propper logging
 - write propper getting started with modsec learning mode guide
 - add automate testing with request to the ne locationmatches with docker
 - Add nginx support:

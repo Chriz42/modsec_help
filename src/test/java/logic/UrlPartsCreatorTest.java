@@ -113,14 +113,14 @@ class UrlPartsCreatorTest {
 	@Test
 	public void createUrlPartWithQueryString() throws UrlPartCreatorException {
 		UrlPartsCreator creator = new UrlPartsCreator();
-		UrlPart urlPart = creator.parseUrlandTyp("GET test?param1=test1&param2=test2 HTTP/1.1");
+		UrlPart urlPart = creator.parseUrlandTyp("GET test?param1=test1%2c&param2=test2%2C HTTP/1.1");
 		assertThat(urlPart.getUrlPartString(), is(equalTo("test")));
 
 		assertThat(urlPart.getUrlPartString(), is("test"));
 		assertThat(urlPart.getHttpTyps(), Matchers.hasItem(HTTPType.GET));
 		Map<String, Set<String>> urlPartParamMap = urlPart.getParamMap();
-		assertThat(urlPartParamMap.get("param1"), is(Set.of("test1")));
-		assertThat(urlPartParamMap.get("param2"), is(Set.of("test2")));
+		assertThat(urlPartParamMap.get("param1"), is(Set.of("test1,")));
+		assertThat(urlPartParamMap.get("param2"), is(Set.of("test2,")));
 	}
 
 	@Test
@@ -168,11 +168,12 @@ class UrlPartsCreatorTest {
 	private static Stream<Arguments> createUrlResourcePlaceholderUrlPart() {
 		return Stream.of(
 				Arguments.of("GET /js/11.m.da9195e4.chunk.js HTTP/1.1",
-						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("js", "*.js")),
+						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("js", ".*\\.js")),
 				Arguments.of("GET /css/11.m.das.chunk.css HTTP/1.1",
-						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("css", "*.css")),
+						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("css", ".*\\.css")),
 				Arguments.of("GET /resources/gsdgdsg.jpg HTTP/1.1",
-						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("resources", "*.*")));
+						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)),
+						Arrays.asList("resources", ".*\\.jpg")));
 	}
 
 	@ParameterizedTest

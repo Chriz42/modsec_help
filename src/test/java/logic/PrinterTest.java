@@ -45,8 +45,8 @@ public class PrinterTest {
 		String openString = String.format(printer.locationMatchOpenString + "\r\n", "/user/[0-9]+/data");
 		String httpTypeString = String.format(printer.requestMethodeString + "\r\n", "POST|GET", 0);
 		String namesString = String.format(printer.unexpectedParamNameString + "\r\n", "name|param2", 1);
-		String valuesString = String.format(printer.containsInvalidCharsString + "\r\n", "name", "a-zA-Z", 2)
-				+ String.format(printer.containsInvalidCharsString + "\r\n", "param2", "0-9\\,\\.", 3);
+		String valuesString = String.format(printer.containsInvalidCharsString + "\r\n", "name", "[a-zA-Z]+", 2)
+				+ String.format(printer.containsInvalidCharsString + "\r\n", "param2", "[0-9\\,\\.]+", 3);
 		String allowString = String.format(printer.requestAllowString + "\r\n", 4);
 		String closeString = printer.locationMatchCloseString + "\r\n";
 		String printedString = newLine + openString + httpTypeString + namesString + valuesString + allowString
@@ -60,13 +60,15 @@ public class PrinterTest {
 		HashMap<String, String> paramMap = new HashMap<>();
 		paramMap.put("one", "21");
 		paramMap.put("two", "42");
+		paramMap.put("three", "");
 
 		PrintWriter printWriter = new PrintWriter(outStream);
 		printer.addExpectedParamValues(paramMap, printWriter);
 		printWriter.close();
 		String output = outStream.toString();
-		String printedString = String.format(printer.containsInvalidCharsString + "\r\n", "one", "21", 0)
-				+ String.format(printer.containsInvalidCharsString + "\r\n", "two", "42", 1);
+		String printedString = String.format(printer.containsInvalidCharsString + "\r\n", "one", "[21]+", 0)
+				+ String.format(printer.containsInvalidCharsString + "\r\n", "two", "[42]+", 1)
+				+ String.format(printer.containsInvalidCharsString + "\r\n", "three", "", 2);
 		assertThat(output, is(printedString));
 
 	}
