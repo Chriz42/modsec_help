@@ -12721,3 +12721,2858 @@ Engine-Mode: "DETECTION_ONLY"
 
 --8beae343-Z--
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         --e74f1750-A--
+[09/Apr/2021:09:45:19 +0000] YHAiLiKk-rGpeHBXfwmH7AAAAAU 172.20.0.1 55292 172.20.0.4 9000
+--e74f1750-B--
+GET / HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--e74f1750-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: text/html;charset=utf-8
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--e74f1750-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961518117348 1026388 (- - -)
+Stopwatch2: 1617961518117348 1026388; combined=27448, p1=0, p2=27381, p3=0, p4=0, p5=67, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--e74f1750-Z--
+
+--204f2a7d-A--
+[09/Apr/2021:09:45:19 +0000] YHAiLyKk-rGpeHBXfwmH7QAAAAY 172.20.0.1 55294 172.20.0.4 9000
+--204f2a7d-B--
+GET /js/main.m.965047d1.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--204f2a7d-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"107708-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 107708
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--204f2a7d-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961519152697 460739 (- - -)
+Stopwatch2: 1617961519152697 460739; combined=1155, p1=0, p2=1146, p3=0, p4=0, p5=9, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--204f2a7d-Z--
+
+--0db8be20-A--
+[09/Apr/2021:09:45:19 +0000] YHAiLyKk-rGpeHBXfwmH8AAAAAk 172.20.0.1 55308 172.20.0.4 9000
+--0db8be20-B--
+GET /api/l10n/index?locale=de-DE HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--0db8be20-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 199
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--0db8be20-H--
+Message: Access denied with code 403 (phase 2). Match of "rx ^[a-zA-Z]+$" against "ARGS:locale" required. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "182"] [id "100092"] [msg "The Parameter ARGS:locale contains invalid characters"]
+Apache-Error: [file "apache2_util.c"] [line 273] [level 3] [client 172.20.0.1] ModSecurity: Access denied with code 403 (phase 2). Match of "rx ^[a-zA-Z]+$" against "ARGS:locale" required. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "182"] [id "100092"] [msg "The Parameter ARGS:locale contains invalid characters"] [hostname "localhost"] [uri "/api/l10n/index"] [unique_id "YHAiLyKk-rGpeHBXfwmH8AAAAAk"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1617961519314857 384116 (- - -)
+Stopwatch2: 1617961519314857 384116; combined=16419, p1=0, p2=16364, p3=0, p4=0, p5=55, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--0db8be20-Z--
+
+--ea98a46b-A--
+[09/Apr/2021:09:45:19 +0000] YHAiLyKk-rGpeHBXfwmH7gAAAAU 172.20.0.1 55292 172.20.0.4 9000
+--ea98a46b-B--
+GET /js/vendors-main.m.d184ed05.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--ea98a46b-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"128499-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 128499
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--ea98a46b-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961519279272 499892 (- - -)
+Stopwatch2: 1617961519279272 499892; combined=15031, p1=0, p2=15022, p3=0, p4=0, p5=9, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--ea98a46b-Z--
+
+--3621b06a-A--
+[09/Apr/2021:09:45:19 +0000] YHAiLyKk-rGpeHBXfwmH8QAAAAo 172.20.0.1 55316 172.20.0.4 9000
+--3621b06a-B--
+GET /js/9.m.437592dd.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--3621b06a-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"272667-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Content-Length: 272667
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--3621b06a-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961519346906 547607 (- - -)
+Stopwatch2: 1617961519346906 547607; combined=1071, p1=0, p2=961, p3=0, p4=0, p5=110, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--3621b06a-Z--
+
+--babc7303-A--
+[09/Apr/2021:09:45:19 +0000] YHAiLyKk-rGpeHBXfwmH8gAAAAs 172.20.0.1 55294 172.20.0.4 9000
+--babc7303-B--
+GET /favicon.ico HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--babc7303-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 199
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--babc7303-H--
+Message: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /favicon.ico"]
+Apache-Error: [file "apache2_util.c"] [line 273] [level 3] [client 172.20.0.1] ModSecurity: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /favicon.ico"] [hostname "localhost"] [uri "/favicon.ico"] [unique_id "YHAiLyKk-rGpeHBXfwmH8gAAAAs"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1617961519632635 330364 (- - -)
+Stopwatch2: 1617961519632635 330364; combined=722, p1=1, p2=713, p3=0, p4=0, p5=8, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--babc7303-Z--
+
+--eae20c7f-A--
+[09/Apr/2021:09:45:20 +0000] YHAiLyKk-rGpeHBXfwmH8wAAABQ 172.20.0.1 55308 172.20.0.4 9000
+--eae20c7f-B--
+GET /js/17.m.7c19ad00.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--eae20c7f-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"204035-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Content-Length: 204035
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--eae20c7f-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961519712556 395059 (- - -)
+Stopwatch2: 1617961519712556 395059; combined=1557, p1=1, p2=1412, p3=0, p4=0, p5=143, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--eae20c7f-Z--
+
+--d0c67a6d-A--
+[09/Apr/2021:09:45:20 +0000] YHAiLyKk-rGpeHBXfwmH9AAAAAU 172.20.0.1 55292 172.20.0.4 9000
+--d0c67a6d-B--
+GET /js/vendors-app.m.b88ebad0.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--d0c67a6d-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"526109-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 526109
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--d0c67a6d-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961519815119 369244 (- - -)
+Stopwatch2: 1617961519815119 369244; combined=350, p1=0, p2=188, p3=0, p4=0, p5=162, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--d0c67a6d-Z--
+
+--a7a5c14f-A--
+[09/Apr/2021:09:45:20 +0000] YHAiMCKk-rGpeHBXfwmH9gAAAAw 172.20.0.1 55294 172.20.0.4 9000
+--a7a5c14f-B--
+GET /js/314.m.fefd882d.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--a7a5c14f-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"29419-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 29419
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--a7a5c14f-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961520033524 315388 (- - -)
+Stopwatch2: 1617961520033524 315388; combined=9802, p1=0, p2=9796, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--a7a5c14f-Z--
+
+--3c4d2a0f-A--
+[09/Apr/2021:09:45:20 +0000] YHAiLyKk-rGpeHBXfwmH9QAAAAc 172.20.0.1 55316 172.20.0.4 9000
+--3c4d2a0f-B--
+GET /js/app.m.3ee455d5.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--3c4d2a0f-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"704838-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 704838
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--3c4d2a0f-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961519909160 481907 (- - -)
+Stopwatch2: 1617961519909160 481907; combined=100, p1=0, p2=70, p3=0, p4=0, p5=30, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--3c4d2a0f-Z--
+
+--6af15f07-A--
+[09/Apr/2021:09:45:20 +0000] YHAiL8IQRSMxw4GMHTXFZQAAAMA 172.20.0.1 55304 172.20.0.4 9000
+--6af15f07-B--
+GET /api/navigation/global HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--6af15f07-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 491
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+--6af15f07-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961519282331 1180415 (- - -)
+Stopwatch2: 1617961519282331 1180415; combined=12140, p1=0, p2=12024, p3=0, p4=0, p5=115, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--6af15f07-Z--
+
+--8d8c2020-A--
+[09/Apr/2021:09:45:20 +0000] YHAiLyKk-rGpeHBXfwmH7wAAAAA 172.20.0.1 55314 172.20.0.4 9000
+--8d8c2020-B--
+GET /api/users/current HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--8d8c2020-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 112
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+--8d8c2020-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961519282648 1413957 (- - -)
+Stopwatch2: 1617961519282648 1413957; combined=3183, p1=0, p2=3164, p3=0, p4=0, p5=12, sr=0, sw=0, l=0, gc=7
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--8d8c2020-Z--
+
+--8f3e727b-A--
+[09/Apr/2021:09:45:20 +0000] YHAiMMIQRSMxw4GMHTXFZgAAAMI 172.20.0.1 55304 172.20.0.4 9000
+--8f3e727b-B--
+GET /js/0.m.5f1f98f2.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--8f3e727b-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"75341-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Content-Length: 75341
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--8f3e727b-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961520566549 356851 (- - -)
+Stopwatch2: 1617961520566549 356851; combined=197, p1=0, p2=82, p3=0, p4=0, p5=115, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--8f3e727b-Z--
+
+--10234f1e-A--
+[09/Apr/2021:09:45:20 +0000] YHAiMCKk-rGpeHBXfwmH9wAAAA0 172.20.0.1 55316 172.20.0.4 9000
+--10234f1e-B--
+GET /js/21.m.1264acfc.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--10234f1e-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"10671-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Content-Length: 10671
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--10234f1e-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961520583803 423183 (- - -)
+Stopwatch2: 1617961520583803 423183; combined=2591, p1=0, p2=1971, p3=0, p4=0, p5=620, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--10234f1e-Z--
+
+--74e62a48-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMMIQRSMxw4GMHTXFZwAAAME 172.20.0.1 55304 172.20.0.4 9000
+--74e62a48-B--
+GET /images/logo.svg?v=6.6 HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+If-None-Match: W/"3507-1614589798000"
+If-Modified-Since: Mon, 01 Mar 2021 09:09:58 GMT
+
+--74e62a48-F--
+HTTP/1.1 304 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+ETag: W/"3507-1614589798000"
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+
+--74e62a48-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961520934614 178938 (- - -)
+Stopwatch2: 1617961520934614 178938; combined=260, p1=0, p2=64, p3=0, p4=0, p5=196, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--74e62a48-Z--
+
+--6960fc29-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMCKk-rGpeHBXfwmH@AAAAA8 172.20.0.1 55292 172.20.0.4 9000
+--6960fc29-B--
+GET /favicon.ico HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--6960fc29-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 199
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--6960fc29-H--
+Message: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /favicon.ico"]
+Apache-Error: [file "apache2_util.c"] [line 273] [level 3] [client 172.20.0.1] ModSecurity: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /favicon.ico"] [hostname "localhost"] [uri "/favicon.ico"] [unique_id "YHAiMCKk-rGpeHBXfwmH@AAAAA8"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1617961520653297 500389 (- - -)
+Stopwatch2: 1617961520653297 500389; combined=49, p1=0, p2=44, p3=0, p4=0, p5=5, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--6960fc29-Z--
+
+--9024f743-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMCKk-rGpeHBXfwmH@AAAAA4 172.20.0.1 55294 172.20.0.4 9000
+--9024f743-B--
+GET /js/366.m.fe0e0358.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--9024f743-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"3110-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 3110
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--9024f743-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961520653297 582304 (- - -)
+Stopwatch2: 1617961520653297 582304; combined=1044, p1=0, p2=1038, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--9024f743-Z--
+
+--5a882f7c-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMcIQRSMxw4GMHTXFaAAAAMM 172.20.0.1 55304 172.20.0.4 9000
+--5a882f7c-B--
+GET /images/scanner-logos/msbuild.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+If-None-Match: W/"722-1614590442000"
+If-Modified-Since: Mon, 01 Mar 2021 09:20:42 GMT
+
+--5a882f7c-F--
+HTTP/1.1 304 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+ETag: W/"722-1614590442000"
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+
+--5a882f7c-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961521130166 207684 (- - -)
+Stopwatch2: 1617961521130166 207684; combined=142, p1=0, p2=136, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--5a882f7c-Z--
+
+--23b5737e-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMCKk-rGpeHBXfwmH@QAAABA 172.20.0.1 55314 172.20.0.4 9000
+--23b5737e-B--
+GET /api/languages/list HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--23b5737e-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 479
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+
+--23b5737e-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961520749624 702333 (- - -)
+Stopwatch2: 1617961520749624 702333; combined=2661, p1=1, p2=2110, p3=0, p4=0, p5=550, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--23b5737e-Z--
+
+--180b8e71-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMcIQRSMxw4GMHTXFaQAAAMQ 172.20.0.1 55304 172.20.0.4 9000
+--180b8e71-B--
+GET /images/scanner-logos/ant.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+If-None-Match: W/"9688-1614590442000"
+If-Modified-Since: Mon, 01 Mar 2021 09:20:42 GMT
+
+--180b8e71-F--
+HTTP/1.1 304 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+ETag: W/"9688-1614590442000"
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+
+--180b8e71-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961521365500 237425 (- - -)
+Stopwatch2: 1617961521365500 237425; combined=240, p1=0, p2=86, p3=0, p4=0, p5=154, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--180b8e71-Z--
+
+--c2b8413a-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMCKk-rGpeHBXfwmH@gAAABE 172.20.0.1 55308 172.20.0.4 9000
+--c2b8413a-B--
+GET /images/scanner-logos/sonarqube.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+If-None-Match: W/"8422-1614590442000"
+If-Modified-Since: Mon, 01 Mar 2021 09:20:42 GMT
+
+--c2b8413a-F--
+HTTP/1.1 304 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+ETag: W/"8422-1614590442000"
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+
+--c2b8413a-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961520749777 1010979 (- - -)
+Stopwatch2: 1617961520749777 1010979; combined=14457, p1=0, p2=14243, p3=0, p4=0, p5=214, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--c2b8413a-Z--
+
+--7db1a53f-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMcIQRSMxw4GMHTXFagAAAMU 172.20.0.1 55304 172.20.0.4 9000
+--7db1a53f-B--
+GET /images/scanner-logos/jenkins.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+If-None-Match: W/"14902-1614590442000"
+If-Modified-Since: Mon, 01 Mar 2021 09:20:42 GMT
+
+--7db1a53f-F--
+HTTP/1.1 304 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+ETag: W/"14902-1614590442000"
+Keep-Alive: timeout=5, max=95
+Connection: Keep-Alive
+
+--7db1a53f-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961521644356 252933 (- - -)
+Stopwatch2: 1617961521644356 252933; combined=230, p1=0, p2=173, p3=0, p4=0, p5=57, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--7db1a53f-Z--
+
+--03133f41-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMSKk-rGpeHBXfwmH@wAAAA0 172.20.0.1 55316 172.20.0.4 9000
+--03133f41-B--
+GET /api/settings/values?keys=sonar.lf.aboutText HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--03133f41-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 15
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+
+--03133f41-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961521018363 926655 (- - -)
+Stopwatch2: 1617961521018363 926655; combined=18201, p1=0, p2=18017, p3=0, p4=0, p5=183, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--03133f41-Z--
+
+--6b3a197d-A--
+[09/Apr/2021:09:45:21 +0000] YHAiMSKk-rGpeHBXfwmH-gAAABA 172.20.0.1 55314 172.20.0.4 9000
+--6b3a197d-B--
+GET /images/scanner-logos/maven.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+If-None-Match: W/"2234-1614590442000"
+If-Modified-Since: Mon, 01 Mar 2021 09:20:42 GMT
+
+--6b3a197d-F--
+HTTP/1.1 304 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+ETag: W/"2234-1614590442000"
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+
+--6b3a197d-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961521467614 567537 (- - -)
+Stopwatch2: 1617961521467614 567537; combined=189, p1=0, p2=182, p3=0, p4=0, p5=6, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--6b3a197d-Z--
+
+--99e7c112-A--
+[09/Apr/2021:09:45:22 +0000] YHAiMSKk-rGpeHBXfwmH-wAAABE 172.20.0.1 55308 172.20.0.4 9000
+--99e7c112-B--
+GET /images/scanner-logos/gradle.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+If-None-Match: W/"3708-1614590442000"
+If-Modified-Since: Mon, 01 Mar 2021 09:20:42 GMT
+
+--99e7c112-F--
+HTTP/1.1 304 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+ETag: W/"3708-1614590442000"
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+
+--99e7c112-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961521771677 328722 (- - -)
+Stopwatch2: 1617961521771677 328722; combined=122, p1=0, p2=68, p3=0, p4=0, p5=54, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--99e7c112-Z--
+
+--a53c5b11-A--
+[09/Apr/2021:09:45:22 +0000] YHAiMSKk-rGpeHBXfwmIAAAAAA0 172.20.0.1 55316 172.20.0.4 9000
+--a53c5b11-B--
+GET /js/321.m.855a3c62.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--a53c5b11-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"64609-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 64609
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--a53c5b11-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961521950652 204169 (- - -)
+Stopwatch2: 1617961521950652 204169; combined=74, p1=0, p2=65, p3=0, p4=0, p5=8, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--a53c5b11-Z--
+
+--5757c663-A--
+[09/Apr/2021:09:45:22 +0000] YHAiMSKk-rGpeHBXfwmH-QAAABU 172.20.0.1 55294 172.20.0.4 9000
+--5757c663-B--
+GET /api/components/search_projects?ps=1 HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--5757c663-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 96
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+
+--5757c663-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961521274941 1657898 (- - -)
+Stopwatch2: 1617961521274941 1657898; combined=3326, p1=1, p2=3047, p3=0, p4=0, p5=277, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--5757c663-Z--
+
+--b46d2d46-A--
+[09/Apr/2021:09:45:23 +0000] YHAiMSKk-rGpeHBXfwmH-AAAABM 172.20.0.1 55292 172.20.0.4 9000
+--b46d2d46-B--
+GET /api/issues/search?resolved=false&facets=types&ps=1&additionalFields=_all HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--b46d2d46-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 799
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+
+--b46d2d46-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961521166613 1945076 (- - -)
+Stopwatch2: 1617961521166613 1945076; combined=11806, p1=1, p2=11800, p3=0, p4=0, p5=5, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--b46d2d46-Z--
+
+--cc75da3b-A--
+[09/Apr/2021:09:45:29 +0000] YHAiOcIQRSMxw4GMHTXFawAAAMg 172.20.0.1 55344 172.20.0.4 9000
+--cc75da3b-B--
+GET /about HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--cc75da3b-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 199
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--cc75da3b-H--
+Message: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /about"]
+Apache-Error: [file "apache2_util.c"] [line 273] [level 3] [client 172.20.0.1] ModSecurity: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /about"] [hostname "localhost"] [uri "/about"] [unique_id "YHAiOcIQRSMxw4GMHTXFawAAAMg"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1617961529508748 194740 (- - -)
+Stopwatch2: 1617961529508748 194740; combined=197, p1=0, p2=165, p3=0, p4=0, p5=32, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--cc75da3b-Z--
+
+--083ccb24-A--
+[09/Apr/2021:09:45:29 +0000] YHAiOcIQRSMxw4GMHTXFbAAAAMk 172.20.0.1 55344 172.20.0.4 9000
+--083ccb24-B--
+GET /favicon.ico HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--083ccb24-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 199
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--083ccb24-H--
+Message: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /favicon.ico"]
+Apache-Error: [file "apache2_util.c"] [line 273] [level 3] [client 172.20.0.1] ModSecurity: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /favicon.ico"] [hostname "localhost"] [uri "/favicon.ico"] [unique_id "YHAiOcIQRSMxw4GMHTXFbAAAAMk"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1617961529743600 93196 (- - -)
+Stopwatch2: 1617961529743600 93196; combined=42, p1=0, p2=37, p3=0, p4=0, p5=5, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--083ccb24-Z--
+
+--bfbc6b14-A--
+[09/Apr/2021:09:45:35 +0000] YHAiP9Z2KPhpL06gJOQRQQAAAJA 172.20.0.1 55340 172.20.0.4 9000
+--bfbc6b14-B--
+GET / HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--bfbc6b14-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: text/html;charset=utf-8
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--bfbc6b14-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961535105348 238142 (- - -)
+Stopwatch2: 1617961535105348 238142; combined=205, p1=0, p2=198, p3=0, p4=0, p5=6, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--bfbc6b14-Z--
+
+--ee3fb417-A--
+[09/Apr/2021:09:45:35 +0000] YHAiP8IQRSMxw4GMHTXFbQAAAMw 172.20.0.1 55354 172.20.0.4 9000
+--ee3fb417-B--
+GET /js/main.m.965047d1.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Origin: http://localhost:9000
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--ee3fb417-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"28333-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--ee3fb417-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961535223985 564205 (- - -)
+Stopwatch2: 1617961535223985 564205; combined=12434, p1=1, p2=12399, p3=0, p4=0, p5=34, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--ee3fb417-Z--
+
+--fa936459-A--
+[09/Apr/2021:09:45:35 +0000] YHAiP9Z2KPhpL06gJOQRQgAAAIo 172.20.0.1 55340 172.20.0.4 9000
+--fa936459-B--
+GET /js/vendors-main.m.d184ed05.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Origin: http://localhost:9000
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--fa936459-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"19806-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--fa936459-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961535361245 515795 (- - -)
+Stopwatch2: 1617961535361245 515795; combined=545, p1=0, p2=523, p3=0, p4=0, p5=22, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--fa936459-Z--
+
+--bfbc6b14-A--
+[09/Apr/2021:09:45:35 +0000] YHAiP6Iujiw1s8rB9vYJPwAAAEE 172.20.0.1 55366 172.20.0.4 9000
+--bfbc6b14-B--
+GET /js/9.m.437592dd.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--bfbc6b14-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"59416-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--bfbc6b14-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961535516089 461924 (- - -)
+Stopwatch2: 1617961535516089 461924; combined=167, p1=0, p2=157, p3=0, p4=0, p5=10, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--bfbc6b14-Z--
+
+--e6bc9572-A--
+[09/Apr/2021:09:45:35 +0000] YHAiP8IQRSMxw4GMHTXFbgAAAM0 172.20.0.1 55354 172.20.0.4 9000
+--e6bc9572-B--
+GET /api/l10n/index?locale=de-DE HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--e6bc9572-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 199
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--e6bc9572-H--
+Message: Access denied with code 403 (phase 2). Match of "rx ^[a-zA-Z]+$" against "ARGS:locale" required. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "182"] [id "100092"] [msg "The Parameter ARGS:locale contains invalid characters"]
+Apache-Error: [file "apache2_util.c"] [line 273] [level 3] [client 172.20.0.1] ModSecurity: Access denied with code 403 (phase 2). Match of "rx ^[a-zA-Z]+$" against "ARGS:locale" required. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "182"] [id "100092"] [msg "The Parameter ARGS:locale contains invalid characters"] [hostname "localhost"] [uri "/api/l10n/index"] [unique_id "YHAiP8IQRSMxw4GMHTXFbgAAAM0"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1617961535797547 264993 (- - -)
+Stopwatch2: 1617961535797547 264993; combined=106, p1=0, p2=100, p3=0, p4=0, p5=5, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--e6bc9572-Z--
+
+--e74f1750-A--
+[09/Apr/2021:09:45:36 +0000] YHAiP9Z2KPhpL06gJOQRQwAAAIw 172.20.0.1 55368 172.20.0.4 9000
+--e74f1750-B--
+GET /api/users/current HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--e74f1750-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 112
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+--e74f1750-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961535515946 650434 (- - -)
+Stopwatch2: 1617961535515946 650434; combined=107, p1=0, p2=101, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--e74f1750-Z--
+
+--fa936459-A--
+[09/Apr/2021:09:45:36 +0000] YHAiP6Iujiw1s8rB9vYJQAAAAEQ 172.20.0.1 55366 172.20.0.4 9000
+--fa936459-B--
+GET /js/9.m.437592dd.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--fa936459-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"272667-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Content-Length: 272667
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--fa936459-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961535988198 291743 (- - -)
+Stopwatch2: 1617961535988198 291743; combined=81, p1=0, p2=73, p3=0, p4=0, p5=8, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--fa936459-Z--
+
+--6f40243c-A--
+[09/Apr/2021:09:45:36 +0000] YHAiQMIQRSMxw4GMHTXFbwAAAM0 172.20.0.1 55354 172.20.0.4 9000
+--6f40243c-B--
+GET /js/314.m.fefd882d.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--6f40243c-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"9829-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--6f40243c-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961536091687 233685 (- - -)
+Stopwatch2: 1617961536091687 233685; combined=246, p1=0, p2=99, p3=0, p4=0, p5=147, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--6f40243c-Z--
+
+--204f2a7d-A--
+[09/Apr/2021:09:45:36 +0000] YHAiP9Z2KPhpL06gJOQRRQAAAIc 172.20.0.1 55370 172.20.0.4 9000
+--204f2a7d-B--
+GET /js/vendors-main.m.d184ed05.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--204f2a7d-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"128499-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 128499
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--204f2a7d-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961535516973 861135 (- - -)
+Stopwatch2: 1617961535516973 861135; combined=580, p1=0, p2=427, p3=0, p4=0, p5=151, sr=0, sw=2, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--204f2a7d-Z--
+
+--00192644-A--
+[09/Apr/2021:09:45:36 +0000] YHAiQMIQRSMxw4GMHTXFcAAAANA 172.20.0.1 55354 172.20.0.4 9000
+--00192644-B--
+GET /js/314.m.fefd882d.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--00192644-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"29419-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 29419
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--00192644-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961536331314 152194 (- - -)
+Stopwatch2: 1617961536331314 152194; combined=143, p1=0, p2=137, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--00192644-Z--
+
+--0db8be20-A--
+[09/Apr/2021:09:45:36 +0000] YHAiP9Z2KPhpL06gJOQRRAAAAIU 172.20.0.1 55372 172.20.0.4 9000
+--0db8be20-B--
+GET /api/navigation/global HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--0db8be20-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 491
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+--0db8be20-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961535516909 1027962 (- - -)
+Stopwatch2: 1617961535516909 1027962; combined=363, p1=0, p2=85, p3=0, p4=0, p5=278, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--0db8be20-Z--
+
+--ea98a46b-A--
+[09/Apr/2021:09:45:36 +0000] YHAiP9Z2KPhpL06gJOQRRgAAAI0 172.20.0.1 55340 172.20.0.4 9000
+--ea98a46b-B--
+GET /js/main.m.965047d1.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--ea98a46b-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"107708-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 107708
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--ea98a46b-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961535894166 787157 (- - -)
+Stopwatch2: 1617961535894166 787157; combined=314, p1=0, p2=306, p3=0, p4=0, p5=8, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--ea98a46b-Z--
+
+--3621b06a-A--
+[09/Apr/2021:09:45:36 +0000] YHAiQNZ2KPhpL06gJOQRRwAAAIM 172.20.0.1 55368 172.20.0.4 9000
+--3621b06a-B--
+GET /js/17.m.7c19ad00.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--3621b06a-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"47505-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--3621b06a-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961536214028 527270 (- - -)
+Stopwatch2: 1617961536214028 527270; combined=77, p1=0, p2=71, p3=0, p4=0, p5=5, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--3621b06a-Z--
+
+--babc7303-A--
+[09/Apr/2021:09:45:36 +0000] YHAiQNZ2KPhpL06gJOQRSAAAAIc 172.20.0.1 55370 172.20.0.4 9000
+--babc7303-B--
+GET /js/vendors-app.m.b88ebad0.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--babc7303-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"165141-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--babc7303-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961536383174 600756 (- - -)
+Stopwatch2: 1617961536383174 600756; combined=211, p1=0, p2=86, p3=0, p4=0, p5=125, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--babc7303-Z--
+
+--4eff843c-A--
+[09/Apr/2021:09:45:37 +0000] YHAiQMIQRSMxw4GMHTXFcQAAANE 172.20.0.1 55354 172.20.0.4 9000
+--4eff843c-B--
+GET /js/21.m.1264acfc.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--4eff843c-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"2253-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--4eff843c-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961536783499 315855 (- - -)
+Stopwatch2: 1617961536783499 315855; combined=74, p1=0, p2=64, p3=0, p4=0, p5=9, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--4eff843c-Z--
+
+--e74f1750-A--
+[09/Apr/2021:09:45:37 +0000] YHAiQKIujiw1s8rB9vYJQQAAAEI 172.20.0.1 55366 172.20.0.4 9000
+--e74f1750-B--
+GET /js/366.m.fe0e0358.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--e74f1750-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"596-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Content-Type: application/javascript
+Content-Length: 596
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+
+--e74f1750-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961536783381 477099 (- - -)
+Stopwatch2: 1617961536783381 477099; combined=1852, p1=1, p2=1770, p3=0, p4=0, p5=81, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--e74f1750-Z--
+
+--eae20c7f-A--
+[09/Apr/2021:09:45:37 +0000] YHAiQNZ2KPhpL06gJOQRSQAAAJI 172.20.0.1 55372 172.20.0.4 9000
+--eae20c7f-B--
+GET /js/app.m.3ee455d5.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--eae20c7f-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"188922-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--eae20c7f-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961536549875 833288 (- - -)
+Stopwatch2: 1617961536549875 833288; combined=134, p1=0, p2=67, p3=0, p4=0, p5=67, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--eae20c7f-Z--
+
+--b9f2cf6c-A--
+[09/Apr/2021:09:45:37 +0000] YHAiQcIQRSMxw4GMHTXFcgAAANI 172.20.0.1 55354 172.20.0.4 9000
+--b9f2cf6c-B--
+GET /js/app.m.3ee455d5.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--b9f2cf6c-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"704838-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 704838
+Keep-Alive: timeout=5, max=95
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--b9f2cf6c-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961537114775 361302 (- - -)
+Stopwatch2: 1617961537114775 361302; combined=181, p1=0, p2=108, p3=0, p4=0, p5=73, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--b9f2cf6c-Z--
+
+--204f2a7d-A--
+[09/Apr/2021:09:45:37 +0000] YHAiQaIujiw1s8rB9vYJQgAAAEU 172.20.0.1 55366 172.20.0.4 9000
+--204f2a7d-B--
+GET /js/21.m.1264acfc.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--204f2a7d-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"10671-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Content-Length: 10671
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--204f2a7d-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961537267107 242651 (- - -)
+Stopwatch2: 1617961537267107 242651; combined=157, p1=0, p2=140, p3=0, p4=0, p5=17, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--204f2a7d-Z--
+
+--d0c67a6d-A--
+[09/Apr/2021:09:45:37 +0000] YHAiQNZ2KPhpL06gJOQRSgAAAJg 172.20.0.1 55368 172.20.0.4 9000
+--d0c67a6d-B--
+GET /js/17.m.7c19ad00.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--d0c67a6d-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"204035-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Content-Length: 204035
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--d0c67a6d-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961536750276 784443 (- - -)
+Stopwatch2: 1617961536750276 784443; combined=226, p1=0, p2=72, p3=0, p4=0, p5=154, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--d0c67a6d-Z--
+
+--a7a5c14f-A--
+[09/Apr/2021:09:45:37 +0000] YHAiQNZ2KPhpL06gJOQRSwAAAJU 172.20.0.1 55340 172.20.0.4 9000
+--a7a5c14f-B--
+GET /api/languages/list HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--a7a5c14f-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 479
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+
+--a7a5c14f-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961536805255 843587 (- - -)
+Stopwatch2: 1617961536805255 843587; combined=263, p1=0, p2=132, p3=0, p4=0, p5=130, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--a7a5c14f-Z--
+
+--b9fb2d0b-A--
+[09/Apr/2021:09:45:37 +0000] YHAiQcIQRSMxw4GMHTXFcwAAANM 172.20.0.1 55354 172.20.0.4 9000
+--b9fb2d0b-B--
+GET /api/settings/values?keys=sonar.lf.aboutText HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--b9fb2d0b-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 15
+Keep-Alive: timeout=5, max=94
+Connection: Keep-Alive
+
+--b9fb2d0b-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961537650770 298393 (- - -)
+Stopwatch2: 1617961537650770 298393; combined=163, p1=0, p2=157, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--b9fb2d0b-Z--
+
+--0db8be20-A--
+[09/Apr/2021:09:45:37 +0000] YHAiQaIujiw1s8rB9vYJQwAAAEY 172.20.0.1 55366 172.20.0.4 9000
+--0db8be20-B--
+GET /api/issues/search?resolved=false&facets=types&ps=1&additionalFields=_all HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--0db8be20-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 799
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+
+--0db8be20-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961537650197 361714 (- - -)
+Stopwatch2: 1617961537650197 361714; combined=932, p1=0, p2=926, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--0db8be20-Z--
+
+--3c4d2a0f-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQdZ2KPhpL06gJOQRTAAAAJM 172.20.0.1 55370 172.20.0.4 9000
+--3c4d2a0f-B--
+GET /js/vendors-app.m.b88ebad0.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--3c4d2a0f-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"526109-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 526109
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--3c4d2a0f-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961537000338 1175517 (- - -)
+Stopwatch2: 1617961537000338 1175517; combined=234, p1=0, p2=86, p3=0, p4=0, p5=148, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--3c4d2a0f-Z--
+
+--685c0239-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQcIQRSMxw4GMHTXFdAAAANQ 172.20.0.1 55354 172.20.0.4 9000
+--685c0239-B--
+GET /images/scanner-logos/jenkins.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--685c0239-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+Accept-Ranges: bytes
+ETag: W/"14902-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Type: image/svg+xml
+Content-Length: 14902
+Keep-Alive: timeout=5, max=93
+Connection: Keep-Alive
+
+--685c0239-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961537968407 343067 (- - -)
+Stopwatch2: 1617961537968407 343067; combined=152, p1=0, p2=144, p3=0, p4=0, p5=8, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--685c0239-Z--
+
+--ea98a46b-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQqIujiw1s8rB9vYJRAAAAEg 172.20.0.1 55366 172.20.0.4 9000
+--ea98a46b-B--
+GET /images/scanner-logos/maven.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--ea98a46b-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+Accept-Ranges: bytes
+ETag: W/"2234-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Type: image/svg+xml
+Content-Length: 2234
+Keep-Alive: timeout=5, max=95
+Connection: Keep-Alive
+
+--ea98a46b-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961538049955 352203 (- - -)
+Stopwatch2: 1617961538049955 352203; combined=94, p1=0, p2=83, p3=0, p4=0, p5=11, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--ea98a46b-Z--
+
+--8d8c2020-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQdZ2KPhpL06gJOQRTQAAAIg 172.20.0.1 55372 172.20.0.4 9000
+--8d8c2020-B--
+GET /js/0.m.5f1f98f2.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--8d8c2020-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"18895-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--8d8c2020-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961537391898 1126647 (- - -)
+Stopwatch2: 1617961537391898 1126647; combined=64, p1=0, p2=59, p3=0, p4=0, p5=5, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--8d8c2020-Z--
+
+--4c234914-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQsIQRSMxw4GMHTXFdQAAANQ 172.20.0.1 55354 172.20.0.4 9000
+--4c234914-B--
+GET /images/scanner-logos/ant.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--4c234914-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+Accept-Ranges: bytes
+ETag: W/"9688-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Type: image/svg+xml
+Content-Length: 9688
+Keep-Alive: timeout=5, max=92
+Connection: Keep-Alive
+
+--4c234914-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961538322561 272076 (- - -)
+Stopwatch2: 1617961538322561 272076; combined=89, p1=0, p2=72, p3=0, p4=0, p5=16, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--4c234914-Z--
+
+--3621b06a-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQqIujiw1s8rB9vYJRQAAAEM 172.20.0.1 55366 172.20.0.4 9000
+--3621b06a-B--
+GET /images/scanner-logos/sonarqube.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--3621b06a-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+Accept-Ranges: bytes
+ETag: W/"8422-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Type: image/svg+xml
+Content-Length: 8422
+Keep-Alive: timeout=5, max=94
+Connection: Keep-Alive
+
+--3621b06a-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961538415645 266171 (- - -)
+Stopwatch2: 1617961538415645 266171; combined=109, p1=0, p2=72, p3=0, p4=0, p5=37, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--3621b06a-Z--
+
+--10234f1e-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQdZ2KPhpL06gJOQRTgAAAJg 172.20.0.1 55368 172.20.0.4 9000
+--10234f1e-B--
+GET /js/321.m.855a3c62.chunk.js HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--10234f1e-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"22210-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+vary: accept-encoding
+Content-Encoding: gzip
+Content-Type: application/javascript
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--10234f1e-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961537543663 1165487 (- - -)
+Stopwatch2: 1617961537543663 1165487; combined=185, p1=0, p2=93, p3=0, p4=0, p5=92, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--10234f1e-Z--
+
+--4725d43d-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQsIQRSMxw4GMHTXFdgAAANU 172.20.0.1 55354 172.20.0.4 9000
+--4725d43d-B--
+GET /js/321.m.855a3c62.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--4725d43d-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"64609-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 64609
+Keep-Alive: timeout=5, max=91
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--4725d43d-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961538599880 308376 (- - -)
+Stopwatch2: 1617961538599880 308376; combined=70, p1=0, p2=65, p3=0, p4=0, p5=5, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--4725d43d-Z--
+
+--6960fc29-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQdZ2KPhpL06gJOQRTwAAAJU 172.20.0.1 55340 172.20.0.4 9000
+--6960fc29-B--
+GET /js/366.m.fe0e0358.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--6960fc29-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"3110-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Length: 3110
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--6960fc29-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961537836683 1097762 (- - -)
+Stopwatch2: 1617961537836683 1097762; combined=210, p1=0, p2=204, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--6960fc29-Z--
+
+--9024f743-A--
+[09/Apr/2021:09:45:38 +0000] YHAiQtZ2KPhpL06gJOQRUAAAAJM 172.20.0.1 55370 172.20.0.4 9000
+--9024f743-B--
+GET /images/logo.svg?v=6.6 HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--9024f743-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+Accept-Ranges: bytes
+ETag: W/"3507-1614589798000"
+Last-Modified: Mon, 01 Mar 2021 09:09:58 GMT
+Content-Type: image/svg+xml
+Content-Length: 3507
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+
+--9024f743-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961538184677 831188 (- - -)
+Stopwatch2: 1617961538184677 831188; combined=87, p1=0, p2=81, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--9024f743-Z--
+
+--23b5737e-A--
+[09/Apr/2021:09:45:39 +0000] YHAiQtZ2KPhpL06gJOQRUQAAAI8 172.20.0.1 55372 172.20.0.4 9000
+--23b5737e-B--
+GET /js/0.m.5f1f98f2.chunk.js.map HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--23b5737e-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=31536000
+Accept-Ranges: bytes
+ETag: W/"75341-1614590440000"
+Last-Modified: Mon, 01 Mar 2021 09:20:40 GMT
+Content-Length: 75341
+Keep-Alive: timeout=5, max=97
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+--23b5737e-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961538528463 590845 (- - -)
+Stopwatch2: 1617961538528463 590845; combined=59, p1=0, p2=50, p3=0, p4=0, p5=9, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--23b5737e-Z--
+
+--c2b8413a-A--
+[09/Apr/2021:09:45:39 +0000] YHAiQtZ2KPhpL06gJOQRUgAAAIQ 172.20.0.1 55368 172.20.0.4 9000
+--c2b8413a-B--
+GET /api/components/search_projects?ps=1 HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Accept: application/json
+X-XSRF-TOKEN: f4qjdbefdlcg93ci3k4g6jlu9p
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--c2b8413a-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate
+Sonar-Version: 7.9.6.41879
+Content-Type: application/json
+Content-Length: 96
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+
+--c2b8413a-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961538726008 436684 (- - -)
+Stopwatch2: 1617961538726008 436684; combined=434, p1=0, p2=272, p3=0, p4=0, p5=162, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--c2b8413a-Z--
+
+--03133f41-A--
+[09/Apr/2021:09:45:39 +0000] YHAiQtZ2KPhpL06gJOQRUwAAAII 172.20.0.1 55340 172.20.0.4 9000
+--03133f41-B--
+GET /images/scanner-logos/gradle.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--03133f41-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+Accept-Ranges: bytes
+ETag: W/"3708-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Type: image/svg+xml
+Content-Length: 3708
+Keep-Alive: timeout=5, max=95
+Connection: Keep-Alive
+
+--03133f41-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961538942293 260579 (- - -)
+Stopwatch2: 1617961538942293 260579; combined=125, p1=0, p2=119, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--03133f41-Z--
+
+--6b3a197d-A--
+[09/Apr/2021:09:45:39 +0000] YHAiQ9Z2KPhpL06gJOQRVAAAAIE 172.20.0.1 55370 172.20.0.4 9000
+--6b3a197d-B--
+GET /images/scanner-logos/msbuild.svg HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--6b3a197d-F--
+HTTP/1.1 200 
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=300
+Accept-Ranges: bytes
+ETag: W/"722-1614590442000"
+Last-Modified: Mon, 01 Mar 2021 09:20:42 GMT
+Content-Type: image/svg+xml
+Content-Length: 722
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+
+--6b3a197d-H--
+Apache-Handler: proxy-server
+Stopwatch: 1617961539027642 218976 (- - -)
+Stopwatch2: 1617961539027642 218976; combined=138, p1=0, p2=132, p3=0, p4=0, p5=6, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--6b3a197d-Z--
+
+--99e7c112-A--
+[09/Apr/2021:09:45:39 +0000] YHAiQ9Z2KPhpL06gJOQRVQAAAIA 172.20.0.1 55370 172.20.0.4 9000
+--99e7c112-B--
+GET /favicon.ico HTTP/1.1
+Host: localhost:9000
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:9000/about
+Accept-Encoding: gzip, deflate, br
+Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: .AspNetCore.Antiforgery.Apg3_zPRVPo=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42WVfBauBucTDILtDOpExDbXe6OmHn-KbvxYn5GzR83Od01dFsb1Jh9Efm9nUyahO9nIn1M1MCbDaBt1brcnjPmr7mONmycgva_uQk-CydiQPbn96sdbdA4-xHzuKpNL_wo; .AspNetCore.Antiforgery.hAd9QrMTC0c=CfDJ8Cy7Z1kxfVpHrE1O8Mqe42VoRNhBcHBnOSwidiMZ3fuNCniHsGCkFdT9wXKmor6K45ScY1XkzuIRPfCAZfgRulqByBGb8Ae9V2hAzBOPsUbpRh9SZQk9jrseGdLp-jROraU1s_X-luutVgnLBulH7Eg; XSRF-TOKEN=f4qjdbefdlcg93ci3k4g6jlu9p; JWT-SESSION=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBWGkxNVZVSVg5a0dDQkNzSkM1ayIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjE3OTU5NDA4LCJleHAiOjE2MTgyMTg2MDgsImxhc3RSZWZyZXNoVGltZSI6MTYxNzk1OTQwODg4MSwieHNyZlRva2VuIjoiZjRxamRiZWZkbGNnOTNjaTNrNGc2amx1OXAifQ.0NDAABv5iBR_5efNi6TxCOeiLQBQCRMq_Bs45tYOU7A
+
+--99e7c112-F--
+HTTP/1.1 403 Forbidden
+Content-Length: 199
+Keep-Alive: timeout=5, max=95
+Connection: Keep-Alive
+Content-Type: text/html; charset=iso-8859-1
+
+--99e7c112-H--
+Message: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /favicon.ico"]
+Apache-Error: [file "apache2_util.c"] [line 273] [level 3] [client 172.20.0.1] ModSecurity: Access denied with code 403 (phase 2). Unconditional match in SecAction. [file "/etc/modsecurity/modsec_local_rules.conf"] [line "361"] [id "100187"] [msg "Unauthorized location was called: /favicon.ico"] [hostname "localhost"] [uri "/favicon.ico"] [unique_id "YHAiQ9Z2KPhpL06gJOQRVQAAAIA"]
+Action: Intercepted (phase 2)
+Apache-Handler: proxy-server
+Stopwatch: 1617961539251479 47472 (- - -)
+Stopwatch2: 1617961539251479 47472; combined=58, p1=0, p2=50, p3=0, p4=0, p5=8, sr=0, sw=0, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.3 (http://www.modsecurity.org/).
+Server: Apache/2.4.46 (Unix) OpenSSL/1.1.1d
+WebApp-Info: "modsecurity-PROJECT" "-" "-"
+Engine-Mode: "ENABLED"
+
+--99e7c112-Z--
+

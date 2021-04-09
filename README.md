@@ -8,7 +8,7 @@ But it is less effort to yust activate learning mode in QA and use the rules on 
 I realy like WAF and modsec but the devs have to create the locationmatches(rules) manually and this is allways a problem between Sec and Dev.
 Often when we look inside  a WAF config inside a projects after some times there is a lot of wildecards or the whole thing is not active anymore because of " some problems on prod"
 
-And thats the reason why I write this little tool. On QA you set modsec to detection only mode and after your tests you take your logfile(modseclog) and generate the locationMatchtes.
+And thats the reason why I write this little tool. On QA you set SecRuleEngine to DetectionOnly and SecAuditEngine to On  mode and after your tests you take your logfile(modseclog) and generate the locationMatchtes.
 
 Maybe at some point of time this will be highly automated server running on QS, fetch all modsec log files from your development enviroment, compare new and old rules inside git and when 
 a change was made it creates a PR with the niew rule set.
@@ -16,7 +16,7 @@ a change was made it creates a PR with the niew rule set.
 But first the basics
 
 **featues**
-- only apche support atm
+- only apache support atm
 - "read" modsec log file
 - generate whitelist locationMatches and deny everything else
 - recognize IDs inside urls and add regex for it
@@ -25,7 +25,8 @@ But first the basics
 - simple regex for every param
 
 **Open features**
-- ADD resource wildcards (and as an option default on)
+- make stuff configureable from propertiesFile
+- only accept log entries with 200 or 300 responsecodes?
 - read and print with input output files from cmd
 - Add propper logging
 - write propper getting started with modsec learning mode guide
