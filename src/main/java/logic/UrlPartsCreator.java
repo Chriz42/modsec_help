@@ -21,16 +21,19 @@ import model.UrlPart;
 
 public class UrlPartsCreator {
 
-	// TODO: add placeholder for js,css, resources
-	private static final List<String> resourcePlaceHolderDirectories;
+	// TODO: add placeholder configureable
+	private static final List<String> resourcePlaceHolder;
 	static {
 		List<String> list = new ArrayList<String>();
 		list.add("js");
 		list.add("css");
 		list.add("resources");
 		list.add("images");
+		list.add("fonts");
+		list.add("styles");
+		list.add("img");
 
-		resourcePlaceHolderDirectories = Collections.unmodifiableList(list);
+		resourcePlaceHolder = Collections.unmodifiableList(list);
 	}
 
 	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap) {
@@ -111,14 +114,14 @@ public class UrlPartsCreator {
 			return createUrlpartWithQueryString(httpTyp, urlPartString);
 		}
 
-		if (resourcePlaceHolderDirectories.contains(urlPartString) && httpTyp.equals(HTTPType.GET)) {
+		if (resourcePlaceHolder.contains(urlPartString) && !httpTyp.equals(HTTPType.GET)) {
+			throw new UrlPartCreatorException("There shouldn't be a non GET request on static resources");
+		} else if (resourcePlaceHolder.contains(urlPartString)) {
 			String fileName = nextUrlPartString[1];
 			String[] splittedString = fileName.split("\\.");
 			UrlPart part = new UrlPart(urlPartString);
-			part.addChild(createUrlParts(".*\\." + splittedString[splittedString.length - 1], httpTyp));
+			part.addChild(createUrlParts(".+\\." + splittedString[splittedString.length - 1], httpTyp));
 			return part;
-		} else if (resourcePlaceHolderDirectories.contains(urlPartString) && !httpTyp.equals(HTTPType.GET)) {
-			throw new UrlPartCreatorException("There shouldn't be a non GET request on static resources");
 		}
 
 		UrlPart part = new UrlPart(urlPartString);

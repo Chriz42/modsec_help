@@ -155,12 +155,12 @@ class UrlPartsCreatorTest {
 	private static Stream<Arguments> createUrlResourcePlaceholderUrlPart() {
 		return Stream.of(
 				Arguments.of("GET /js/11.m.da9195e4.chunk.js HTTP/1.1",
-						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("js", ".*\\.js")),
+						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("js", ".+\\.js")),
 				Arguments.of("GET /css/11.m.das.chunk.css HTTP/1.1",
-						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("css", ".*\\.css")),
+						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)), Arrays.asList("css", ".+\\.css")),
 				Arguments.of("GET /resources/gsdgdsg.jpg HTTP/1.1",
 						Arrays.asList(SetUtils.emptySet(), Set.of(HTTPType.GET)),
-						Arrays.asList("resources", ".*\\.jpg")));
+						Arrays.asList("resources", ".+\\.jpg")));
 	}
 
 	@ParameterizedTest
