@@ -8,7 +8,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import model.HTTPType;
@@ -19,7 +18,6 @@ public class Printer {
 	// TODO: make actions configurable
 	// TODO: add posibillity for anomalyscoring
 	// TODO: addpossebillity to log matched value, with masking for sensitiv data
-	// TODO: make startRuleID configureable
 
 	final String locationMatchOpenString = "<LocationMatch \"^%s$\">";
 	final String requestMethodeString = "\tSecRule REQUEST_METHOD !(%s) \"deny,id:%s,msg:'Request method not allowed'\"";
@@ -33,9 +31,15 @@ public class Printer {
 	final String defaultRuleUrlString = "/.*";
 
 	private int currentRuleId;
+	boolean forbidUnknownPostParams = true;
 
 	public Printer(int currentRuleId) {
 		this.currentRuleId = currentRuleId;
+	}
+
+	public Printer(int currentRuleId, boolean forbidUnknownPostParams) {
+		this.currentRuleId = currentRuleId;
+		this.forbidUnknownPostParams = forbidUnknownPostParams;
 	}
 
 	public void printToStream(LocationMatch locationMatch, OutputStream outStream) {
@@ -44,7 +48,10 @@ public class Printer {
 		printWriter.println(String.format(locationMatchOpenString, locationMatch.getUrlString()));
 
 		addHttpMethode(locationMatch.getHttpTyps(), printWriter);
-		if (MapUtils.isNotEmpty(locationMatch.getParams())) {
+		if (locationMatch.getHttpTyps().contains(HTTPType.POST) && !forbidUnknownPostParams) {
+			System.out.println(
+					" WARN: forbidUnknownPostParams is set to false -> SecRules with HTTPType Post will accept every param with every content!");
+		} else {
 			addExpectedParamNames(locationMatch.getParams(), printWriter);
 			addExpectedParamValues(locationMatch.getParams(), printWriter);
 		}
@@ -71,7 +78,7 @@ public class Printer {
 		String paramNamesString = StringUtils.EMPTY;
 		if (params.size() > 1) {
 			paramNamesString = StringUtils.join(params.keySet(), "|");
-		} else {
+		} else if (params.size() == 1) {
 			paramNamesString = params.entrySet().iterator().next().getKey();
 		}
 		printWriter.println(String.format(unexpectedParamNameString, paramNamesString, currentRuleId++));

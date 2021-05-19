@@ -135,19 +135,6 @@ class UrlPartsCreatorTest {
 		assertThat(urlPartParamMap, is(IsMapWithSize.anEmptyMap()));
 	}
 
-	@Test
-	public void createUrlPartWithQueryStringFromPostErrorHandling() throws UrlPartCreatorException {
-
-		UrlPartCreatorException exception = assertThrows(UrlPartCreatorException.class, () -> {
-			UrlPartsCreator creator = new UrlPartsCreator();
-			creator.parseUrlandTyp("POST test?param1=test1&param2=test2 HTTP/1.1");
-		});
-		String expectedMessage = "There shouldn't be a non GET request with querystring";
-		String actualMessage = exception.getMessage();
-
-		assertTrue(actualMessage.contains(expectedMessage));
-	}
-
 	@ParameterizedTest
 	@MethodSource
 	public void createUrlResourcePlaceholderUrlPart(String line, List<Set<HTTPType>> httpTyps, List<String> urls)

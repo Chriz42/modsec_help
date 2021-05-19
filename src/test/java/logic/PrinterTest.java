@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -18,6 +19,7 @@ import model.LocationMatch;
 public class PrinterTest {
 
 //	TODO: add negativ tests
+	// add test for optOut allow every param if no isprovided
 	Printer printer;
 	ByteArrayOutputStream outStream;
 	String newLine = System.getProperty("line.separator");
@@ -126,9 +128,10 @@ public class PrinterTest {
 
 		String openString = String.format(printer.locationMatchOpenString + newLine, "/user/[0-9]+/data");
 		String httpTypeString = String.format(printer.requestMethodeString + newLine, "POST|GET", 0);
-		String allowString = String.format(printer.requestAllowString + newLine, 1);
+		String namesString = String.format(printer.unexpectedParamNameString + newLine, StringUtils.EMPTY, 1);
+		String allowString = String.format(printer.requestAllowString + newLine, 2);
 		String closeString = printer.locationMatchCloseString + newLine;
-		String printedString = newLine + openString + httpTypeString + allowString + closeString;
+		String printedString = newLine + openString + httpTypeString + namesString + allowString + closeString;
 		assertThat(output, is(printedString));
 	}
 
@@ -143,9 +146,10 @@ public class PrinterTest {
 
 		String openString = String.format(printer.locationMatchOpenString + newLine, "/");
 		String httpTypeString = String.format(printer.requestMethodeString + newLine, "GET", 0);
-		String allowString = String.format(printer.requestAllowString + newLine, 1);
+		String namesString = String.format(printer.unexpectedParamNameString + newLine, StringUtils.EMPTY, 1);
+		String allowString = String.format(printer.requestAllowString + newLine, 2);
 		String closeString = printer.locationMatchCloseString + newLine;
-		String printedString = newLine + openString + httpTypeString + allowString + closeString;
+		String printedString = newLine + openString + httpTypeString + namesString + allowString + closeString;
 		assertThat(output, is(printedString));
 	}
 

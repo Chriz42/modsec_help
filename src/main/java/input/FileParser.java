@@ -9,7 +9,7 @@ import java.util.Set;
 public class FileParser {
 
 	public HashMap<String, Set<String>> parse(BufferedReader reader) throws IOException {
-
+		// TODO: Is POST boddy wrtten to -I--?Saw something inside auditlog config
 		HashMap<String, Set<String>> dataMap = new HashMap<>();
 		String line;
 		String urlLine = "";

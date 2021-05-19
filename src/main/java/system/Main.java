@@ -27,6 +27,10 @@ public class Main {
 		// TODO help from args
 		// Test this args logic
 		// better path handling for in and out files
+		// load properties file for secid and forbidUnknownPostParams
+
+		boolean forbidUnknownPostParams = true;
+		int startRuleId = 1111111;
 		List<String> argsList = Arrays.asList(args);
 		String logFileName = "modsec.log";
 		String modsecRuleFileName = "modsecRulesFile.conf";
@@ -51,7 +55,7 @@ public class Main {
 		LocationMatchCreator locationMatchCreator = new LocationMatchCreator();
 		Set<LocationMatch> locationMatchList = locationMatchCreator.createListOfLocationMatch(urlList);
 
-		Printer printer = new Printer(100000);
+		Printer printer = new Printer(startRuleId, forbidUnknownPostParams);
 		ByteArrayOutputStream outStream = new ByteArrayOutputStream();
 
 		for (LocationMatch locationMatch : locationMatchList) {

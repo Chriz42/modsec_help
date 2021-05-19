@@ -107,10 +107,8 @@ public class UrlPartsCreator {
 		String urlPartString = nextUrlPartString[0];
 		// TODO: check if paths in modsec are case sensitive or not
 
-		if (urlPartString.contains("?") && httpTyp.equals(HTTPType.GET)) {
+		if (urlPartString.contains("?")) {
 			return createUrlpartWithQueryString(httpTyp, urlPartString);
-		} else if (urlPartString.contains("?") && !httpTyp.equals(HTTPType.GET)) {
-			throw new UrlPartCreatorException("There shouldn't be a non GET request with querystring");
 		}
 
 		if (resourcePlaceHolderDirectories.contains(urlPartString) && httpTyp.equals(HTTPType.GET)) {
