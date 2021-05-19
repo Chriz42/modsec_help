@@ -15,6 +15,10 @@ a change was made it creates a PR with the niew rule set.
 
 But first the basics
 
+**configuration**
+- startRuleId -> set the start for created rule Ids (Default: 1111111)
+- forbidUnknownPostParams -> set to false if you want to allow unknown postbodies for some reasons
+
 **featues**
 - only apache support atm
 - "read" modsec log file
