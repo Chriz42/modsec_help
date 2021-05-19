@@ -25,6 +25,13 @@ public class FileParser {
 					dataMap.get(urlLine).add(paramLine);
 				}
 			}
+			if (line.contains("-F--")) {
+				String returnCodeLine = reader.readLine();
+				String[] returnCodeLIneParts = returnCodeLine.split(" ");
+				if (returnCodeLIneParts[1].matches("^4\\d\\d$")) {
+					dataMap.remove(urlLine);
+				}
+			}
 		}
 
 		return dataMap;

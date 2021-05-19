@@ -8,9 +8,6 @@ Accept: */*
 Content-Length: 12
 Content-Type: application/x-www-form-urlencoded
 
---35dba327-C--
-kekse=super
-
 --35dba327-F--
 HTTP/1.1 200 OK
 X-Powered-By: PHP/7.4.12
@@ -198,7 +195,7 @@ Content-Type: text/html; charset=UTF-8
 --3ec6f675-A--
 [06/Nov/2020:19:51:02 +0000] X6WpJvZWoSRJOp7VlCLnkAAAAAE 172.17.0.1 41278 172.17.0.2 80
 --3ec6f675-B--
-POST /jkngsdjgs/php HTTP/1.1
+POST /php HTTP/1.1
 Host: localhost:8080
 User-Agent: curl/7.49.0
 Accept: */*
@@ -756,3 +753,43 @@ Content-Type: text/html; charset=UTF-8
 
 --82191360-Z--
 
+--cb43d36e-A--
+[18/May/2021:13:39:49 +0200] YKOnhaIc4jOLao0bHqtv0gAAAAg 172.30.28.233 64776 10.6.248.165 443
+--cb43d36e-B--
+GET /should/not/be/inside/test/result HTTP/1.1
+Host: threedsadm01.jakku.pay1-test.de
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0
+Accept: image/webp,*/*
+Accept-Language: de,en-US;q=0.7,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+DNT: 1
+Connection: keep-alive
+Referer: https://threedsadm01.jakku.pay1-test.de/authentication.html
+Cookie: AUTH_LANGUAGE=EN
+
+--cb43d36e-F--
+HTTP/1.1 488
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Set-Cookie: CSRF-TOKEN=18e8b97a-e7d9-4e3a-b6b1-702061177b8c; Path=/
+Keep-Alive: timeout=2, max=1000
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+
+--cb43d36e-H--
+Message: Warning. Unconditional match in SecAction. [file "/etc/modsecurity/modsecurity-netcetera_admin/modsecurity_payone_10_netcetera_admin_99_fallback.conf"] [line "6"] [id "31289999"] [msg "Unauthorized location was called: /auth/authentication/api/favicon.ico"]
+Apache-Error: [file "apache2_util.c"] [line 273] [level 3] [client 172.30.28.233] ModSecurity: Warning. Unconditional match in SecAction. [file "/etc/modsecurity/modsecurity-netcetera_admin/modsecurity_payone_10_netcetera_admin_99_fallback.conf"] [line "6"] [id "31289999"] [msg "Unauthorized location was called: /auth/authentication/api/favicon.ico"] [hostname "threedsadm01.jakku.pay1-test.de"] [uri "/auth/authentication/api/favicon.ico"] [unique_id "YKOnhaIc4jOLao0bHqtv0gAAAAg"]
+Apache-Handler: proxy-server
+Stopwatch: 1621337989261515 5413 (- - -)
+Stopwatch2: 1621337989261515 5413; combined=165, p1=0, p2=162, p3=1, p4=0, p5=1, sr=0, sw=1, l=0, gc=0
+Producer: ModSecurity for Apache/2.9.2 (http://www.modsecurity.org/).
+Server: Apache
+WebApp-Info: "modsecurity-threeds_server_admin_netcetera" "-" "-"
+Engine-Mode: "DETECTION_ONLY"
+
+--cb43d36e-Z--

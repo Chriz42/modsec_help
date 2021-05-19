@@ -23,14 +23,16 @@ But first the basics
 - Whitelist HTTP Types
 - Whitelist ParamNames
 - simple regex for every param
+- only create SecRules for responsetypes != 4XX
 
 **Open features**
+- add real xml and json support
+	- atm only the single characters are added
 - make stuff configureable from propertiesFile
-- only accept log entries with 200 or 300 responsecodes?
 - read and print with input output files from cmd
-- Add propper logging
-- write propper getting started with modsec learning mode guide
-- add automate testing with request to the ne locationmatches with docker
+- Add logging
+- write  getting started with modsec learning mode guide
+- add automate testing with request to the  locationmatches with docker 
 - Add nginx support:
 Problem LocationMatch is an apache directive.
 But Modsec can use something like this:
@@ -46,7 +48,7 @@ But Modsec can use something like this:
 	SecRule 1111111111110 blocks everything else. 
 	Con: you don't have a message inside the auditlog what went wrong...
 
-** Configtest **
+**Configtest**
 
 Test the generate locationMatches:
 1. add your loationsmatches to "configtest/modsechelp/modsec_9999.conf" 

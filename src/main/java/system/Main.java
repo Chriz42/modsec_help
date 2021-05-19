@@ -5,6 +5,10 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -22,17 +26,24 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		// TODO help from args
 		// Test this args logic
+		// better path handling for in and out files
 		List<String> argsList = Arrays.asList(args);
 		String logFileName = "modsec.log";
+		String modsecRuleFileName = "modsecRulesFile.conf";
 		for (int i = 0; i < args.length; i++) {
 			switch (args[i].toLowerCase()) {
 			case "logfilename":
 				logFileName = args[i + 1];
 				break;
+			case "outputfile":
+				modsecRuleFileName = args[i + 1];
+				break;
 			}
 		}
+		System.out.println("Modsecurity log file to read: " + logFileName);
 
 		InputStream inputStream = Main.class.getResourceAsStream(logFileName);
+
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 		HashMap<String, Set<String>> dataMap = new FileParser().parse(reader);
 		List<UrlPart> urlList = new UrlPartsCreator().parseRAWData(dataMap);
@@ -47,8 +58,10 @@ public class Main {
 			printer.printToStream(locationMatch, outStream);
 		}
 		printer.printDefaultMatchToStream(outStream);
-		System.out.println(outStream.toString());
-		// TODO: print to file
+
+		Path outputFile = Paths.get(modsecRuleFileName);
+		Files.write(outputFile, outStream.toByteArray(), StandardOpenOption.CREATE);
+		System.out.println("Write rules to file: " + outputFile.getFileName().toAbsolutePath());
 	}
 
 }
