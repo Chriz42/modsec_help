@@ -1,6 +1,7 @@
 package logic;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -9,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.stream.Stream;
 
@@ -191,6 +193,7 @@ class UrlPartsCreatorTest {
 				Set.of("param1=value1&param2=value2", "param3=value3&param2=value22"));
 
 		parsedLines.put("GET /drei?param3=value3 HTTP/1.1", SetUtils.emptySet());
+		parsedLines.put("GET /test/kekse?instance=https://test.super.domain.de HTTP/1.1", SetUtils.emptySet());
 		List<UrlPart> urlPartsList = creator.parseRAWData(parsedLines);
 
 		UrlPart eins = urlPartsList.stream().filter(urlPart -> urlPart.getUrlPartString().equals("eins")).findFirst()
@@ -218,6 +221,22 @@ class UrlPartsCreatorTest {
 		assertThat(drei.getHttpTyps(), Matchers.hasItem(HTTPType.GET));
 		Map<String, Set<String>> dreiParamMap = drei.getParamMap();
 		assertThat(dreiParamMap.get("param3"), is(Set.of("value3")));
+
+		UrlPart test = urlPartsList.stream().filter(urlPart -> urlPart.getUrlPartString().equals("test")).findFirst()
+				.get();
+		assertThat(test.getUrlPartString(), is("test"));
+		assertThat(test.getHttpTyps(), is(IsCollectionWithSize.hasSize(0)));
+		assertThat(test.getParamMap(), is(IsMapWithSize.anEmptyMap()));
+		assertThat(test.getChildren(), is(IsCollectionWithSize.hasSize(1)));
+
+		UrlPart testChild = test.getChildren().iterator().next();
+		assertThat(testChild.getChildren(), is(empty()));
+		assertThat(testChild.getHttpTyps(), Matchers.hasItem(HTTPType.GET));
+		assertThat(testChild.getParamMap(), is(IsMapWithSize.aMapWithSize(1)));
+
+		Entry<String, Set<String>> param = testChild.getParamMap().entrySet().iterator().next();
+		assertThat(param.getKey(), is("instance"));
+		assertThat(param.getValue(), is(Set.of("https://test.super.domain.de")));
 	}
 
 }

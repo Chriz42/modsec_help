@@ -111,7 +111,13 @@ public class UrlPartsCreator {
 		// TODO: check if paths in modsec are case sensitive or not
 
 		if (urlPartString.contains("?")) {
-			return createUrlpartWithQueryString(httpTyp, urlPartString);
+
+			if (nextUrlPartString.length > 1) {
+				// There is an URl inside the query Params -> use the full url
+				return createUrlpartWithQueryString(httpTyp, url);
+			} else {
+				return createUrlpartWithQueryString(httpTyp, urlPartString);
+			}
 		}
 
 		if (resourcePlaceHolder.contains(urlPartString) && !httpTyp.equals(HTTPType.GET)) {

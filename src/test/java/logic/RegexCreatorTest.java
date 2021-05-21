@@ -38,7 +38,7 @@ public class RegexCreatorTest {
 				Arguments.of(Arrays.asList(createSimpleEntry("A-Z")), Set.of("TT")), 
 				Arguments.of(Arrays.asList(createSimpleEntry(StringUtils.EMPTY,0)), Set.of()),
 				Arguments.of(Arrays.asList(createSimpleEntry("0-9"), createSimpleEntry("\\,"), createSimpleEntry("\\.")), Set.of("55", "44.88", "44,33")), 
-				Arguments.of(Arrays.asList(createSimpleEntry("0-9"), createSimpleEntry("+"), createSimpleEntry("|"), createSimpleEntry(">"), createSimpleEntry("!"), createSimpleEntry("\\",3)), Set.of("133+5|>34|(!5|\\\\|0+4(|2!|\\\\/|3")),
+				Arguments.of(Arrays.asList(createSimpleEntry("0-9"), createSimpleEntry("+"), createSimpleEntry("|"), createSimpleEntry(">"), createSimpleEntry("!"), createSimpleEntry("\\",4),createSimpleEntry("\\/")), Set.of("133+5|>34|(!5|\\\\|0+4(|2!|\\\\/|3")),
 				Arguments.of(Arrays.asList(createSimpleEntry("a-z"),createSimpleEntry("\"")), Set.of("\"test\"")),
 				Arguments.of(Arrays.asList(createSimpleEntry("a-z"),createSimpleEntry("\\",2)), Set.of("\\test\\")),
 				Arguments.of(Arrays.asList(createSimpleEntry("\\\\")), Set.of("\\")),
@@ -56,9 +56,11 @@ public class RegexCreatorTest {
 				Arguments.of(Arrays.asList(createSimpleEntry("\\]")), Set.of("]")),
 				Arguments.of(Arrays.asList(createSimpleEntry("\\{")), Set.of("{")),
 				Arguments.of(Arrays.asList(createSimpleEntry("\\}")), Set.of("}")),
+				Arguments.of(Arrays.asList(createSimpleEntry("\\/")), Set.of("/")),
 				Arguments.of(Arrays.asList(createSimpleEntry("a-z"),createSimpleEntry(":"),createSimpleEntry("!"),createSimpleEntry("^"),createSimpleEntry("["),createSimpleEntry("]"),createSimpleEntry("+"),createSimpleEntry("$")), Set.of("!^[[:print:]]+$")),
-				Arguments.of(Arrays.asList(createSimpleEntry("a-z"),createSimpleEntry("A-Z"),createSimpleEntry("-",3)),Set.of("de-DE","en-EN"))
-				
+				Arguments.of(Arrays.asList(createSimpleEntry("a-z"),createSimpleEntry("A-Z"),createSimpleEntry("-",3)),Set.of("de-DE","en-EN")),
+				Arguments.of(Arrays.asList(createSimpleEntry("a-z"),createSimpleEntry("A-Z"),createSimpleEntry("0-9"),createSimpleEntry(":"),createSimpleEntry("\\."),createSimpleEntry("\\/")),
+						Set.of("https://www.c00kiesAreBest.com:9999"))
 				);
 		// @formatter:on
 	}

@@ -15,7 +15,7 @@ public class RegexCreator {
 	private final String numeric = "0-9";
 	private final String numericupperCasePlaceHolder = "numeric";
 	private final List<String> toEscapeChars = Arrays.asList("\\", ",", "^", "$", ".", "|", "?", "*", "+", "(", ")",
-			"[", "]", "{", "}");
+			"[", "]", "{", "}", "/");
 	private final String escapeChar = "\\";
 
 	public String getRegex(Set<String> values) {
