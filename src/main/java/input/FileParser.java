@@ -28,7 +28,8 @@ public class FileParser {
 			if (line.contains("-F--")) {
 				String returnCodeLine = reader.readLine();
 				String[] returnCodeLIneParts = returnCodeLine.split(" ");
-				if (returnCodeLIneParts[1].matches("^4\\d\\d$")) {
+				// remove entries with 4** returncodes except 403
+				if (returnCodeLIneParts[1].matches("^4\\d\\d$") && returnCodeLIneParts[1] != "403") {
 					dataMap.remove(urlLine);
 				}
 			}
