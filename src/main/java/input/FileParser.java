@@ -29,7 +29,7 @@ public class FileParser {
 				String returnCodeLine = reader.readLine();
 				String[] returnCodeLIneParts = returnCodeLine.split(" ");
 				// remove entries with 4** returncodes except 403
-				if (returnCodeLIneParts[1].matches("^4\\d\\d$") && returnCodeLIneParts[1] != "403") {
+				if (returnCodeLIneParts[1].matches("^4\\d\\d$") && returnCodeLIneParts[1].matches("!^403$")) {
 					dataMap.remove(urlLine);
 				}
 			}
