@@ -4,6 +4,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.nullValue;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -187,10 +188,11 @@ class UrlPartsCreatorTest {
 	void parseRAWData() {
 		UrlPartsCreator creator = new UrlPartsCreator();
 		Map<String, Set<String>> parsedLines = new HashedMap<String, Set<String>>();
-		parsedLines.put("POST /eins HTTP/1.1", Set.of("param1=value1&param2=value2", "param3=value3&param2=value22"));
+		parsedLines.put("POST /eins HTTP/1.1",
+				Set.of("param1=value1&param2=value2", "param3=value3&param2=value22", "only=parent"));
 
 		parsedLines.put("POST /eins/zwei HTTP/1.1",
-				Set.of("param1=value1&param2=value2", "param3=value3&param2=value22"));
+				Set.of("param1=value1&param2=value2", "param3=3value&param2=value22"));
 
 		parsedLines.put("GET /drei?param3=value3 HTTP/1.1", SetUtils.emptySet());
 		parsedLines.put("GET /test/kekse?instance=https://test.super.domain.de HTTP/1.1", SetUtils.emptySet());
@@ -205,6 +207,7 @@ class UrlPartsCreatorTest {
 		assertThat(einsParamMap.get("param1"), is(Set.of("value1")));
 		assertThat(einsParamMap.get("param2"), is(Set.of("value2", "value22")));
 		assertThat(einsParamMap.get("param3"), is(Set.of("value3")));
+		assertThat(einsParamMap.get("only"), is(Set.of("parent")));
 
 		UrlPart zwei = eins.getChildren().stream().filter(urlPart -> urlPart.getUrlPartString().equals("zwei"))
 				.findFirst().get();
@@ -213,7 +216,8 @@ class UrlPartsCreatorTest {
 		Map<String, Set<String>> zweiParamMap = zwei.getParamMap();
 		assertThat(zweiParamMap.get("param1"), is(Set.of("value1")));
 		assertThat(zweiParamMap.get("param2"), is(Set.of("value2", "value22")));
-		assertThat(zweiParamMap.get("param3"), is(Set.of("value3")));
+		assertThat(zweiParamMap.get("param3"), is(Set.of("3value")));
+		assertThat(zweiParamMap.get("only"), is(nullValue()));
 
 		UrlPart drei = urlPartsList.stream().filter(urlPart -> urlPart.getUrlPartString().equals("drei")).findFirst()
 				.get();

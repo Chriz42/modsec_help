@@ -32,6 +32,7 @@ public class UrlPartsCreator {
 		list.add("fonts");
 		list.add("styles");
 		list.add("img");
+		list.add("assets");
 
 		resourcePlaceHolder = Collections.unmodifiableList(list);
 	}
@@ -109,6 +110,8 @@ public class UrlPartsCreator {
 		String[] nextUrlPartString = url.split("/", 2);
 		String urlPartString = nextUrlPartString[0];
 		// TODO: check if paths in modsec are case sensitive or not
+		// dependce on the use OS -> Linux is case sensitive windows not ->
+		// best way would be to stick to the incomeing case
 
 		if (urlPartString.contains("?")) {
 
