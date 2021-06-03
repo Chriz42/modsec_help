@@ -15,6 +15,7 @@ public class UrlPart {
 	private Map<String, Set<String>> params = new HashMap<String, Set<String>>();
 	private Set<HTTPType> httpTyps = new HashSet<HTTPType>();
 
+	public static final String UUIDRegexStringForUrlpart = "[a-fA-F0-9\\-]+";
 	private Set<UrlPart> children = new HashSet<UrlPart>();
 
 	public UrlPart(String url) {
@@ -30,9 +31,17 @@ public class UrlPart {
 	private void setUrlPart(String url) {
 		if (StringUtils.isNumeric(url)) {
 			this.urlPartString = "[0-9]+";
-		} else {
+		} else if (isUUID(url)) {
+			this.urlPartString = UUIDRegexStringForUrlpart;
+		}
+
+		else {
 			this.urlPartString = url;
 		}
+	}
+
+	private boolean isUUID(String url) {
+		return url.matches("[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}");
 	}
 
 	public void addChild(UrlPart urlPart) {

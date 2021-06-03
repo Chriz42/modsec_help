@@ -32,7 +32,7 @@ import model.UrlPart;
 
 class UrlPartsCreatorTest {
 
-	// TODO:Sauber formatieren
+	// TODO:clean up and write better tests....
 
 	@ParameterizedTest
 	@MethodSource
@@ -110,7 +110,11 @@ class UrlPartsCreatorTest {
 						Arrays.asList("eins", "test.php")),
 				Arguments.of("POST test.php HTTP/1.1", Arrays.asList(HTTPType.POST), Arrays.asList("test.php")),
 				Arguments.of("POST /eins/zwei/drei/test.php HTTP/1.1", Arrays.asList(null, null, null, HTTPType.POST),
-						Arrays.asList("eins", "zwei", "drei", "test.php")));
+						Arrays.asList("eins", "zwei", "drei", "test.php")),
+				Arguments.of("GET / HTTP/1.1", Arrays.asList(HTTPType.GET), Arrays.asList("/")),
+				Arguments.of("PUT eins/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c/uuid HTTP/1.1",
+						Arrays.asList(null, null, HTTPType.PUT),
+						Arrays.asList("eins", UrlPart.UUIDRegexStringForUrlpart, "uuid")));
 	}
 
 	@Test

@@ -7,11 +7,15 @@ import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInA
 
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Stream;
 
 import org.apache.commons.collections4.map.HashedMap;
 import org.hamcrest.collection.IsCollectionWithSize;
 import org.hamcrest.collection.IsMapWithSize;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
 public class UrlPartTest {
 
@@ -122,5 +126,23 @@ public class UrlPartTest {
 		parent.addChild(child);
 		parent.addParamMapToLastChild(paramMap);
 		assertThat(child.getParamMap(), is(IsMapWithSize.aMapWithSize(1)));
+	}
+
+	@ParameterizedTest
+	@MethodSource
+	void differentUrlPartRegexTest(String rawUrlPart, String urlpartString) {
+		UrlPart urlPart = new UrlPart(rawUrlPart);
+		assertThat(urlPart.getUrlPartString(), is(urlpartString));
+
+	}
+
+	private static Stream<Arguments> differentUrlPartRegexTest() {
+		return Stream.of(Arguments.of("simpleString", "simpleString"), Arguments.of("5678", "[0-9]+"),
+				Arguments.of("4a1e3fb1-ea81-4eee-a691-b31c059fbe0c", UrlPart.UUIDRegexStringForUrlpart),
+				// removed one letter from uuid
+				Arguments.of("4a1e3fb1-ea81-4eee-a691-b31c059fb0c", "4a1e3fb1-ea81-4eee-a691-b31c059fb0c"),
+				// add a U inside UUID (only Hex a-f is permitted
+				// TODO is this to strict? UUIds are difiend like this but for the real world...
+				Arguments.of("4U1e3fb1-ea81-4eee-a691-b31c059fbe0c", "4U1e3fb1-ea81-4eee-a691-b31c059fbe0c"));
 	}
 }
