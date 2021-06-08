@@ -142,7 +142,14 @@ public class UrlPartTest {
 				// removed one letter from uuid
 				Arguments.of("4a1e3fb1-ea81-4eee-a691-b31c059fb0c", "4a1e3fb1-ea81-4eee-a691-b31c059fb0c"),
 				// add a U inside UUID (only Hex a-f is permitted
-				// TODO is this to strict? UUIds are difiend like this but for the real world...
-				Arguments.of("4U1e3fb1-ea81-4eee-a691-b31c059fbe0c", "4U1e3fb1-ea81-4eee-a691-b31c059fbe0c"));
+				// TODO is this to strict? UUIds are defined like this but for the real world...
+				Arguments.of("4U1e3fb1-ea81-4eee-a691-b31c059fbe0c", "4U1e3fb1-ea81-4eee-a691-b31c059fbe0c"),
+				Arguments.of("nca-favicon.37cfa069b71f7ebb6c14.svg",
+						"nca-favicon\\." + UrlPart.HashRegexString + "\\.svg"),
+				Arguments.of("primeicons.473e2a746d3c151d7dca.ttf",
+						"primeicons\\." + UrlPart.HashRegexString + "\\.ttf"),
+				Arguments.of("polyfills.22fcf5faba95f1bf1359.js", "polyfills\\." + UrlPart.HashRegexString + "\\.js")
+
+		);
 	}
 }

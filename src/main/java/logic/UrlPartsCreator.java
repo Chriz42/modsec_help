@@ -32,7 +32,6 @@ public class UrlPartsCreator {
 		list.add("fonts");
 		list.add("styles");
 		list.add("img");
-		list.add("assets");
 
 		resourcePlaceHolder = Collections.unmodifiableList(list);
 	}

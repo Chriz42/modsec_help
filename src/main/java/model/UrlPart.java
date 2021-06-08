@@ -1,9 +1,11 @@
 package model;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.map.HashedMap;
@@ -15,7 +17,9 @@ public class UrlPart {
 	private Map<String, Set<String>> params = new HashMap<String, Set<String>>();
 	private Set<HTTPType> httpTyps = new HashSet<HTTPType>();
 
+	// TODO: make this regex configureable
 	public static final String UUIDRegexStringForUrlpart = "[a-fA-F0-9\\-]+";
+	public static final String HashRegexString = "[a-fA-F0-9]+";
 	private Set<UrlPart> children = new HashSet<UrlPart>();
 
 	public UrlPart(String url) {
@@ -33,15 +37,35 @@ public class UrlPart {
 			this.urlPartString = "[0-9]+";
 		} else if (isUUID(url)) {
 			this.urlPartString = UUIDRegexStringForUrlpart;
-		}
+		} else if (containsHashString(url)) {
+			this.urlPartString = addHashRegexStringToUrl(url);
 
-		else {
+		} else {
 			this.urlPartString = url;
 		}
 	}
 
+	private String addHashRegexStringToUrl(String url) {
+		String[] splitted = url.split("\\.");
+		return Arrays.stream(splitted).map(string -> string.matches(HashRegexString) ? HashRegexString : string)
+				.collect(Collectors.joining("\\."));
+	}
+
+	/*
+	 * In frontend development it is common to set a hash inside the static resource
+	 * filenames. Without a regex we have to generate new locationmatches for every
+	 * new version e.g. runtime.e330f42ab6b744c4debd.js or
+	 * nca-favicon.37cfa069b71f7ebb6c14.svg The methode with this regex should
+	 * recognize this TODO: make this regex configureable
+	 *
+	 */
+	private boolean containsHashString(String url) {
+		return url.matches("^[a-zA-Z\\-]+\\.[a-fA-F0-9]+\\.[a-zA-Z0-9]+$");
+	}
+
+	// TODO: make this regex configureable
 	private boolean isUUID(String url) {
-		return url.matches("[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}");
+		return url.matches("^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$");
 	}
 
 	public void addChild(UrlPart urlPart) {
