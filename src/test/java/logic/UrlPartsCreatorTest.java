@@ -3,6 +3,7 @@ package logic;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -186,6 +187,67 @@ class UrlPartsCreatorTest {
 	private static Stream<Arguments> createUrlResourcePlaceholderUrlPartErrors() {
 		return Stream.of(Arguments.of("POST /js/11.m.das.chunk.js HTTP/1.1"),
 				Arguments.of("POST /css/11.m.das.chunk.css HTTP/1.1"), Arguments.of("POST /resources/dasg.png"));
+	}
+
+	/*
+	 * With the first real life project I recognized a strange behavior. There where
+	 * log entries like this: GET
+	 * /user/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c?name=bob&age=12 PUT
+	 * /user/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c/locked PUT
+	 * /user/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c/active
+	 * 
+	 * The logic behind this request is pretty clear. Inside the generated rules it
+	 * end up like all of the Locationmatches get the same parameters from the first
+	 * request
+	 */
+	@Test
+	void checkInheritOfParametersTest() {
+		Map<String, Set<String>> parsedLines = new HashedMap<String, Set<String>>();
+		parsedLines.put("GET /user/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c?name=bob&age=12 HTTP/1.1", SetUtils.emptySet());
+		parsedLines.put("PUT /user/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c/locked HTTP/1.1", SetUtils.emptySet());
+		parsedLines.put("PUT /user/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c/active HTTP/1.1", SetUtils.emptySet());
+
+		UrlPartsCreator creator = new UrlPartsCreator();
+
+		List<UrlPart> urlPartsList = creator.parseRAWData(parsedLines);
+
+		// /user
+		assertThat(urlPartsList, is(hasSize(1)));
+		UrlPart userUrl = urlPartsList.iterator().next();
+		assertThat(userUrl.getUrlPartString(), is("user"));
+		assertThat(userUrl.getHttpTyps(), is(SetUtils.emptySet()));
+		Map<String, Set<String>> userParamMap = userUrl.getParamMap();
+		assertThat(userParamMap, IsMapWithSize.aMapWithSize(0));
+
+		Set<UrlPart> userUrlChildren = userUrl.getChildren();
+		// /user/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c
+		assertThat(userUrlChildren, is(hasSize(1)));
+		UrlPart uuidUrl = userUrlChildren.iterator().next();
+		assertThat(uuidUrl.getUrlPartString(), is(UrlPart.UUIDRegexStringForUrlpart));
+		assertThat(uuidUrl.getHttpTyps(), is(hasSize(1)));
+		assertThat(uuidUrl.getHttpTyps(), is(Matchers.hasItem(HTTPType.GET)));
+		assertThat(uuidUrl.getParamMap(), IsMapWithSize.aMapWithSize(2));
+
+		Set<UrlPart> uuidChildren = uuidUrl.getChildren();
+		assertThat(uuidChildren, is(hasSize(2)));
+
+		UrlPart locked = uuidChildren.stream().filter(urlPart -> urlPart.getUrlPartString().equals("locked"))
+				.findFirst().get();
+		// /user/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c/locked
+		assertThat(locked.getUrlPartString(), is("locked"));
+		assertThat(locked.getHttpTyps(), is(hasSize(1)));
+		assertThat(locked.getHttpTyps(), is(Matchers.hasItem(HTTPType.PUT)));
+		assertThat(locked.getParamMap(), IsMapWithSize.aMapWithSize(0));
+		assertThat(locked.getChildren(), is(hasSize(0)));
+
+		UrlPart active = uuidChildren.stream().filter(urlPart -> urlPart.getUrlPartString().equals("active"))
+				.findFirst().get();
+		// /user/4a1e3fb1-ea81-4eee-a691-b31c059fbe0c/active
+		assertThat(active.getUrlPartString(), is("active"));
+		assertThat(active.getHttpTyps(), is(hasSize(1)));
+		assertThat(active.getHttpTyps(), is(Matchers.hasItem(HTTPType.PUT)));
+		assertThat(active.getParamMap(), IsMapWithSize.aMapWithSize(0));
+		assertThat(active.getChildren(), is(hasSize(0)));
 	}
 
 	@Test
