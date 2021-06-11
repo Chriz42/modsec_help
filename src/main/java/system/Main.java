@@ -2,6 +2,8 @@ package system;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -12,6 +14,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Properties;
 import java.util.Set;
 
 import input.FileParser;
@@ -23,16 +26,22 @@ import model.UrlPart;
 
 public class Main {
 
+	public static Properties appProps = new Properties();
+
 	public static void main(String[] args) throws IOException {
 		// TODO help from args
 		// Test this args logic
 		// better path handling for in and out files
 		// load properties file for secid and forbidUnknownPostParams
 
-		boolean forbidUnknownPostParams = true;
-		int startRuleId = 1111111;
+		loadPropertiesFile();
+		// base url / doesn'T work
+		boolean forbidUnknownPostParams = Boolean.valueOf(appProps.getProperty("forbidUnknownPostParams", "true"));
+		int startRuleId = Integer.valueOf(appProps.getProperty("startRuleId", "666666"));
+
 		List<String> argsList = Arrays.asList(args);
 		String logFileName = "modsec.log";
+//		String logFileName = "modsecurity-netcetera_admin.log.1";
 		String modsecRuleFileName = "modsecRulesFile.conf";
 		for (int i = 0; i < args.length; i++) {
 			switch (args[i].toLowerCase()) {
@@ -66,6 +75,14 @@ public class Main {
 		Path outputFile = Paths.get(modsecRuleFileName);
 		Files.write(outputFile, outStream.toByteArray(), StandardOpenOption.CREATE);
 		System.out.println("Write rules to file: " + outputFile.getFileName().toAbsolutePath());
+	}
+
+	private static void loadPropertiesFile() throws IOException, FileNotFoundException {
+		/// Read properties
+		String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+		String appConfigPath = rootPath + "app.properties";
+
+		appProps.load(new FileInputStream(appConfigPath));
 	}
 
 }
