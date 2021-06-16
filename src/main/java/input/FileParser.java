@@ -32,6 +32,7 @@ public class FileParser {
 			if (line.contains("-F--")) {
 				String returnCodeLine = reader.readLine();
 				String[] returnCodeLIneParts = returnCodeLine.split(" ");
+				// TODO: Should 500 are removed too?
 				// remove entries with 4** returncodes except 403 ->allowed400HttpStatusCodes
 				// inside app.properties
 				if (returnCodeLIneParts[1].matches("^4\\d\\d$")
