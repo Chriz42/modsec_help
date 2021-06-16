@@ -6,7 +6,11 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
+import system.Main;
+
 public class FileParser {
+
+	private String ALLOWED_4XX_HTTPSTATUSCODES = Main.appProps.getString("allowed400HttpStatusCodes", "403");
 
 	public HashMap<String, Set<String>> parse(BufferedReader reader) throws IOException {
 		// TODO: Is POST boddy wrtten to -I--?Saw something inside auditlog config
@@ -28,8 +32,10 @@ public class FileParser {
 			if (line.contains("-F--")) {
 				String returnCodeLine = reader.readLine();
 				String[] returnCodeLIneParts = returnCodeLine.split(" ");
-				// remove entries with 4** returncodes except 403
-				if (returnCodeLIneParts[1].matches("^4\\d\\d$") && !returnCodeLIneParts[1].matches("^(403$)")) {
+				// remove entries with 4** returncodes except 403 ->allowed400HttpStatusCodes
+				// inside app.properties
+				if (returnCodeLIneParts[1].matches("^4\\d\\d$")
+						&& !returnCodeLIneParts[1].matches("^(" + ALLOWED_4XX_HTTPSTATUSCODES + ")$")) {
 					dataMap.remove(urlLine);
 				}
 			}

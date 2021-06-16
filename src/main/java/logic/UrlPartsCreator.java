@@ -18,10 +18,10 @@ import org.apache.commons.lang3.StringUtils;
 import logic.exceptions.UrlPartCreatorException;
 import model.HTTPType;
 import model.UrlPart;
+import system.Main;
 
 public class UrlPartsCreator {
 
-	// TODO: add placeholder configureable
 	private static final List<String> resourcePlaceHolder;
 	static {
 		List<String> list = new ArrayList<String>();
@@ -32,8 +32,8 @@ public class UrlPartsCreator {
 		list.add("fonts");
 		list.add("styles");
 		list.add("img");
-
-		resourcePlaceHolder = Collections.unmodifiableList(list);
+		resourcePlaceHolder = Collections
+				.unmodifiableList(Main.appProps.getList(String.class, "resourceUrlPlaceHolder", list));
 	}
 
 	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap) {

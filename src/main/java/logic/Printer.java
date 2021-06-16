@@ -12,6 +12,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import model.HTTPType;
 import model.LocationMatch;
+import system.Main;
 
 public class Printer {
 
@@ -30,16 +31,15 @@ public class Printer {
 
 	final String defaultRuleUrlString = "/.*";
 
-	private int currentRuleId;
-	boolean forbidUnknownPostParams = true;
+	boolean forbidUnknownPostParams = Main.appProps.getBoolean("forbidUnknownPostParams", true);
+	private int currentRuleId = Main.appProps.getInt("startRuleId", 666666);
+
+	public Printer() {
+
+	}
 
 	public Printer(int currentRuleId) {
 		this.currentRuleId = currentRuleId;
-	}
-
-	public Printer(int currentRuleId, boolean forbidUnknownPostParams) {
-		this.currentRuleId = currentRuleId;
-		this.forbidUnknownPostParams = forbidUnknownPostParams;
 	}
 
 	public void printToStream(LocationMatch locationMatch, OutputStream outStream) {
