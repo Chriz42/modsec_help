@@ -21,6 +21,8 @@ But first the basics
 - resourceUrlPlaceHolder -> Inside folders with static content there shouldn't be a rule for every single path. Therefore it is possible to add generic placeholders like: <LocationMatch "^/js/.+\.js$"> every file with the js ending is possible to access but only with GET. The folders can be configured as comma separated list. Default contains: js, css, resources, images, fonts, styles, img
 - denyAccessToUnknownUrl -> If set to true at the end will be added a rule that forbids access to the urls that weren't permitted by the rules before. Default ist true
 - allowed400HttpStatusCodes -> We only want rules for valid requests inside the training data. If the response of the application is 404 Not found we don't want to create a rule for this. But for 403 access denied you maybe want because the url is valid and only the user isn't permitted. Therefor you can add a regex for 4xx response codes eg. 403|412 .Default: 403 
+- regexPlaceholderForUUID -> We don't want a single locationmatch for every possible UUID inside an url to identify e.g. a user. Therefore a regex will be added to the locationmatch url string. default is "[a-fA-F0-9\-]+" but maybe you  want to use something more specific e.g."^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" for some reasons
+- regexPlaceholderForHashes ->  We don't want a single locationmatch for every possible hash (and to regernate the rules for every update). Therefore a regex is added to the locationmatch url string. default is  "[a-fA-F0-9]+" maybe you want to change this
 
 **featues**
 - only apache support atm

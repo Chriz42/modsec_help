@@ -11,15 +11,17 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.map.HashedMap;
 import org.apache.commons.lang3.StringUtils;
 
+import system.Main;
+
 public class UrlPart {
 
 	private String urlPartString;
 	private Map<String, Set<String>> params = new HashMap<String, Set<String>>();
 	private Set<HTTPType> httpTyps = new HashSet<HTTPType>();
 
-	// TODO: make this regex configureable
-	public static final String UUIDRegexStringForUrlpart = "[a-fA-F0-9\\-]+";
-	public static final String HashRegexString = "[a-fA-F0-9]+";
+	public static final String UUIDRegexStringForUrlpart = Main.appProps.getString("regexPlaceholderForUUID",
+			"[a-fA-F0-9\\-]+");
+	public static final String HashRegexString = Main.appProps.getString("regexPlaceholderForHashes", "[a-fA-F0-9]+");
 	private Set<UrlPart> children = new HashSet<UrlPart>();
 
 	public UrlPart(String url) {
@@ -51,19 +53,11 @@ public class UrlPart {
 				.collect(Collectors.joining("\\."));
 	}
 
-	/*
-	 * In frontend development it is common to set a hash inside the static resource
-	 * filenames. Without a regex we have to generate new locationmatches for every
-	 * new version e.g. runtime.e330f42ab6b744c4debd.js or
-	 * nca-favicon.37cfa069b71f7ebb6c14.svg The methode with this regex should
-	 * recognize this TODO: make this regex configureable
-	 *
-	 */
+	// TODO: I'm not shour if this two regex should be configurable a too
 	private boolean containsHashString(String url) {
 		return url.matches("^[a-zA-Z\\-]+\\.[a-fA-F0-9]+\\.[a-zA-Z0-9]+$");
 	}
 
-	// TODO: make this regex configureable
 	private boolean isUUID(String url) {
 		return url.matches("^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$");
 	}
