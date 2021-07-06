@@ -28,7 +28,7 @@ public class PrinterTest {
 	public void init() {
 		printer = new Printer(0);
 		outStream = new ByteArrayOutputStream();
-		printer.forbidUnknownPostParams = true;
+		printer.forbidUnknownBodyParams = true;
 	}
 
 	@Test

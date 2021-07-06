@@ -17,7 +17,7 @@ But first the basics
 
 **configuration**
 - startRuleId -> set the start for created rule Ids (Default: 666666)
-- forbidUnknownPostParams -> set to false if you want to allow unknown postbodies for some reasons
+- forbidUnknownBodyParams -> set to false if you want to allow unknown http bodies for some reasons
 - resourceUrlPlaceHolder -> Inside folders with static content there shouldn't be a rule for every single path. Therefore it is possible to add generic placeholders like: <LocationMatch "^/js/.+\.js$"> every file with the js ending is possible to access but only with GET. The folders can be configured as comma separated list. Default contains: js, css, resources, images, fonts, styles, img
 - denyAccessToUnknownUrl -> If set to true at the end will be added a rule that forbids access to the urls that weren't permitted by the rules before. Default ist true
 - allowed400HttpStatusCodes -> We only want rules for valid requests inside the training data. If the response of the application is 404 Not found we don't want to create a rule for this. But for 403 access denied you maybe want because the url is valid and only the user isn't permitted. Therefor you can add a regex for 4xx response codes eg. 403|412 .Default: 403 

@@ -23,15 +23,17 @@ public class Printer {
 	final String locationMatchOpenString = "<LocationMatch \"^%s$\">";
 	final String requestMethodeString = "\tSecRule REQUEST_METHOD !(%s) \"deny,id:%s,msg:'Request method not allowed'\"";
 	final String unexpectedParamNameString = "\tSecRule ARGS_NAMES !^(%s)$ \"deny,id:%s,msg:'The request contained the following unexpected Param: %%{MATCHED_VAR_NAME}'\"";
+	final String forbidQueryParamsString = "\tSecRule ARGS_GET_NAMES !^()$ \"deny,id:%s,msg:'The request contained the following unexpected Param: %%{MATCHED_VAR_NAME}'\"";
 	final String containsInvalidCharsString = "\tSecRule ARGS:%s !^%s$ \"deny,id:%s,msg:'The Parameter %%{MATCHED_VAR_NAME} contains invalid characters'\"";
-	final String requestAllowString = "\tSecAction \"allow,id:%s,msg:'Request passed',nolog\"";
+	final String requestAllowString = "\tSecAction \"allow,id:%s,msg:'Request passed',nolog,skip:31289999\"";
+//	final String requestAllowString = "\tSecAction \"allow,id:%s,msg:'Request passed',nolog\"";
 	final String locationMatchCloseString = "</LocationMatch>";
 
 	final String unauthLocationCalledSecActionString = "\tSecAction \"deny,id:%s,msg:'Unauthorized location was called: %%{REQUEST_URI}'\"";
 
 	final String defaultRuleUrlString = "/.*";
 
-	boolean forbidUnknownPostParams = Main.appProps.getBoolean("forbidUnknownPostParams", true);
+	boolean forbidUnknownBodyParams = Main.appProps.getBoolean("forbidUnknownBodyParams", true);
 	private int currentRuleId = Main.appProps.getInt("startRuleId", 666666);
 
 	public Printer() {
@@ -48,9 +50,13 @@ public class Printer {
 		printWriter.println(String.format(locationMatchOpenString, locationMatch.getUrlString()));
 
 		addHttpMethode(locationMatch.getHttpTyps(), printWriter);
-		if (locationMatch.getHttpTyps().contains(HTTPType.POST) && !forbidUnknownPostParams) {
+		Set<HTTPType> httpTypes = locationMatch.getHttpTyps();
+		if ((httpTypes.contains(HTTPType.POST) || httpTypes.contains(HTTPType.PUT)) && !forbidUnknownBodyParams) {
 			System.out.println(
-					" WARN: forbidUnknownPostParams is set to false -> SecRules with HTTPType Post will accept every param with every content!");
+					" WARN: forbidUnknownBodyParams is set to false -> SecRules with HTTP body will accept every param with every content!");
+			if (httpTypes.contains(HTTPType.GET)) {
+				printWriter.println(String.format(forbidQueryParamsString, currentRuleId++));
+			}
 		} else {
 			addExpectedParamNames(locationMatch.getParams(), printWriter);
 			addExpectedParamValues(locationMatch.getParams(), printWriter);
