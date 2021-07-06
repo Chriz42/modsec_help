@@ -20,7 +20,7 @@ import org.apache.commons.configuration2.builder.fluent.Configurations;
 import org.apache.commons.configuration2.convert.DefaultListDelimiterHandler;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 
-import input.FileParser;
+import input.LogFileParser;
 import logic.LocationMatchCreator;
 import logic.Printer;
 import logic.UrlPartsCreator;
@@ -39,7 +39,6 @@ public class Main {
 		// base url / doesn'T work
 		List<String> argsList = Arrays.asList(args);
 		String logFileName = "modsec.log";
-//		String logFileName = "modsecurity-netcetera_admin.log.1";
 		String modsecRuleFileName = "modsecRulesFile.conf";
 		for (int i = 0; i < args.length; i++) {
 			switch (args[i].toLowerCase()) {
@@ -56,7 +55,7 @@ public class Main {
 		InputStream inputStream = Main.class.getResourceAsStream(logFileName);
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-		HashMap<String, Set<String>> dataMap = new FileParser().parse(reader);
+		HashMap<String, Set<String>> dataMap = new LogFileParser().parse(reader);
 		List<UrlPart> urlList = new UrlPartsCreator().parseRAWData(dataMap);
 
 		LocationMatchCreator locationMatchCreator = new LocationMatchCreator();

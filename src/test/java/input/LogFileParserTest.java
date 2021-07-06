@@ -16,14 +16,14 @@ import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 
-public class FileParserTest {
+public class LogFileParserTest {
 
 	@Test
 	public void singleLogEntry() throws IOException {
-		FileParser parser = new FileParser();
+		LogFileParser parser = new LogFileParser();
 
-		File file = new File(FileParserTest.class.getResource("modsecurity.log").getFile());
-		InputStream inputStream = FileParserTest.class.getResourceAsStream("modsecurity.log");
+		File file = new File(LogFileParserTest.class.getResource("modsecurity.log").getFile());
+		InputStream inputStream = LogFileParserTest.class.getResourceAsStream("modsecurity.log");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
 		Map<String, Set<String>> parsedLines = parser.parse(reader);

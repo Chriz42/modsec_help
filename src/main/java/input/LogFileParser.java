@@ -8,7 +8,7 @@ import java.util.Set;
 
 import system.Main;
 
-public class FileParser {
+public class LogFileParser {
 
 	private String ALLOWED_4XX_HTTPSTATUSCODES = Main.appProps.getString("allowed400HttpStatusCodes", "403");
 
