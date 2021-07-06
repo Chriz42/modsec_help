@@ -6,7 +6,6 @@ import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.oneOf;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -19,10 +18,9 @@ import org.junit.jupiter.api.Test;
 public class LogFileParserTest {
 
 	@Test
-	public void singleLogEntry() throws IOException {
+	public void logFileTest() throws IOException {
 		LogFileParser parser = new LogFileParser();
 
-		File file = new File(LogFileParserTest.class.getResource("modsecurity.log").getFile());
 		InputStream inputStream = LogFileParserTest.class.getResourceAsStream("modsecurity.log");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 

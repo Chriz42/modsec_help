@@ -36,8 +36,7 @@ public class UrlPartsCreator {
 				.unmodifiableList(Main.appProps.getList(String.class, "resourceUrlPlaceHolder", list));
 	}
 
-	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap) {
-		List<UrlPart> urlList = new ArrayList<>();
+	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap, List<UrlPart> urlPartsList) {
 		for (Entry<String, Set<String>> entry : dataMap.entrySet()) {
 
 			Map<String, Set<String>> paramMap = createParameterMap(entry.getValue());
@@ -45,16 +44,21 @@ public class UrlPartsCreator {
 			try {
 				urlPart = parseUrlandTyp(entry.getKey());
 				urlPart.addParamMapToLastChild(paramMap);
-				if (urlList.contains(urlPart)) {
-					urlList.get(urlList.indexOf(urlPart)).merge(urlPart);
+				if (urlPartsList.contains(urlPart)) {
+					urlPartsList.get(urlPartsList.indexOf(urlPart)).merge(urlPart);
 				} else {
-					urlList.add(urlPart);
+					urlPartsList.add(urlPart);
 				}
 			} catch (UrlPartCreatorException e) {
 				System.out.println("error occured scip this log entry. Message: " + e.getMessage());
 			}
 		}
-		return urlList;
+		return urlPartsList;
+	}
+
+	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap) {
+		return parseRAWData(dataMap, new ArrayList<UrlPart>());
+
 	}
 
 	Map<String, Set<String>> createParameterMap(String paramString) {

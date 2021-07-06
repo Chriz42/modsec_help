@@ -22,14 +22,12 @@ public class LogFileParser {
 				urlLine = reader.readLine();
 				dataMap.putIfAbsent(urlLine, new HashSet<>());
 				continue;
-			}
-			if (line.contains("-C--")) {
+			} else if (line.contains("-C--")) {
 				String paramLine = reader.readLine();
 				if (dataMap.containsKey(urlLine) && !dataMap.get(urlLine).contains(paramLine)) {
 					dataMap.get(urlLine).add(paramLine);
 				}
-			}
-			if (line.contains("-F--")) {
+			} else if (line.contains("-F--")) {
 				String returnCodeLine = reader.readLine();
 				String[] returnCodeLIneParts = returnCodeLine.split(" ");
 				// TODO: Should 500 are removed too?

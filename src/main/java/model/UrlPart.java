@@ -92,8 +92,8 @@ public class UrlPart {
 		this.httpTyps.add(httpTyp);
 	}
 
-	public void addHttpTyps(Set<String> httpTyps) {
-		httpTyps.addAll(httpTyps);
+	public void addHttpTyps(Set<HTTPType> httpTyps) {
+		this.httpTyps.addAll(httpTyps);
 	}
 
 	public void addParamMapToLastChild(Map<String, Set<String>> paramMap) {

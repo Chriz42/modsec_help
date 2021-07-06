@@ -33,6 +33,7 @@ But first the basics
 - Whitelist ParamNames
 - simple regex for every param
 - only create SecRules for responsetypes != 4XX
+- update older modsecurity files with new locationmatches from new log input
 
 **Open features**
 - add real xml and json support
