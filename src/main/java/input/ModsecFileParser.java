@@ -83,6 +83,9 @@ public class ModsecFileParser {
 		String[] parts = line.split("!", 2);
 		String[] nextParts = parts[1].split(" ", 2);
 		String rawValue = nextParts[0].substring(2, nextParts[0].length() - 2);
+		if (StringUtils.isBlank(rawValue)) {
+			return;
+		}
 		if (rawValue.contains("|")) {
 			Arrays.stream(rawValue.split("\\|")).forEach(string -> paramMap.put(string, new HashSet<String>()));
 		} else {
