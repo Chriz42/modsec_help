@@ -16,8 +16,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.commons.configuration2.FileBasedConfiguration;
 import org.apache.commons.configuration2.PropertiesConfiguration;
-import org.apache.commons.configuration2.builder.fluent.Configurations;
+import org.apache.commons.configuration2.builder.FileBasedConfigurationBuilder;
+import org.apache.commons.configuration2.builder.fluent.Parameters;
 import org.apache.commons.configuration2.convert.DefaultListDelimiterHandler;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.apache.commons.lang3.StringUtils;
@@ -33,17 +35,17 @@ import model.UrlPart;
 
 public class Main {
 
-	public static PropertiesConfiguration appProps = loadPropertiesFile();
+	public static FileBasedConfiguration appProps = loadPropertiesFile();
 
 	public static void main(String[] args) throws IOException, FileParserException {
 		// TODO help from args
 		// Test this args logic
 		// better path handling for in and out files
 		// base url / doesn'T work
-
+		// And some point it would be nice to add project spefic config
+		// How to handle optional params when they are send empty?
 		List<String> argsList = Arrays.asList(args);
 		String logFileName = "modsec.log";
-//		String logFileName = "modsecurity-netcetera_admin.log.1";
 		String oldModsecurityFile = "modsecRulesFile_10.conf_old";
 		String modsecRuleFileName = "modsecRulesFile.conf";
 		for (int i = 0; i < args.length; i++) {
@@ -69,9 +71,9 @@ public class Main {
 
 		if (StringUtils.isNotBlank(oldModsecurityFile)) {
 			System.out.println("Parse old modsecurity file: " + oldModsecurityFile);
-			InputStream inputStream = Main.class.getResourceAsStream(logFileName);
-			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-			List<UrlPart> oldUrlPartList = new ModsecFileParser().parseFile(reader);
+			InputStream modsecInputStream = Main.class.getResourceAsStream(oldModsecurityFile);
+			BufferedReader modsecReader = new BufferedReader(new InputStreamReader(modsecInputStream));
+			List<UrlPart> oldUrlPartList = new ModsecFileParser().parseFile(modsecReader);
 			urlPartList = new UrlPartsCreator().parseRAWData(dataMap, oldUrlPartList);
 		} else {
 			urlPartList = new UrlPartsCreator().parseRAWData(dataMap);
@@ -94,19 +96,22 @@ public class Main {
 		System.out.println("Write rules to file: " + outputFile.getFileName().toAbsolutePath());
 	}
 
-	private static PropertiesConfiguration loadPropertiesFile() {
-		PropertiesConfiguration appPropsLoaded = new PropertiesConfiguration();
-		try {
-			/// Read properties
-			String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
-			String appConfigPath = rootPath + "app.properties";
-			appPropsLoaded = new Configurations().properties(new File(appConfigPath));
-			appPropsLoaded.setListDelimiterHandler(new DefaultListDelimiterHandler(','));
-		} catch (ConfigurationException e) {
-			System.out.println("Error reading properties. message: " + e.getMessage() + " will use default config");
+	private static FileBasedConfiguration loadPropertiesFile() {
+		String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+		String appConfigPath = rootPath + "app.properties";
+		Parameters params = new Parameters();
+		File propertiesFile = new File(appConfigPath);
 
+		FileBasedConfigurationBuilder<FileBasedConfiguration> builder = new FileBasedConfigurationBuilder<FileBasedConfiguration>(
+				PropertiesConfiguration.class)
+						.configure(params.fileBased().setListDelimiterHandler(new DefaultListDelimiterHandler(','))
+								.setFile(propertiesFile));
+		try {
+			return builder.getConfiguration();
+		} catch (ConfigurationException e) {
+			System.out.println("Can't read configuration File: " + e.getMessage());
 		}
-		return appPropsLoaded;
+		return new PropertiesConfiguration();
 	}
 
 }
