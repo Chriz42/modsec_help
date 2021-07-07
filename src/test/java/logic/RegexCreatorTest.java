@@ -2,6 +2,7 @@ package logic;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.text.StringContainsInOrder.stringContainsInOrder;
 
 import java.util.AbstractMap.SimpleEntry;
 import java.util.Arrays;
@@ -11,6 +12,7 @@ import java.util.Set;
 import java.util.stream.Stream;
 
 import org.apache.commons.lang3.StringUtils;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -72,4 +74,12 @@ public class RegexCreatorTest {
 	private static SimpleEntry<String, Integer> createSimpleEntry(String key, int value) {
 		return new SimpleEntry<String, Integer>(key, value);
 	}
+
+	@Test
+	public void createStringFromRegexTest() {
+		RegexCreator regexCreator = new RegexCreator();
+		String string = regexCreator.createStringFromRegex("a-zA-Z0-9\\+\\,\\&");
+		assertThat(string, stringContainsInOrder("AZ", "az", "09", ",", "+", "\\", "&"));
+	}
+
 }

@@ -23,6 +23,8 @@ But first the basics
 - allowed400HttpStatusCodes -> We only want rules for valid requests inside the training data. If the response of the application is 404 Not found we don't want to create a rule for this. But for 403 access denied you maybe want because the url is valid and only the user isn't permitted. Therefor you can add a regex for 4xx response codes eg. 403|412 .Default: 403 
 - regexPlaceholderForUUID -> We don't want a single locationmatch for every possible UUID inside an url to identify e.g. a user. Therefore a regex will be added to the locationmatch url string. default is "[a-fA-F0-9\-]+" but maybe you  want to use something more specific e.g."^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" for some reasons
 - regexPlaceholderForHashes ->  We don't want a single locationmatch for every possible hash (and to regernate the rules for every update). Therefore a regex is added to the locationmatch url string. default is  "[a-fA-F0-9]+" maybe you want to change this
+- parameterWhiteList -> inside fields like names you will never get any possible character in your testing scenario. Therefore it is possible to whitelist parameter names where the regex from parameterWhiteListRegex config is added
+- parameterWhiteListRegex -> Regex for parameterWhitelist entries Default is: . (all printable characters)
 
 **featues**
 - only apache support atm
@@ -33,12 +35,12 @@ But first the basics
 - Whitelist ParamNames
 - simple regex for every param
 - only create SecRules for responsetypes != 4XX
-- update older modsecurity files with new locationmatches from new log input
+- update older modsecurity files with new locationmatches from new log inpu. It isrecommanded only parse locationmatches that where generated from this tool
+
 
 **Open features**
 - add real xml and json support
 	- atm only the single characters are added
-- make stuff configureable from propertiesFile
 - read and print with input output files from cmd
 - Add logging
 - write  getting started with modsec learning mode guide

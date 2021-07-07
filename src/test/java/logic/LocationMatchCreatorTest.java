@@ -6,8 +6,10 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.hamcrest.Matchers.oneOf;
+import static org.hamcrest.text.StringContainsInOrder.stringContainsInOrder;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -132,4 +134,20 @@ public class LocationMatchCreatorTest {
 		}
 	}
 
+	@Test
+	public void testParameterWhitelist() {
+		UrlPart parent = new UrlPart("one");
+		Map<String, Set<String>> paramMap = new HashedMap<>();
+		paramMap.put("param1", Set.of("value1", "value2"));
+		paramMap.put("param2", Set.of("value1", "value2"));
+		parent.addParamMap(paramMap);
+		LocationMatchCreator creator = new LocationMatchCreator();
+		creator.parameterWhiteList = Arrays.asList("param1");
+		Set<LocationMatch> matches = creator.createLocationMatch(parent);
+		assertThat(matches, is(IsCollectionWithSize.hasSize(1)));
+		HashMap<String, String> params = matches.iterator().next().getParams();
+		assertThat(params.get("param1"), is(creator.parameterWhiteListRegex));
+		assertThat(params.get("param2"), stringContainsInOrder("a-z", "0-9"));
+
+	}
 }

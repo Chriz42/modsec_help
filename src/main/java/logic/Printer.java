@@ -51,6 +51,7 @@ public class Printer {
 
 		addHttpMethode(locationMatch.getHttpTyps(), printWriter);
 		Set<HTTPType> httpTypes = locationMatch.getHttpTyps();
+		// TODO: Check how delete and other HTTP Typs work and rework if needed
 		if ((httpTypes.contains(HTTPType.POST) || httpTypes.contains(HTTPType.PUT)) && !forbidUnknownBodyParams) {
 			System.out.println(
 					" WARN: forbidUnknownBodyParams is set to false -> SecRules with HTTP body will accept every param with every content!");
