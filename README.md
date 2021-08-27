@@ -42,7 +42,7 @@ only relativ paths from the execution directory are possible at the moment
 - Whitelist ParamNames
 - simple regex for every param
 - only create SecRules for responsetypes != 4XX
-- update older modsecurity files with new locationmatches from new log inpu. It isrecommanded only parse locationmatches that where generated from this tool
+- update older modsecurity files with new locationmatches from new log inpu. It is recommanded only parse locationmatches that where generated from this tool
 
 
 **Open features**
@@ -66,13 +66,6 @@ But Modsec can use something like this:
 	SecRule 1111111111110 blocks everything else. 
 	Con: you don't have a message inside the auditlog what went wrong...
 
-**Configtest**
 
-Test the generate locationMatches:
-1. add your loationsmatches to "configtest/modsechelp/modsec_9999.conf" 
-2. "bash run.sh"
-3. docker handelsthe rest and start apache with modsec and your rules, syntax errors should be checked on startup
-
-to test the matches you should set SecRuleEngine From DetectionOnly to On 
 
 you could use "header_00_config_template.conf" as a template for modsec configuration tp generate your logfiles 

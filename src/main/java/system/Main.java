@@ -37,10 +37,10 @@ public class Main {
 
 	public static FileBasedConfiguration appProps = loadPropertiesFile();
 
-	private static final String pathDelimiter = "\\";
+	private static final String pathDelimiter = System.getProperty("file.separator");
 
 	public static void main(String[] args) throws IOException, FileParserException, URISyntaxException {
-		// base url / doesn'T work
+
 		// Add possibility to overwrite properties from external file or comandline
 		// How to handle optional params when they are send empty?
 		// add logging framework an set log level to warn to remove the
@@ -76,7 +76,6 @@ public class Main {
 			System.exit(42);
 		}
 		final String executionDirectory = System.getProperty("user.dir");
-		// path delimiter important when executed with linux?
 		String logFilePath = executionDirectory + pathDelimiter + logFileName;
 		File logFile = new File(logFilePath);
 		if (!logFile.exists() && !logFile.isDirectory()) {
@@ -119,7 +118,7 @@ public class Main {
 			printer.printDefaultMatchToStream(outStream);
 		}
 
-		Path outputFile = Paths.get(executionDirectory + "\\" + modsecRuleFileName);
+		Path outputFile = Paths.get(executionDirectory + pathDelimiter + modsecRuleFileName);
 		Files.write(outputFile, outStream.toByteArray(), StandardOpenOption.CREATE);
 		System.out.println("Write rules to file: " + outputFile.getFileName().toAbsolutePath());
 	}
