@@ -41,7 +41,8 @@ public class ModsecFileParser {
 				// SecRule REQUEST_METHOD !(POST) "deny,id:31280226,msg:'Request method not
 				// allowed'"
 				addHttpTypeToLastChild(tmp, line);
-			} else if (line.contains("SecRule ARGS_NAMES")) {
+			} else if (line.contains("SecRule ARGS_NAMES") || line.contains("SecRule ARGS_GET_NAMES")
+					|| line.contains("SecRule ARGS_POST_NAMES")) {
 				// SecRule ARGS_NAMES !^(firstName|lastName)$ "deny,id:31280209,msg:'The request
 				// contained the following unexpected Param: %{MATCHED_VAR_NAME}'"
 				addParamNames(paramMap, line);

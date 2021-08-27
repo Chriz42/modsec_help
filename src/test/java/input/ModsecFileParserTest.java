@@ -53,6 +53,18 @@ public class ModsecFileParserTest {
 		assertThat(paramMap, is(IsMapWithSize.aMapWithSize(2)));
 		assertThat(paramMap, hasKey("firstName"));
 		assertThat(paramMap, hasKey("lastName"));
+
+		parser.addParamNames(paramMap,
+				"SecRule ARGS_POST_NAMES !^(firstName|lastName)$ \"deny,id:31280209,msg:'The request contained the following unexpected Param: %{MATCHED_VAR_NAME}'\"");
+		assertThat(paramMap, is(IsMapWithSize.aMapWithSize(2)));
+		assertThat(paramMap, hasKey("firstName"));
+		assertThat(paramMap, hasKey("lastName"));
+
+		parser.addParamNames(paramMap,
+				"SecRule ARGS_GET_NAMES !^(firstName|lastName)$ \"deny,id:31280209,msg:'The request contained the following unexpected Param: %{MATCHED_VAR_NAME}'\"");
+		assertThat(paramMap, is(IsMapWithSize.aMapWithSize(2)));
+		assertThat(paramMap, hasKey("firstName"));
+		assertThat(paramMap, hasKey("lastName"));
 	}
 
 	@Test
