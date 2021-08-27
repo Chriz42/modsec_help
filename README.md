@@ -15,6 +15,13 @@ a change was made it creates a PR with the niew rule set.
 
 But first the basics
 
+**run as jar**
+
+only relativ paths from the execution directory are possible at the moment
+- logfile -> logfile that should be parsed
+- outputfilename (optional) -> name of the outputfile 
+- existingmodsecurityfile (optional)  -> existing modsecrule file where the rules should be updated with ne content from the log file
+
 **configuration**
 - startRuleId -> set the start for created rule Ids (Default: 666666)
 - forbidUnknownBodyParams -> set to false if you want to allow unknown http bodies for some reasons
@@ -41,7 +48,6 @@ But first the basics
 **Open features**
 - add real xml and json support
 	- atm only the single characters are added
-- read and print with input output files from cmd
 - Add logging
 - write  getting started with modsec learning mode guide
 - add automate testing with request to the  locationmatches with docker 

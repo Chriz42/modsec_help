@@ -3,9 +3,9 @@ package system;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -37,44 +37,72 @@ public class Main {
 
 	public static FileBasedConfiguration appProps = loadPropertiesFile();
 
-	public static void main(String[] args) throws IOException, FileParserException {
-		// TODO help from args
-		// Test this args logic
-		// better path handling for in and out files
+	private static final String pathDelimiter = "\\";
+
+	public static void main(String[] args) throws IOException, FileParserException, URISyntaxException {
 		// base url / doesn'T work
-		// And some point it would be nice to add project spefic config
+		// Add possibility to overwrite properties from external file or comandline
 		// How to handle optional params when they are send empty?
+		// add logging framework an set log level to warn to remove the
+		// org.apache.commons.beanutils.FluentPropertyBeanIntrospector info thing
+		// exception Handling
+
 		List<String> argsList = Arrays.asList(args);
-		String logFileName = "modsec.log";
-		String oldModsecurityFile = "modsecRulesFile_10.conf_old";
+		String logFileName = null;
+		String existingModsecurityFileName = null;
 		String modsecRuleFileName = "modsecRulesFile.conf";
 		for (int i = 0; i < args.length; i++) {
 			switch (args[i].toLowerCase()) {
-			case "oldModsecurityFile":
-				oldModsecurityFile = args[i + 1];
-			case "logfilename":
+			case "existingmodsecurityfile":
+				existingModsecurityFileName = args[i + 1];
+			case "logfile":
 				logFileName = args[i + 1];
 				break;
-			case "outputfile":
+			case "outputfilename":
 				modsecRuleFileName = args[i + 1];
+				break;
+			case "--help":
+			case "-help":
+			case "-h":
+			case "--h":
+				printHelpInfos();
+				System.exit(42);
 				break;
 			}
 		}
-		System.out.println("Modsecurity log file to read: " + logFileName);
 
-		InputStream logFileInputStream = Main.class.getResourceAsStream(logFileName);
+		if (StringUtils.isBlank(logFileName)) {
+			System.out.println("logfile is mandatroy, set --help for more informations");
+			System.exit(42);
+		}
+		final String executionDirectory = System.getProperty("user.dir");
+		// path delimiter important when executed with linux?
+		String logFilePath = executionDirectory + pathDelimiter + logFileName;
+		File logFile = new File(logFilePath);
+		if (!logFile.exists() && !logFile.isDirectory()) {
+			System.out.println("Logfile: " + logFilePath + " can't be read. Check path and file permissions");
+			System.exit(42);
+		}
+		System.out.println("Modsecurity log file to read: " + logFilePath);
 
-		BufferedReader logFileReader = new BufferedReader(new InputStreamReader(logFileInputStream));
+		BufferedReader logFileReader = new BufferedReader(new FileReader(logFile));
+
 		HashMap<String, Set<String>> dataMap = new LogFileParser().parse(logFileReader);
 
 		List<UrlPart> urlPartList = new ArrayList<UrlPart>();
 
-		if (StringUtils.isNotBlank(oldModsecurityFile)) {
-			System.out.println("Parse old modsecurity file: " + oldModsecurityFile);
-			InputStream modsecInputStream = Main.class.getResourceAsStream(oldModsecurityFile);
-			BufferedReader modsecReader = new BufferedReader(new InputStreamReader(modsecInputStream));
-			List<UrlPart> oldUrlPartList = new ModsecFileParser().parseFile(modsecReader);
-			urlPartList = new UrlPartsCreator().parseRAWData(dataMap, oldUrlPartList);
+		if (StringUtils.isNotBlank(existingModsecurityFileName)) {
+			String existingModsecurityFilePath = executionDirectory + pathDelimiter + existingModsecurityFileName;
+			System.out.println("Parse existing modsecurity file: " + existingModsecurityFilePath);
+			File existingModsecurityFile = new File(existingModsecurityFilePath);
+			if (!existingModsecurityFile.exists() && !existingModsecurityFile.isDirectory()) {
+				System.out.println("existing modsecurityfile: " + existingModsecurityFilePath
+						+ " can't be read. Check path and file permissions");
+				System.exit(42);
+			}
+			BufferedReader modsecReader = new BufferedReader(new FileReader(existingModsecurityFile));
+			List<UrlPart> existingUrlPartList = new ModsecFileParser().parseFile(modsecReader);
+			urlPartList = new UrlPartsCreator().parseRAWData(dataMap, existingUrlPartList);
 		} else {
 			urlPartList = new UrlPartsCreator().parseRAWData(dataMap);
 		}
@@ -91,14 +119,27 @@ public class Main {
 			printer.printDefaultMatchToStream(outStream);
 		}
 
-		Path outputFile = Paths.get(modsecRuleFileName);
+		Path outputFile = Paths.get(executionDirectory + "\\" + modsecRuleFileName);
 		Files.write(outputFile, outStream.toByteArray(), StandardOpenOption.CREATE);
 		System.out.println("Write rules to file: " + outputFile.getFileName().toAbsolutePath());
 	}
 
+	private static void printHelpInfos() {
+		System.out.println();
+		System.out.println("Modsecurity learning mode parameters:");
+		System.out.println("Only relativ paths to the execution directory are working at the moment");
+		System.out.println();
+		System.out.println("maditory parameters:");
+		System.out.println("logfile -> file with modsecurity audit logs");
+		System.out.println();
+		System.out.println("optional parameters:");
+		System.out.println("outputfilename -> name of outputfile defualt: modsecRulesFile.conf");
+		System.out.println("existingmodsecurityfile -> file with existing rules that should be updated");
+
+	}
+
 	private static FileBasedConfiguration loadPropertiesFile() {
-		String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
-		String appConfigPath = rootPath + "app.properties";
+		String appConfigPath = Thread.currentThread().getContextClassLoader().getResource("app.properties").getPath();
 		Parameters params = new Parameters();
 		File propertiesFile = new File(appConfigPath);
 
