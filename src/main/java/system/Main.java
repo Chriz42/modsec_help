@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import org.apache.commons.configuration2.FileBasedConfiguration;
@@ -54,12 +55,13 @@ public class Main {
 		for (int i = 0; i < args.length; i++) {
 			switch (args[i].toLowerCase()) {
 			case "existingmodsecurityfile":
-				existingModsecurityFileName = args[i + 1];
+				existingModsecurityFileName = args[++i];
+				break;
 			case "logfile":
-				logFileName = args[i + 1];
+				logFileName = args[++i];
 				break;
 			case "outputfilename":
-				modsecRuleFileName = args[i + 1];
+				modsecRuleFileName = args[++i];
 				break;
 			case "--help":
 			case "-help":
@@ -68,6 +70,9 @@ public class Main {
 				printHelpInfos();
 				System.exit(42);
 				break;
+			default:
+				setProperty(i, args);
+				i++;
 			}
 		}
 		if (StringUtils.isBlank(logFileName)) {
@@ -122,6 +127,24 @@ public class Main {
 		System.out.println("Write rules to file: " + outputFile.getFileName().toAbsolutePath());
 	}
 
+	private static void setProperty(int i, String[] args) {
+		Optional<Properties> property = searchEnum(Properties.class, args[i]);
+		property.ifPresentOrElse((prop) -> {
+			String propName = prop.name();
+			if (appProps.containsKey(propName)) {
+				appProps.clearProperty(propName);
+			}
+			appProps.addProperty(propName, args[i + 1]);
+			System.out.println("Reading property: " + propName + " with value: " + args[i + 1]
+					+ " from commandline overwriting existing value!");
+
+		}, () -> {
+			System.out.println(args[i] + " is not a expected property! ");
+			System.exit(42);
+		});
+
+	}
+
 	private static void printHelpInfos() {
 		System.out.println();
 		System.out.println("Modsecurity learning mode parameters:");
@@ -133,6 +156,8 @@ public class Main {
 		System.out.println("optional parameters:");
 		System.out.println("outputfilename -> name of outputfile defualt: modsecRulesFile.conf");
 		System.out.println("existingmodsecurityfile -> file with existing rules that should be updated");
+		System.out.println();
+		System.out.println("It is possible to overwrite properties. Add propertyname value for details see readme");
 
 	}
 
@@ -153,4 +178,12 @@ public class Main {
 		return new PropertiesConfiguration();
 	}
 
+	public static <T extends Enum<?>> Optional<T> searchEnum(Class<T> enumeration, String search) {
+		for (T each : enumeration.getEnumConstants()) {
+			if (each.name().compareToIgnoreCase(search) == 0) {
+				return Optional.of(each);
+			}
+		}
+		return Optional.empty();
+	}
 }
