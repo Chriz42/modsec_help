@@ -21,7 +21,7 @@ only relativ paths from the execution directory are possible at the moment
 - logfile -> logfile that should be parsed
 - outputfilename (optional) -> name of the outputfile 
 - existingmodsecurityfile (optional)  -> existing modsecrule file where the rules should be updated with ne content from the log file
-- It is possbile to overwrite all properties from comandline. Just add "propertyname value" add the end of the command, details see configuration.
+- It is possbile to overwrite all properties from comandline. Just add "propertyname value" add the end of the command, details see configuration. If you set a list you have to remove whitespaces between the elements e.g. one,two,three and not one, two, three
 
 
 **configuration**
