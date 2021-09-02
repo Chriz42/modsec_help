@@ -70,7 +70,6 @@ public class Main {
 				break;
 			}
 		}
-
 		if (StringUtils.isBlank(logFileName)) {
 			System.out.println("logfile is mandatroy, set --help for more informations");
 			System.exit(42);
@@ -114,7 +113,7 @@ public class Main {
 		for (LocationMatch locationMatch : locationMatchList) {
 			printer.printToStream(locationMatch, outStream);
 		}
-		if (appProps.getBoolean("denyAccessToUnknownUrl", true)) {
+		if (appProps.getBoolean(Properties.denyAccessToUnknownUrl.name(), true)) {
 			printer.printDefaultMatchToStream(outStream);
 		}
 

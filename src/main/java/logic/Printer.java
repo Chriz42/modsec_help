@@ -13,6 +13,7 @@ import org.apache.commons.lang3.StringUtils;
 import model.HTTPType;
 import model.LocationMatch;
 import system.Main;
+import system.Properties;
 
 public class Printer {
 
@@ -33,8 +34,8 @@ public class Printer {
 
 	final String defaultRuleUrlString = "/.*";
 
-	boolean forbidUnknownBodyParams = Main.appProps.getBoolean("forbidUnknownBodyParams", true);
-	private int currentRuleId = Main.appProps.getInt("startRuleId", 666666);
+	boolean forbidUnknownBodyParams = Main.appProps.getBoolean(Properties.forbidUnknownBodyParams.name(), true);
+	private int currentRuleId = Main.appProps.getInt(Properties.startRuleId.name(), 666666);
 
 	public Printer() {
 

@@ -7,10 +7,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 import system.Main;
+import system.Properties;
 
 public class LogFileParser {
 
-	private String ALLOWED_4XX_HTTPSTATUSCODES = Main.appProps.getString("allowed400HttpStatusCodes", "403");
+	private String ALLOWED_4XX_HTTPSTATUSCODES = Main.appProps.getString(Properties.allowed400HttpStatusCodes.name(),
+			"403");
 
 	public HashMap<String, Set<String>> parse(BufferedReader reader) throws IOException {
 		// TODO: Is POST boddy wrtten to -I--?Saw something inside auditlog config

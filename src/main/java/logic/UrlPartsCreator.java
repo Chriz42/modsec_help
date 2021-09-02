@@ -19,6 +19,7 @@ import logic.exceptions.UrlPartCreatorException;
 import model.HTTPType;
 import model.UrlPart;
 import system.Main;
+import system.Properties;
 
 public class UrlPartsCreator {
 
@@ -33,7 +34,7 @@ public class UrlPartsCreator {
 		list.add("styles");
 		list.add("img");
 		resourcePlaceHolder = Collections
-				.unmodifiableList(Main.appProps.getList(String.class, "resourceUrlPlaceHolder", list));
+				.unmodifiableList(Main.appProps.getList(String.class, Properties.resourceUrlPlaceHolder.name(), list));
 	}
 
 	public List<UrlPart> parseRAWData(Map<String, Set<String>> dataMap, List<UrlPart> urlPartsList) {

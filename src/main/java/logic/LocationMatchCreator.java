@@ -13,13 +13,14 @@ import org.apache.commons.lang3.SerializationUtils;
 import model.LocationMatch;
 import model.UrlPart;
 import system.Main;
+import system.Properties;
 
 public class LocationMatchCreator {
 
 	private final RegexCreator regexCreator = new RegexCreator();
-	List<String> parameterWhiteList = Collections
-			.unmodifiableList(Main.appProps.getList(String.class, "parameterWhiteList", new ArrayList<String>()));
-	final String parameterWhiteListRegex = Main.appProps.getString("parameterWhiteListRegex", ".");
+	List<String> parameterWhiteList = Collections.unmodifiableList(
+			Main.appProps.getList(String.class, Properties.parameterWhiteList.name(), new ArrayList<String>()));
+	final String parameterWhiteListRegex = Main.appProps.getString(Properties.parameterWhiteListRegex.name(), ".");
 
 	public Set<LocationMatch> createLocationMatch(UrlPart parent) {
 		Set<LocationMatch> matches = new HashSet<>();

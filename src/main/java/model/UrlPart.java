@@ -12,6 +12,7 @@ import org.apache.commons.collections4.map.HashedMap;
 import org.apache.commons.lang3.StringUtils;
 
 import system.Main;
+import system.Properties;
 
 public class UrlPart {
 
@@ -19,9 +20,10 @@ public class UrlPart {
 	private Map<String, Set<String>> params = new HashMap<String, Set<String>>();
 	private Set<HTTPType> httpTyps = new HashSet<HTTPType>();
 
-	public static final String UUIDRegexStringForUrlpart = Main.appProps.getString("regexPlaceholderForUUID",
-			"[a-fA-F0-9\\-]+");
-	public static final String HashRegexString = Main.appProps.getString("regexPlaceholderForHashes", "[a-fA-F0-9]+");
+	public static final String UUIDRegexStringForUrlpart = Main.appProps
+			.getString(Properties.regexPlaceholderForUUID.name(), "[a-fA-F0-9\\-]+");
+	public static final String HashRegexString = Main.appProps.getString(Properties.regexPlaceholderForHashes.name(),
+			"[a-fA-F0-9]+");
 	private Set<UrlPart> children = new HashSet<UrlPart>();
 
 	public UrlPart(String url) {

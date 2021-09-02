@@ -65,7 +65,3 @@ But Modsec can use something like this:
 	REQUEST_FILENAME is the url and all SecRules are chained and allow if everything match the whitelist secrules.
 	SecRule 1111111111110 blocks everything else. 
 	Con: you don't have a message inside the auditlog what went wrong...
-
-
-
-you could use "header_00_config_template.conf" as a template for modsec configuration tp generate your logfiles 
