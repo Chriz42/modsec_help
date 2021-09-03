@@ -11,7 +11,7 @@ I want to have the possibility to create modsecurity WAF rules from the log file
 The important point is that the log files are containing every possible request. If you have a good testcoverage you can use the logs from qa. If not take the logs from production. Every time check if anything gets blocked before going live.
 
 
-## Ffeatures
+## Features
 
 - "read" modsec log files and create rules
 - generate whitelist locationMatches and deny every unkown url
@@ -53,4 +53,8 @@ Parameter:
 - **parameterWhiteList**: Inside fields like names you will never get any possible character in your testing scenario. Therefore it is possible to whitelist parameter names where the regex from parameterWhiteListRegex config is added
 - **parameterWhiteListRegex**: Regex for parameterWhitelist entries Default is: . (all printable characters)
 
+## build your own jar
+If you don't want to wait until I build a new release, just checkout develop  and run 
+	``mvn package install`` 
+and use the jar (with dependencies) inside the target folder
 
