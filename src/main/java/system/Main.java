@@ -36,13 +36,13 @@ import model.UrlPart;
 
 public class Main {
 
-	public static FileBasedConfiguration appProps = loadPropertiesFile();
+	public static FileBasedConfiguration appProps = loadPropertiesFile("app.properties");
 
 	private static final String pathDelimiter = System.getProperty("file.separator");
 
 	public static void main(String[] args) throws IOException, FileParserException, URISyntaxException {
 
-		// Add possibility to overwrite properties from external file or comandline
+		// Add possibility to overwrite properties from external file
 		// How to handle optional params when they are send empty?
 		// add logging framework an set log level to warn to remove the
 		// org.apache.commons.beanutils.FluentPropertyBeanIntrospector info thing
@@ -75,6 +75,7 @@ public class Main {
 				i++;
 			}
 		}
+
 		if (StringUtils.isBlank(logFileName)) {
 			System.out.println("logfile is mandatroy, set --help for more informations");
 			System.exit(42);
@@ -161,8 +162,8 @@ public class Main {
 
 	}
 
-	private static FileBasedConfiguration loadPropertiesFile() {
-		String appConfigPath = Thread.currentThread().getContextClassLoader().getResource("app.properties").getPath();
+	private static FileBasedConfiguration loadPropertiesFile(String propFileName) {
+		String appConfigPath = Thread.currentThread().getContextClassLoader().getResource(propFileName).getPath();
 		Parameters params = new Parameters();
 		File propertiesFile = new File(appConfigPath);
 
