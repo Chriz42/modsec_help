@@ -11,7 +11,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
@@ -24,6 +23,8 @@ import org.apache.commons.configuration2.builder.fluent.Parameters;
 import org.apache.commons.configuration2.convert.DefaultListDelimiterHandler;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import input.LogFileParser;
 import input.ModsecFileParser;
@@ -40,6 +41,8 @@ public class Main {
 
 	private static final String pathDelimiter = System.getProperty("file.separator");
 
+	private static final Logger logger = LoggerFactory.getLogger(Main.class);
+
 	public static void main(String[] args) throws IOException, FileParserException, URISyntaxException {
 
 		// Add possibility to overwrite properties from external file
@@ -48,7 +51,6 @@ public class Main {
 		// org.apache.commons.beanutils.FluentPropertyBeanIntrospector info thing
 		// exception Handling
 
-		List<String> argsList = Arrays.asList(args);
 		String logFileName = null;
 		String existingModsecurityFileName = null;
 		String modsecRuleFileName = "modsecRulesFile.conf";
@@ -80,17 +82,17 @@ public class Main {
 		}
 
 		if (StringUtils.isBlank(logFileName)) {
-			System.out.println("logfile is mandatroy, set --help for more informations");
+			logger.error("logfile is mandatroy, set --help for more informations");
 			System.exit(42);
 		}
 		final String executionDirectory = System.getProperty("user.dir");
 		String logFilePath = executionDirectory + pathDelimiter + logFileName;
 		File logFile = new File(logFilePath);
 		if (!logFile.exists() && !logFile.isDirectory()) {
-			System.out.println("Logfile: " + logFilePath + " can't be read. Check path and file permissions");
+			logger.error("Logfile: " + logFilePath + " can't be read. Check path and file permissions");
 			System.exit(42);
 		}
-		System.out.println("Modsecurity log file to read: " + logFilePath);
+		logger.info("Modsecurity log file to read: " + logFilePath);
 
 		BufferedReader logFileReader = new BufferedReader(new FileReader(logFile));
 
@@ -100,10 +102,10 @@ public class Main {
 
 		if (StringUtils.isNotBlank(existingModsecurityFileName)) {
 			String existingModsecurityFilePath = executionDirectory + pathDelimiter + existingModsecurityFileName;
-			System.out.println("Parse existing modsecurity file: " + existingModsecurityFilePath);
+			logger.info("Parse existing modsecurity file: " + existingModsecurityFilePath);
 			File existingModsecurityFile = new File(existingModsecurityFilePath);
 			if (!existingModsecurityFile.exists() && !existingModsecurityFile.isDirectory()) {
-				System.out.println("existing modsecurityfile: " + existingModsecurityFilePath
+				logger.error("existing modsecurityfile: " + existingModsecurityFilePath
 						+ " can't be read. Check path and file permissions");
 				System.exit(42);
 			}
@@ -128,7 +130,7 @@ public class Main {
 
 		Path outputFile = Paths.get(executionDirectory + pathDelimiter + modsecRuleFileName);
 		Files.write(outputFile, outStream.toByteArray(), StandardOpenOption.CREATE);
-		System.out.println("Write rules to file: " + outputFile.getFileName().toAbsolutePath());
+		logger.info("Write rules to file: " + outputFile.getFileName().toAbsolutePath());
 	}
 
 	private static void setProperty(int i, String[] args) {
@@ -139,7 +141,7 @@ public class Main {
 				appProps.clearProperty(propName);
 			}
 			appProps.addProperty(propName, args[i + 1]);
-			System.out.println("Reading property: " + propName + " with value: " + args[i + 1]
+			logger.info("Reading property: " + propName + " with value: " + args[i + 1]
 					+ " from commandline overwriting existing value!");
 
 		}, () -> {
@@ -150,18 +152,18 @@ public class Main {
 	}
 
 	private static void printHelpInfos() {
-		System.out.println();
-		System.out.println("Modsecurity learning mode parameters:");
-		System.out.println("Only relativ paths to the execution directory are working at the moment");
-		System.out.println();
-		System.out.println("maditory parameters:");
-		System.out.println("logfile -> file with modsecurity audit logs");
-		System.out.println();
-		System.out.println("optional parameters:");
-		System.out.println("outputfilename -> name of outputfile defualt: modsecRulesFile.conf");
-		System.out.println("existingmodsecurityfile -> file with existing rules that should be updated");
-		System.out.println();
-		System.out.println("It is possible to overwrite properties. Add propertyname value for details see readme");
+		logger.info("");
+		logger.info("Modsecurity learning mode parameters:");
+		logger.info("Only relativ paths to the execution directory are working at the moment");
+		logger.info("");
+		logger.info("maditory parameters:");
+		logger.info("logfile -> file with modsecurity audit logs");
+		logger.info("");
+		logger.info("optional parameters:");
+		logger.info("outputfilename -> name of outputfile defualt: modsecRulesFile.conf");
+		logger.info("existingmodsecurityfile -> file with existing rules that should be updated");
+		logger.info("");
+		logger.info("It is possible to overwrite properties. Add propertyname value for details see readme");
 
 	}
 
@@ -177,7 +179,8 @@ public class Main {
 		try {
 			return builder.getConfiguration();
 		} catch (ConfigurationException e) {
-			System.out.println("Can't read configuration File: " + e.getMessage());
+			logger.warn(
+					"Can't read configuration File: " + e.getMessage() + " will use defaults and provided properties");
 		}
 		return new PropertiesConfiguration();
 	}

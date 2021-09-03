@@ -47,8 +47,8 @@ when you start the application there will be the message
 Sep. 03, 2021 12:40:31 NACHM. org.apache.commons.beanutils.FluentPropertyBeanIntrospector introspect
 INFO: Error when creating PropertyDescriptor for public final void org.apache.commons.configuration2.AbstractConfiguration.setProperty(java.lang.String,java.lang.Object)! Ignoring this property.
  ```
-[See](https://issues.apache.org/jira/browse/BEANUTILS-477) 
-This issue will be removed when I add a logging framework 
+[See](https://issues.apache.org/jira/browse/BEANUTILS-477) I don't get this logging magic with the different frameworks to work... Just ignore the warning for the moment... 
+
 
 ## configuration
 
