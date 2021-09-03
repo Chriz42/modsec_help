@@ -1,4 +1,4 @@
-# modsec_help
+# modsecurity WAF "learning mode"
 Tool to generate modsecurity WAF Rules for apache from modsecurity log files
 
 ## Why
