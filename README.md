@@ -1,7 +1,7 @@
 # modsec_help
 Tool to generate modsecurity WAF Rules for apache from modsecurity log files
 
-##Why
+## Why
 
 I want to have the possibility to create modsecurity WAF rules from the log files modsecurity is creating in "detectiononly" mode. I realy like modesecurity rules, the rules are easy to read if you take care, they are extremly powerfull and modsecurity is open source. But if you don't know what the application behind the firewall is doing it is pretty hard to write the rules your self or if you are to lazy write rules. Normally you would take an enterprise solution like f5 here, but I experienced that no one realy know at the end why the firewall is doing what. You use the learning mode in QA, test again with blocking mode, deploy to production and hope. If something get blocked that shouldn't be blocked you start again. It is realy hard to understand why a special request was blocked. Of course this is a Ui topic but there are more good reasons to use modsecurity rules.
 
@@ -11,7 +11,7 @@ I want to have the possibility to create modsecurity WAF rules from the log file
 The important point is that the log files are containing every possible request. If you have a good testcoverage you can use the logs from qa. If not take the logs from production. Every time check if anything gets blocked before going live.
 
 
-##features
+## Ffeatures
 
 - "read" modsec log files and create rules
 - generate whitelist locationMatches and deny every unkown url
@@ -23,7 +23,7 @@ The important point is that the log files are containing every possible request.
 - update older modsecurity files with new locationmatches from new log input. It is recommended only parse locationmatches that where generated from this tool
 
 
-##Open features
+## Open features
 
 - add real xml and json support
 	- atm only the single characters are added
@@ -31,7 +31,7 @@ The important point is that the log files are containing every possible request.
 - add possibility to set params as sensitive inside the logs
  
 
-##run the fat jar
+## run the fat jar
 
  At the moment only relative paths from the execution directory are possible
 Parameter:
@@ -41,7 +41,7 @@ Parameter:
 - It is possbile to overwrite all properties from comandline. Just add "propertyname value" add the end of the command, details see configuration. If you set a list you have to remove whitespaces between the elements e.g. one,two,three and not one, two, three
 
 
-##configuration
+## configuration
 
 -   **startRuleId**: Set the start for created rule Ids (Default: 666666)
 - **forbidUnknownBodyParams**: Set to false if you want to allow unknown http bodies for some reasons
