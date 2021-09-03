@@ -55,12 +55,15 @@ public class Main {
 		for (int i = 0; i < args.length; i++) {
 			switch (args[i].toLowerCase()) {
 			case "existingmodsecurityfile":
+			case "existingModsecurityFile":
 				existingModsecurityFileName = args[++i];
 				break;
 			case "logfile":
+			case "logFile":
 				logFileName = args[++i];
 				break;
 			case "outputfilename":
+			case "outputFilename":
 				modsecRuleFileName = args[++i];
 				break;
 			case "--help":
