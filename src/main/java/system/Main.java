@@ -44,10 +44,9 @@ public class Main {
 	private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
 	public static void main(String[] args) {
-
+//TODO
 		// Add possibility to overwrite properties from external file
 		// How to handle optional params when they are send empty?
-		// exception Handling
 
 		String logFileName = null;
 		String existingModsecurityFileName = null;
