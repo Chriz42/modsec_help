@@ -14,6 +14,8 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import logic.exceptions.UrlPartCreatorException;
 import model.HTTPType;
@@ -24,6 +26,8 @@ import system.Properties;
 public class UrlPartsCreator {
 
 	private static final List<String> resourcePlaceHolder;
+	private static final Logger logger = LoggerFactory.getLogger(UrlPartsCreator.class);
+
 	static {
 		List<String> list = new ArrayList<String>();
 		list.add("js");
@@ -51,7 +55,7 @@ public class UrlPartsCreator {
 					urlPartsList.add(urlPart);
 				}
 			} catch (UrlPartCreatorException e) {
-				System.out.println("error occured scip this log entry. Message: " + e.getMessage());
+				logger.warn("error occured skip this log entry. Message: " + e.getMessage());
 			}
 		}
 		return urlPartsList;
@@ -155,7 +159,7 @@ public class UrlPartsCreator {
 			try {
 				urldecodedParams = URLDecoder.decode(urlAndQueryString[1], StandardCharsets.UTF_8.name());
 			} catch (UnsupportedEncodingException e) {
-				System.out.println("Urldecoding error with string: " + urlAndQueryString[1]
+				logger.warn("Urldecoding error with string: " + urlAndQueryString[1]
 						+ " and UTF-8 charset. Use raw value for params");
 				urldecodedParams = urlAndQueryString[1];
 			}

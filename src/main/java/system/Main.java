@@ -3,9 +3,9 @@ package system;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -43,12 +43,10 @@ public class Main {
 
 	private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
-	public static void main(String[] args) throws IOException, FileParserException, URISyntaxException {
+	public static void main(String[] args) {
 
 		// Add possibility to overwrite properties from external file
 		// How to handle optional params when they are send empty?
-		// add logging framework an set log level to warn to remove the
-		// org.apache.commons.beanutils.FluentPropertyBeanIntrospector info thing
 		// exception Handling
 
 		String logFileName = null;
@@ -93,7 +91,21 @@ public class Main {
 			System.exit(42);
 		}
 		logger.info("Modsecurity log file to read: " + logFilePath);
+		try {
+			process(existingModsecurityFileName, modsecRuleFileName, executionDirectory, logFile);
+		} catch (IOException | FileParserException e) {
+			logger.error("Catch critical exception: " + e.getMessage() + " Shutting down!");
+			System.exit(42);
+		} catch (Exception e) {
+			logger.error("Catch unexpected critical exception: " + e.getMessage() + " Shutting down!");
+			System.exit(42);
+		}
 
+	}
+
+	private static void process(String existingModsecurityFileName, String modsecRuleFileName,
+			final String executionDirectory, File logFile)
+			throws FileNotFoundException, IOException, FileParserException {
 		BufferedReader logFileReader = new BufferedReader(new FileReader(logFile));
 
 		HashMap<String, Set<String>> dataMap = new LogFileParser().parse(logFileReader);
@@ -145,7 +157,7 @@ public class Main {
 					+ " from commandline overwriting existing value!");
 
 		}, () -> {
-			System.out.println(args[i] + " is not a expected property! ");
+			logger.error(args[i] + " is not a expected property! ");
 			System.exit(42);
 		});
 

@@ -9,6 +9,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import model.HTTPType;
 import model.LocationMatch;
@@ -20,6 +22,8 @@ public class Printer {
 	// TODO: make actions configurable
 	// TODO: add posibillity for anomalyscoring
 	// TODO: addpossebillity to log matched value, with masking for sensitiv data
+
+	private static final Logger logger = LoggerFactory.getLogger(Printer.class);
 
 	final String locationMatchOpenString = "<LocationMatch \"^%s$\">";
 	final String requestMethodeString = "\tSecRule REQUEST_METHOD !(%s) \"deny,id:%s,msg:'Request method not allowed'\"";
@@ -54,8 +58,8 @@ public class Printer {
 		Set<HTTPType> httpTypes = locationMatch.getHttpTyps();
 		// TODO: Check how delete and other HTTP Typs work and rework if needed
 		if ((httpTypes.contains(HTTPType.POST) || httpTypes.contains(HTTPType.PUT)) && !forbidUnknownBodyParams) {
-			System.out.println(
-					" WARN: forbidUnknownBodyParams is set to false -> SecRules with HTTP body will accept every param with every content!");
+			logger.warn(
+					" forbidUnknownBodyParams is set to false -> SecRules with HTTP body will accept every param with every content!");
 			if (httpTypes.contains(HTTPType.GET)) {
 				printWriter.println(String.format(forbidQueryParamsString, currentRuleId++));
 			}
